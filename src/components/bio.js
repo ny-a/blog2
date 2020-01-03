@@ -6,12 +6,10 @@
  */
 
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-
-import { rhythm } from "../utils/typography"
+import {graphql, useStaticQuery} from "gatsby"
 
 const Bio = () => {
-  const data = useStaticQuery(graphql`
+    const data = useStaticQuery(graphql`
     query BioQuery {
       site {
         siteMetadata {
@@ -24,24 +22,22 @@ const Bio = () => {
     }
   `)
 
-  const { author, social } = data.site.siteMetadata
-  return (
-    <div
-      style={{
-        display: `flex`,
-        marginBottom: rhythm(2.5),
-      }}
-    >
-      <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
-        {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
-      </p>
-    </div>
-  )
+    const {author, social} = data.site.siteMetadata
+    return (
+        <div
+            style={{
+                display: `flex`,
+            }}
+        >
+            <p>
+                Written by <strong>{author}</strong>.
+                {` `}
+                <a href={`https://twitter.com/${social.twitter}`}>
+                    Twitter@{social.twitter}
+                </a>
+            </p>
+        </div>
+    )
 }
 
 export default Bio
