@@ -4,7 +4,7 @@ date:   2020-01-04 01:00:00
 description: "Jekyll のタイムゾーンを JST に設定しました"
 ---
 
-[octokitをアップデートしました](/update-octokit/) を投稿したのが01時
+[octokitをアップデートしました](/2020-01/update-octokit/) を投稿したのが01時
 だったのですが、前日の投稿として表示されてしまいました。
 
 ## 原因・JST設定

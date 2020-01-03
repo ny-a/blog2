@@ -4,7 +4,7 @@ date:   2020-01-04 01:18:27
 description: "octokit 4.15.0がリリースされたのでアップデートしました"
 ---
 
-[octokitをアップデートしました](/update-octokit/) では octokit のリリースがまだだったので github から
+[octokitをアップデートしました](/2020-01/update-octokit/) では octokit のリリースがまだだったので github から
 直接インストールするようにしてアップデートしましたが、 4.15.0 がリリースされたのでそちらにアップデートします。
 
 ## github 指定を削除
