@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Jan 2020 16:41:48 GMT</lastBuildDate><item><title><![CDATA[octokit 4.15.0がリリースされました]]></title><description><![CDATA[octokitをアップデートしました では octokit のリリースがまだだったので github から
+直接インストールするようにしてアップデートしましたが、 4.15.0 がリリースされたのでそちらにアップデートします。 github…]]></description><link>https://ny-a.github.io/blog2/2020-01/released-octokit/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/released-octokit/</guid><pubDate>Sat, 04 Jan 2020 01:18:27 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;/blog2/2020-01/update-octokit/&quot;&gt;octokitをアップデートしました&lt;/a&gt; では octokit のリリースがまだだったので github から
+直接インストールするようにしてアップデートしましたが、 4.15.0 がリリースされたのでそちらにアップデートします。&lt;/p&gt;
+&lt;h2&gt;github 指定を削除&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gem &amp;quot;octokit&amp;quot;, github: &amp;quot;octokit/octokit.rb&amp;quot;, ref: &amp;quot;ae5838a&amp;quot;&lt;/code&gt; を削除して、 &lt;code class=&quot;language-text&quot;&gt;bundle update&lt;/code&gt; を実行します。&lt;/p&gt;
+&lt;p&gt;これで faraday 1.0 系でもエラーにならずに正しく実行できるようになりました。&lt;/p&gt;
+&lt;p&gt;リリースありがとうございます！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Jekyllのタイムゾーン設定を変更しました]]></title><description><![CDATA[octokitをアップデートしました を投稿したのが01時
+だったのですが、前日の投稿として表示されてしまいました。 原因・JST設定 GitHub の CI でのデフォルトのタイムゾーンが JST ではないからですね。 Jekyll の Configuration…]]></description><link>https://ny-a.github.io/blog2/2020-01/change-jekyll-timezone/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/change-jekyll-timezone/</guid><pubDate>Sat, 04 Jan 2020 01:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;/blog2/2020-01/update-octokit/&quot;&gt;octokitをアップデートしました&lt;/a&gt; を投稿したのが01時
+だったのですが、前日の投稿として表示されてしまいました。&lt;/p&gt;
+&lt;h2&gt;原因・JST設定&lt;/h2&gt;
+&lt;p&gt;GitHub の CI でのデフォルトのタイムゾーンが JST ではないからですね。&lt;/p&gt;
+&lt;p&gt;Jekyll の &lt;a href=&quot;https://jekyllrb.com/docs/configuration/options/&quot;&gt;Configuration Options&lt;/a&gt; を確認すると、
+Timezone を設定できるようです。 &lt;code class=&quot;language-text&quot;&gt;Asia/Tokyo&lt;/code&gt; に設定しました。&lt;/p&gt;
+&lt;h2&gt;UTC に揃える&lt;/h2&gt;
+&lt;p&gt;全部 UTC に揃えたら楽だとは思いますが、朝09時に日付が変わるのはまだ慣れないので……
+と思ったのですが、 gatsby の方で面倒だったのでやっぱり UTC に揃えることにしました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[octokitをアップデートしました]]></title><description><![CDATA[Jekyllを使い始めました でセットアップ時に
+エラーが出ていたので調査しました。 原因  gem の 1.0 がリリースされたことが原因ですが、リリースされたのが丁度01/01でした。
+情報が少なかったわけです。 依存ツリーとしては github-pages github…]]></description><link>https://ny-a.github.io/blog2/2020-01/update-octokit/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/update-octokit/</guid><pubDate>Fri, 03 Jan 2020 01:06:28 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;/blog2/2020-01/introduction-of-jekyll/&quot;&gt;Jekyllを使い始めました&lt;/a&gt; でセットアップ時に
+エラーが出ていたので調査しました。&lt;/p&gt;
+&lt;h2&gt;原因&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;faraday&lt;/code&gt; gem の 1.0 がリリースされたことが原因ですが、リリースされたのが丁度01/01でした。
+情報が少なかったわけです。&lt;/p&gt;
+&lt;p&gt;依存ツリーとしては&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;github-pages&lt;/li&gt;
+&lt;li&gt;github-pages-health-check, jekyll-gist, jekyll-github-metadata&lt;/li&gt;
+&lt;li&gt;octokit&lt;/li&gt;
+&lt;li&gt;(sawyer)&lt;/li&gt;
+&lt;li&gt;faraday&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;となっているようです。
+また、 &lt;code class=&quot;language-text&quot;&gt;~&amp;gt; 0&lt;/code&gt; のような、1系が入らないバージョン指定もないようです。&lt;/p&gt;
+&lt;h2&gt;各gemのissueの確認&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/github/pages-gem/issues/665&quot;&gt;issue github/pages-gem#665&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/octokit/octokit.rb/pull/1154&quot;&gt;PR octokit/octokit.rb#1154&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;どうやら原因は octokit にあるようです。
+修正の PR 自体は master ブランチにマージされていて、リリースを待つだけのようです。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/octokit/octokit.rb/issues/1177&quot;&gt;issue octokit/octokit.rb#1177&lt;/a&gt; によると、来週にはリリースする予定ということです。&lt;/p&gt;
+&lt;h2&gt;workaround&lt;/h2&gt;
+&lt;p&gt;01/01 に書いたように faraday の 0.17 を指定することでもエラーは出なくなりますが、
+octokit を github から取得するようにしても対応できます。&lt;/p&gt;
+&lt;p&gt;具体的には、&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;gem &amp;quot;octokit&amp;quot;, github: &amp;quot;octokit/octokit.rb&amp;quot;, ref: &amp;quot;ae5838a&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;を Gemfile に追加することで、 faraday の 1系を使えるようになります。&lt;/p&gt;
+&lt;p&gt;(&lt;code class=&quot;language-text&quot;&gt;ae5838a&lt;/code&gt; 以降であればいいので、 &lt;code class=&quot;language-text&quot;&gt;branch: &amp;quot;master&amp;quot;&lt;/code&gt; などでも問題ないです。)&lt;/p&gt;
+&lt;h2&gt;まとめ&lt;/h2&gt;
+&lt;p&gt;octokit のメンテナさん、リリース頑張ってください！いつもありがとうございます。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Progateを始めました]]></title><description><![CDATA[最近 Twitter で Progate という名前をよく見かけるので、 Go のレッスンを始めてみました。 レッスン1 やるだけ レッスン2 1枚目のスライドの内容とは関係ない部分ですが、Go のレッスン1、 レッスン…]]></description><link>https://ny-a.github.io/blog2/2020-01/introduction-of-progate/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/introduction-of-progate/</guid><pubDate>Thu, 02 Jan 2020 14:50:52 GMT</pubDate><content:encoded>&lt;p&gt;最近 Twitter で Progate という名前をよく見かけるので、 Go のレッスンを始めてみました。&lt;/p&gt;
+&lt;h2&gt;レッスン1&lt;/h2&gt;
+&lt;p&gt;やるだけ&lt;/p&gt;
+&lt;h2&gt;レッスン2&lt;/h2&gt;
+&lt;p&gt;1枚目のスライドの内容とは関係ない部分ですが、Go のレッスン1、 レッスン2 を
+それぞれ &lt;code class=&quot;language-text&quot;&gt;GoⅠ&lt;/code&gt; と &lt;code class=&quot;language-text&quot;&gt;GoⅡ&lt;/code&gt; と表わしているのが見た目に紛らわしいなと思いました。&lt;/p&gt;
+&lt;p&gt;はい、やるだk……有料プランの説明が出てきました。&lt;/p&gt;
+&lt;p&gt;そういえば始めの方のレッスンのみ無料ということだったので、とりあえず無料のレッスンを進めていきます。&lt;/p&gt;
+&lt;h2&gt;レッスン3, レッスン4&lt;/h2&gt;
+&lt;p&gt;やるだけ&lt;/p&gt;
+&lt;h2&gt;感想&lt;/h2&gt;
+&lt;p&gt;Go、…… Better C？&lt;/p&gt;
+&lt;p&gt;関数型が好きです、よろしくお願いします。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Jekyllを使い始めました]]></title><description><![CDATA[一年の計は元旦にあり！ …… ………… ……………… ( ˘ω˘ ) 元日なのでセーフということで…… Jekyll をセットアップしてブログを書き始めました。
+今年は毎日何かアウトプットすることが目標です。 Jekyll…]]></description><link>https://ny-a.github.io/blog2/2020-01/introduction-of-jekyll/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/introduction-of-jekyll/</guid><pubDate>Wed, 01 Jan 2020 11:23:40 GMT</pubDate><content:encoded>&lt;p&gt;一年の計は元旦にあり！&lt;/p&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;p&gt;…………&lt;/p&gt;
+&lt;p&gt;………………&lt;/p&gt;
+&lt;p&gt;( ˘ω˘ )&lt;/p&gt;
+&lt;p&gt;元日なのでセーフということで……&lt;/p&gt;
+&lt;p&gt;Jekyll をセットアップしてブログを書き始めました。
+今年は毎日何かアウトプットすることが目標です。&lt;/p&gt;
+&lt;h2&gt;Jekyll のセットアップ&lt;/h2&gt;
+&lt;p&gt;セットアップの方法は、基本的に&lt;a href=&quot;https://jekyllrb.com/docs/github-pages/&quot;&gt;公式の docs&lt;/a&gt;に書いてある通りです。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;jekyll new blog
+cd blog
+sed -i -e &amp;#39;s/^gem &amp;quot;jekyll&amp;quot;/# &amp;amp;/&amp;#39; -e &amp;#39;/gem &amp;quot;github-pages&amp;quot;/s/^#//&amp;#39; -e &amp;#39;$a gem &amp;quot;faraday&amp;quot;, &amp;quot;~&amp;gt; 0.17&amp;quot;&amp;#39; Gemfile
+bundle update
+sed -i -e &amp;#39;s#baseurl: &amp;quot;&amp;quot;#baseurl: &amp;quot;/blog&amp;quot;#&amp;#39; _config.yml
+bundle exec jekyll serve&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;1つ問題があり、数ヶ月前に同様の手順を踏んだときから &lt;code class=&quot;language-text&quot;&gt;faraday&lt;/code&gt; が 1.0 にアップデートされたようで、実行時に
+&lt;code class=&quot;language-text&quot;&gt;jekyll 3.8.5 | Error:  uninitialized constant Faraday::Error::ClientError&lt;/code&gt; というエラーが出るようになっていました。&lt;/p&gt;
+&lt;p&gt;そのため、 workaround として &lt;code class=&quot;language-text&quot;&gt;faraday&lt;/code&gt; を 0.17 系を使用するようにしました。&lt;/p&gt;
+&lt;h2&gt;Happy new year!&lt;/h2&gt;
+&lt;p&gt;&amp;#x26; Happy development!!&lt;/p&gt;</content:encoded></item></channel></rss>
