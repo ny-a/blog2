@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Jan 2020 16:41:48 GMT</lastBuildDate><item><title><![CDATA[octokit 4.15.0がリリースされました]]></title><description><![CDATA[octokitをアップデートしました では octokit のリリースがまだだったので github から
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 05 Jan 2020 06:09:26 GMT</lastBuildDate><item><title><![CDATA[gatsbyを使い始めました]]></title><description><![CDATA[Jekyll を使い始めたところですが、早速浮気して Gatsby を使っていこうと思います。 9 Projects you can do to become a Frontend Master in 2020
+に丁度 gatsby で blog…]]></description><link>https://ny-a.github.io/blog2/2020-01/introduction-of-gatsby/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/introduction-of-gatsby/</guid><pubDate>Sun, 05 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Jekyll を使い始めたところですが、早速浮気して Gatsby を使っていこうと思います。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://dev.to/simonholdorf/9-projects-you-can-do-to-become-a-frontend-master-in-2020-n2h&quot;&gt;9 Projects you can do to become a Frontend Master in 2020&lt;/a&gt;
+に丁度 gatsby で blog を作るという項目があったので、これを順不同でこなしていこうと思います。&lt;/p&gt;
+&lt;h2&gt;導入&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby new&lt;/code&gt; を実行します。&lt;/p&gt;
+&lt;h2&gt;gh-pages&lt;/h2&gt;
+&lt;p&gt;公式ドキュメントの &lt;a href=&quot;https://www.gatsbyjs.org/docs/how-gatsby-works-with-github-pages/&quot;&gt;How Gatsby Works with GitHub Pages&lt;/a&gt;
+を参考に、 &lt;code class=&quot;language-text&quot;&gt;yarn add -D gh-pages&lt;/code&gt; を実行して、 deploy スクリプトを追加します。&lt;/p&gt;
+&lt;p&gt;また、 &lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt; に &lt;code class=&quot;language-text&quot;&gt;pathPrefix&lt;/code&gt; を追加して、実際のレポジトリに合わせて設定します。&lt;/p&gt;
+&lt;h2&gt;GitHub Pagesにデプロイ&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;yarn deploy&lt;/code&gt; を実行します。&lt;/p&gt;
+&lt;p&gt;標準では自動で &lt;code class=&quot;language-text&quot;&gt;gh-pages&lt;/code&gt; ブランチに push されるようです。&lt;/p&gt;
+&lt;h2&gt;感想&lt;/h2&gt;
+&lt;p&gt;内部で GraphQL を使っていてなるほど〜となりました。
+今までこういった Static Site Generator を使ったことはなかったのですが、理想に近いものだと感じました。&lt;/p&gt;
+&lt;p&gt;でも github-pages 公式サポートのある Jekyll の方が楽なんですよね……少し悩んでいます。&lt;/p&gt;
+&lt;p&gt;後日 gatsby with TypeScript に挑戦したいと思っています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[octokit 4.15.0がリリースされました]]></title><description><![CDATA[octokitをアップデートしました では octokit のリリースがまだだったので github から
 直接インストールするようにしてアップデートしましたが、 4.15.0 がリリースされたのでそちらにアップデートします。 github…]]></description><link>https://ny-a.github.io/blog2/2020-01/released-octokit/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/released-octokit/</guid><pubDate>Sat, 04 Jan 2020 01:18:27 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;/blog2/2020-01/update-octokit/&quot;&gt;octokitをアップデートしました&lt;/a&gt; では octokit のリリースがまだだったので github から
 直接インストールするようにしてアップデートしましたが、 4.15.0 がリリースされたのでそちらにアップデートします。&lt;/p&gt;
 &lt;h2&gt;github 指定を削除&lt;/h2&gt;
