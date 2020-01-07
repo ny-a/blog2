@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 06 Jan 2020 01:36:39 GMT</lastBuildDate><item><title><![CDATA[ArchLinuxが壊れたときにまず試すことメモ]]></title><description><![CDATA[私は体に染みついていますが、他の人はそうではないと思うのでメモしておきます。 手順 USB key から起動して、いつも通りマウントして chroot して  する 自動化 まれによくあるので、installation 環境とデュアルブートにしておいて、fstab…]]></description><link>https://ny-a.github.io/blog2/2020-01/how-to-fix-broken-arch-linux/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/how-to-fix-broken-arch-linux/</guid><pubDate>Mon, 06 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;私は体に染みついていますが、他の人はそうではないと思うのでメモしておきます。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 07 Jan 2020 01:43:46 GMT</lastBuildDate><item><title><![CDATA[Svelteを使ってみました]]></title><description><![CDATA[9 Projects you can do to become a Frontend Master in 2020
+をこなしていきます。今回は Svelte で ToDo アプリを作るやつを少しだけ進めてみました。 導入 The easiest way to get…]]></description><link>https://ny-a.github.io/blog2/2020-01/introduction-of-svelte/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/introduction-of-svelte/</guid><pubDate>Tue, 07 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://dev.to/simonholdorf/9-projects-you-can-do-to-become-a-frontend-master-in-2020-n2h&quot;&gt;9 Projects you can do to become a Frontend Master in 2020&lt;/a&gt;
+をこなしていきます。今回は Svelte で ToDo アプリを作るやつを少しだけ進めてみました。&lt;/p&gt;
+&lt;h2&gt;導入&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://svelte.dev/blog/the-easiest-way-to-get-started&quot;&gt;The easiest way to get started with Svelte&lt;/a&gt;
+に書いてある通りですが、 &lt;code class=&quot;language-text&quot;&gt;degit&lt;/code&gt; を &lt;code class=&quot;language-text&quot;&gt;yarn&lt;/code&gt; で使うには少し注意が必要です。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npx degit&lt;/code&gt; の場合、2番目の引数はカレントディレクトリのフォルダ名になりますが、
+(&lt;code class=&quot;language-text&quot;&gt;~/node_modules/.bin/degit&lt;/code&gt; を使う場合の) &lt;code class=&quot;language-text&quot;&gt;yarn degit&lt;/code&gt; の場合は、ホームディレクトリからのフォルダ名になるような気がします。&lt;/p&gt;
+&lt;p&gt;そのため、代わりに以下のコマンドを実行するのでもよさそうです。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git clone https://github.com/sveltejs/template my-svelte-project
+cd my-svelte-project
+rm -r .git
+yarn
+yarn dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;感想&lt;/h2&gt;
+&lt;p&gt;今回はデフォルトの &lt;code class=&quot;language-text&quot;&gt;rollup&lt;/code&gt; をそのまま使ってみましたが、 &lt;code class=&quot;language-text&quot;&gt;webpack&lt;/code&gt; も使えるようです。
+また &lt;code class=&quot;language-text&quot;&gt;webpack&lt;/code&gt; でも試してみようかなと思います。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ArchLinuxが壊れたときにまず試すことメモ]]></title><description><![CDATA[私は体に染みついていますが、他の人はそうではないと思うのでメモしておきます。 手順 USB key から起動して、いつも通りマウントして chroot して  する 自動化 まれによくあるので、installation 環境とデュアルブートにしておいて、fstab…]]></description><link>https://ny-a.github.io/blog2/2020-01/how-to-fix-broken-arch-linux/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/how-to-fix-broken-arch-linux/</guid><pubDate>Mon, 06 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;私は体に染みついていますが、他の人はそうではないと思うのでメモしておきます。&lt;/p&gt;
 &lt;h2&gt;手順&lt;/h2&gt;
 &lt;p&gt;USB key から起動して、いつも通りマウントして chroot して &lt;code class=&quot;language-text&quot;&gt;pacman -S linux&lt;/code&gt; する&lt;/p&gt;
 &lt;h2&gt;自動化&lt;/h2&gt;
