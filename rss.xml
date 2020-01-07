@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 07 Jan 2020 01:43:46 GMT</lastBuildDate><item><title><![CDATA[Svelteを使ってみました]]></title><description><![CDATA[9 Projects you can do to become a Frontend Master in 2020
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 07 Jan 2020 12:54:03 GMT</lastBuildDate><item><title><![CDATA[すごいHaskell楽しく学ぼうを読み始めました]]></title><description><![CDATA[関数型言語は Elm などいくつか触ったことがありますが、 Haskell はきちんと触っていなかったので
+すごいH…]]></description><link>https://ny-a.github.io/blog2/2020-01/reading-learn-you-a-haskell-for-great-good/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/reading-learn-you-a-haskell-for-great-good/</guid><pubDate>Wed, 08 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;関数型言語は Elm などいくつか触ったことがありますが、 Haskell はきちんと触っていなかったので
+すごいH本を読んでみました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://learnyouahaskell.com/chapters&quot;&gt;英語版&lt;/a&gt;も公開されていますね。&lt;/p&gt;
+&lt;h2&gt;型クラス&lt;/h2&gt;
+&lt;p&gt;型クラスという名前は知っていましたが、具体的にどのようなものかは分かっていませんでした。&lt;/p&gt;
+&lt;p&gt;サブクラスなども一貫性のある記述方法で、分かりやすいと感じました。&lt;/p&gt;
+&lt;h2&gt;感想&lt;/h2&gt;
+&lt;p&gt;8章あたりまで斜め読みをしただけなのですが、もう Haskell は楽しいと感じています。&lt;/p&gt;
+&lt;p&gt;あとはモナドトランスフォーマーなどの理解を……(？)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Svelteを使ってみました]]></title><description><![CDATA[9 Projects you can do to become a Frontend Master in 2020
 をこなしていきます。今回は Svelte で ToDo アプリを作るやつを少しだけ進めてみました。 導入 The easiest way to get…]]></description><link>https://ny-a.github.io/blog2/2020-01/introduction-of-svelte/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/introduction-of-svelte/</guid><pubDate>Tue, 07 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://dev.to/simonholdorf/9-projects-you-can-do-to-become-a-frontend-master-in-2020-n2h&quot;&gt;9 Projects you can do to become a Frontend Master in 2020&lt;/a&gt;
 をこなしていきます。今回は Svelte で ToDo アプリを作るやつを少しだけ進めてみました。&lt;/p&gt;
 &lt;h2&gt;導入&lt;/h2&gt;
