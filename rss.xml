@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 07 Jan 2020 12:54:03 GMT</lastBuildDate><item><title><![CDATA[すごいHaskell楽しく学ぼうを読み始めました]]></title><description><![CDATA[関数型言語は Elm などいくつか触ったことがありますが、 Haskell はきちんと触っていなかったので
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 09 Jan 2020 01:07:49 GMT</lastBuildDate><item><title><![CDATA[dockerのインストールでハマりました]]></title><description><![CDATA[Docker…]]></description><link>https://ny-a.github.io/blog2/2020-01/problem-on-installing-docker/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/problem-on-installing-docker/</guid><pubDate>Thu, 09 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Docker のインストールは何度もやったことがあるのですが、稼働中のサーバー上でインストールした経験はなかったので、
+(特殊な状況というか、あまり好ましくない状況ですが)ネットワーク周りで少しハマりました。&lt;/p&gt;
+&lt;h2&gt;背景&lt;/h2&gt;
+&lt;p&gt;稼働中のサービスがあるホストで、再起動は避けたい状況でした。&lt;/p&gt;
+&lt;p&gt;そのサービスのアップデートをデプロイする前に、docker コンテナ化したアップデート済みサービスを
+デプロイして検証しようとしていました。&lt;/p&gt;
+&lt;p&gt;いやまあ検証環境分けろはそうなんですが……。&lt;/p&gt;
+&lt;h2&gt;発生した問題&lt;/h2&gt;
+&lt;p&gt;centos7 に docker をインストールし、docker-compose でコンテナを起動した所、
+他のコンテナとはネットワークアクセス可能なのに、外部へのアクセスができない状況でした。&lt;/p&gt;
+&lt;p&gt;(直接？の原因としては、 iptables の FORWARD チェーンが DROP になっていました。)&lt;/p&gt;
+&lt;p&gt;iptables に docker 用のルールが自動で追加されるようなのですが(手元のマシンには追加されていました)、そのホストには
+追加されていませんでした。&lt;/p&gt;
+&lt;h2&gt;解決方法&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;systemctl restart docker&lt;/code&gt; を実行しました。終わり。&lt;/p&gt;
+&lt;h2&gt;まとめ？&lt;/h2&gt;
+&lt;p&gt;普通にホスト再起動してあげましょう。
+というかメンテナンスしよ？&lt;/p&gt;</content:encoded></item><item><title><![CDATA[すごいHaskell楽しく学ぼうを読み始めました]]></title><description><![CDATA[関数型言語は Elm などいくつか触ったことがありますが、 Haskell はきちんと触っていなかったので
 すごいH…]]></description><link>https://ny-a.github.io/blog2/2020-01/reading-learn-you-a-haskell-for-great-good/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/reading-learn-you-a-haskell-for-great-good/</guid><pubDate>Wed, 08 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;関数型言語は Elm などいくつか触ったことがありますが、 Haskell はきちんと触っていなかったので
 すごいH本を読んでみました。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://learnyouahaskell.com/chapters&quot;&gt;英語版&lt;/a&gt;も公開されていますね。&lt;/p&gt;
