@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 09 Jan 2020 01:07:49 GMT</lastBuildDate><item><title><![CDATA[dockerのインストールでハマりました]]></title><description><![CDATA[Docker…]]></description><link>https://ny-a.github.io/blog2/2020-01/problem-on-installing-docker/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/problem-on-installing-docker/</guid><pubDate>Thu, 09 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Docker のインストールは何度もやったことがあるのですが、稼働中のサーバー上でインストールした経験はなかったので、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 09 Jan 2020 14:35:25 GMT</lastBuildDate><item><title><![CDATA[GnuPGのssh-agentエミュレータを使ってみました]]></title><description><![CDATA[今まではあまり気にしていなかったのですが、gh-pages のデプロイ時に2回パスフレーズを聞かれるのが
+さすがに気になってしまい、 ssh-agent…]]></description><link>https://ny-a.github.io/blog2/2020-01/introduction-of-gpg-ssh-agent/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/introduction-of-gpg-ssh-agent/</guid><pubDate>Fri, 10 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;今まではあまり気にしていなかったのですが、gh-pages のデプロイ時に2回パスフレーズを聞かれるのが
+さすがに気になってしまい、 ssh-agent を使うことにしました。&lt;/p&gt;
+&lt;p&gt;前に何度か使っていたような記憶があるのですが、システム自体をあまり理解していなかったのもあり、
+今の環境をセットアップするときには有効にしていませんでした。&lt;/p&gt;
+&lt;h2&gt;設定&lt;/h2&gt;
+&lt;p&gt;基本的には&lt;a href=&quot;https://wiki.archlinux.org/index.php/GnuPG#SSH_agent&quot;&gt;GnuPG - ArchWiki&lt;/a&gt; に従うだけです。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;~/.pam_environment&lt;/code&gt; で &lt;code class=&quot;language-text&quot;&gt;SSH_AUTH_SOCK&lt;/code&gt; の設定をして、Xorg で使う場合は TTY の設定をします。&lt;/p&gt;
+&lt;h2&gt;感想&lt;/h2&gt;
+&lt;p&gt;ssh-agent と変わらずパスフレーズのキャッシュなどは普通に便利なのですが、
+gpg-agent は内部で ssh-key を gpg-key としてインポートしていそうな感じですね。(追って調査します)&lt;/p&gt;
+&lt;p&gt;gpg-key で ssh することも可能なので、行く行くは gpg-key にまとめてしまおうかなと思っています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[dockerのインストールでハマりました]]></title><description><![CDATA[Docker…]]></description><link>https://ny-a.github.io/blog2/2020-01/problem-on-installing-docker/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/problem-on-installing-docker/</guid><pubDate>Thu, 09 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Docker のインストールは何度もやったことがあるのですが、稼働中のサーバー上でインストールした経験はなかったので、
 (特殊な状況というか、あまり好ましくない状況ですが)ネットワーク周りで少しハマりました。&lt;/p&gt;
 &lt;h2&gt;背景&lt;/h2&gt;
 &lt;p&gt;稼働中のサービスがあるホストで、再起動は避けたい状況でした。&lt;/p&gt;
