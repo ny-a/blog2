@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 09 Jan 2020 14:35:25 GMT</lastBuildDate><item><title><![CDATA[GnuPGのssh-agentエミュレータを使ってみました]]></title><description><![CDATA[今まではあまり気にしていなかったのですが、gh-pages のデプロイ時に2回パスフレーズを聞かれるのが
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 11 Jan 2020 05:18:44 GMT</lastBuildDate><item><title><![CDATA[AndroidアプリでHelloWorldをしました]]></title><description><![CDATA[今まで Android アプリ開発には Android Studio を使っていて、
+IntelliJ IDEA と両方使っていたのですが、 Android アプリも
+Intellij IDEA で開発してみました。 背景 今までも何度か IntelliJ で Android…]]></description><link>https://ny-a.github.io/blog2/2020-01/helloworld-android-with-intellij/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/helloworld-android-with-intellij/</guid><pubDate>Sat, 11 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;今まで Android アプリ開発には Android Studio を使っていて、
+IntelliJ IDEA と両方使っていたのですが、 Android アプリも
+Intellij IDEA で開発してみました。&lt;/p&gt;
+&lt;h2&gt;背景&lt;/h2&gt;
+&lt;p&gt;今までも何度か IntelliJ で Android アプリの開発を試みていたのですが、
+謎のエラーに悩まされていて、特に Visual Layout Editor が機能しなくて困っていました。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Sync Project with Gradle Files&lt;/code&gt; を選ぶと以下のエラーが出ていました。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;New Gradle Sync is not supported due to containing Kotlin modules&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;原因&lt;/h2&gt;
+&lt;p&gt;上記のエラーメッセージで検索すると、皆さんいろいろな方法で解決されているようですが、
+私はどの方法でも解決しませんでした。&lt;/p&gt;
+&lt;p&gt;結論としては、システムの JRE のバージョンが 13 だったことが原因だったようです。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://wiki.archlinux.org/index.php/Java#Launching_an_application_with_the_non-default_java_version&quot;&gt;Java - Arch Wiki&lt;/a&gt;
+を参考に、 IntelliJ を Java8(1.8) を使って起動するようにしたら解決しました。&lt;/p&gt;
+&lt;h2&gt;感想&lt;/h2&gt;
+&lt;p&gt;IntelliJ の設定は複雑すぎる気がします……
+とはいえ、新しい IDE を使う度に同じことを思っている気もします。&lt;/p&gt;
+&lt;p&gt;シンプルにすればいいというわけではないですが、エラーメッセージはもう少し詳細に書いてほしいのと、
+プロジェクト作成などある程度のことは CLI でもできるようにするなど、
+問題の切り分けがやりやすくなればいいなと思いました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[GnuPGのssh-agentエミュレータを使ってみました]]></title><description><![CDATA[今まではあまり気にしていなかったのですが、gh-pages のデプロイ時に2回パスフレーズを聞かれるのが
 さすがに気になってしまい、 ssh-agent…]]></description><link>https://ny-a.github.io/blog2/2020-01/introduction-of-gpg-ssh-agent/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/introduction-of-gpg-ssh-agent/</guid><pubDate>Fri, 10 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;今まではあまり気にしていなかったのですが、gh-pages のデプロイ時に2回パスフレーズを聞かれるのが
 さすがに気になってしまい、 ssh-agent を使うことにしました。&lt;/p&gt;
 &lt;p&gt;前に何度か使っていたような記憶があるのですが、システム自体をあまり理解していなかったのもあり、
