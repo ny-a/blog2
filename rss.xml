@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 11 Jan 2020 05:18:44 GMT</lastBuildDate><item><title><![CDATA[AndroidアプリでHelloWorldをしました]]></title><description><![CDATA[今まで Android アプリ開発には Android Studio を使っていて、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 12 Jan 2020 04:39:28 GMT</lastBuildDate><item><title><![CDATA[なぜIDEの支援機能を使うのか]]></title><description><![CDATA[少し前まで IDE の補完機能など、コーディングの支援機能を使いながらコーディングすることが、
+なんだか IDE にコーディングさせられているようで嫌でした。 これは恐らく私だけが感じていることではなくて、初心者の方のツイートで
+IDE…]]></description><link>https://ny-a.github.io/blog2/2020-01/why-programmers-use-ide/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/why-programmers-use-ide/</guid><pubDate>Sun, 12 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;少し前まで IDE の補完機能など、コーディングの支援機能を使いながらコーディングすることが、
+なんだか IDE にコーディングさせられているようで嫌でした。&lt;/p&gt;
+&lt;p&gt;これは恐らく私だけが感じていることではなくて、初心者の方のツイートで
+IDE なしでコーディングする/コーディングできるようになりたい、といった
+発言を見かけることがあります。&lt;/p&gt;
+&lt;p&gt;ただ、これは開発の規模がまだ小さいときに強く感じるものだと思います。
+コードベースの規模が大きくなってくると、細かい所まで全て覚えていられないですし、
+コーディング量が増えるにつれてミスをする確立も上がっていきます。
+そんなときに IDE を使っていると、例え補完機能を(候補が出ても無視して)
+ほとんど使っていなかったとしても、ミスがあればすぐに知らせてくれますし、
+仮にスペルに自信がないなどの場合にも補完機能を使ってスムーズにコーディングを進めることができます。
+(もし補完機能を使っていなければ定義されている箇所を確認することになりますし、
+早くミスを見つけるためには頻繁にコンパイル等をする必要があります。)&lt;/p&gt;
+&lt;p&gt;コンピュータはコアとなるロジックを実装されるまで知りません。
+プログラマーはそのコアロジックの実装に集中することで生産性を高めようとしています。
+そのため、既に実装されている部分やライブラリについてはコンピュータの助けを借りて、
+新しい部分の実装に集中することができるのです。&lt;/p&gt;
+&lt;p&gt;もちろん、主体的にプログラミングする必要があります。
+いくら候補が表示されているからといって、何も考えずにそれを選んでいると間違うこともあります。
+自分で何を実装すべきかをきちんと認識した上で、実際のコード上の表現について
+助けを借りる、といった考え方が合っているのかなと思っています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[AndroidアプリでHelloWorldをしました]]></title><description><![CDATA[今まで Android アプリ開発には Android Studio を使っていて、
 IntelliJ IDEA と両方使っていたのですが、 Android アプリも
 Intellij IDEA で開発してみました。 背景 今までも何度か IntelliJ で Android…]]></description><link>https://ny-a.github.io/blog2/2020-01/helloworld-android-with-intellij/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/helloworld-android-with-intellij/</guid><pubDate>Sat, 11 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;今まで Android アプリ開発には Android Studio を使っていて、
 IntelliJ IDEA と両方使っていたのですが、 Android アプリも
