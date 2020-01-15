@@ -8,8 +8,19 @@
 import React from "react"
 import {graphql, useStaticQuery} from "gatsby"
 
+type QueryType = {
+    site: {
+        siteMetadata: {
+            author: string,
+            social: {
+                twitter: string,
+            }
+        }
+    }
+}
+
 const Bio = () => {
-    const data = useStaticQuery(graphql`
+    const data: QueryType = useStaticQuery(graphql`
     query BioQuery {
       site {
         siteMetadata {
