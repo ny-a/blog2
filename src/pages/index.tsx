@@ -40,7 +40,7 @@ class BlogIndex extends React.Component<BlogIndexProps> {
                             <section>
                                 <p
                                     dangerouslySetInnerHTML={{
-                                        __html: node.frontmatter.description || node.excerpt,
+                                        __html: node.excerpt,
                                     }}
                                 />
                             </section>
@@ -70,7 +70,6 @@ type PageQueryType = {
                 frontmatter: {
                     date: string,
                     title: string,
-                    description: string,
                 }
             }
         }]
@@ -87,14 +86,13 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
+          excerpt(pruneLength: 50)
           fields {
             slug
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            description
           }
         }
       }

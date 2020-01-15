@@ -1,7 +1,6 @@
 ---
 title:  "Svelteを使ってみました"
 date:   2020-01-07
-description: "Svelteを使ってみました"
 ---
 
 [9 Projects you can do to become a Frontend Master in 2020](https://dev.to/simonholdorf/9-projects-you-can-do-to-become-a-frontend-master-in-2020-n2h)

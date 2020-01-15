@@ -1,7 +1,6 @@
 ---
 title:  "AndroidアプリでHelloWorldをしました"
 date:   2020-01-11
-description: "Androidアプリ開発をIntelliJで始めてみました"
 ---
 
 今まで Android アプリ開発には Android Studio を使っていて、

@@ -1,7 +1,6 @@
 ---
 title:  "GnuPGのssh-agentエミュレータを使ってみました"
 date:   2020-01-10
-description: "GnuPGのssh-agentエミュレータを使ってみました"
 ---
 
 今まではあまり気にしていなかったのですが、gh-pages のデプロイ時に2回パスフレーズを聞かれるのが

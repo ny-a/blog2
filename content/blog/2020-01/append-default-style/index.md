@@ -1,7 +1,6 @@
 ---
 title:  "Gatsbyのスタイルを変更しました"
 date:   2020-01-13
-description: "Gatsbyのスタイルを変更しました"
 ---
 
 このブログを作成するときに `gatsby-starter-blog` を使ったのですが、スタイルを変えていなかったので、

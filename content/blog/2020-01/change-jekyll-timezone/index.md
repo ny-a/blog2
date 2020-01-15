@@ -1,7 +1,6 @@
 ---
 title:  "Jekyllのタイムゾーン設定を変更しました"
 date:   2020-01-04 01:00:00
-description: "Jekyll のタイムゾーンを JST に設定しました"
 ---
 
 [octokitをアップデートしました](/2020-01/update-octokit/) を投稿したのが01時

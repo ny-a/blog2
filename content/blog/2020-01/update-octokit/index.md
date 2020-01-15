@@ -1,7 +1,6 @@
 ---
 title:  "octokitをアップデートしました"
 date:   2020-01-03 01:06:28
-description: "Jekyllを使い始めました でセットアップ時にエラーが出ていたので調査しました"
 ---
 
 [Jekyllを使い始めました](/2020-01/introduction-of-jekyll/) でセットアップ時に

@@ -1,7 +1,6 @@
 ---
 title:  "Progateを始めました"
 date:   2020-01-02 14:50:52
-description: "最近 Twitter で Progate という名前をよく見かけるので Go のレッスンを始めてみました"
 ---
 
 最近 Twitter で Progate という名前をよく見かけるので、 Go のレッスンを始めてみました。

@@ -1,7 +1,6 @@
 ---
 title: "gatsbyを使い始めました"
 date: "2020-01-05"
-description: "gatsbyを使い始めました"
 ---
 
 Jekyll を使い始めたところですが、早速浮気して Gatsby を使っていこうと思います。
