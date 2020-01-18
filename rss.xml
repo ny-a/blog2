@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 18 Jan 2020 02:00:18 GMT</lastBuildDate><item><title><![CDATA[esModuleInteropを使わないようにしました]]></title><description><![CDATA[このブログに Typescript を導入したとき、 default import でエラーが出ていたので一旦
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 18 Jan 2020 15:57:42 GMT</lastBuildDate><item><title><![CDATA[Svelteをwebpackで使ってみました]]></title><description><![CDATA[Building A Svelte 3 Todo App From Start To Deployment
+に従いつつ、 rollup の代わりに webpack を使って from stratch で作成してみました。 手順 まずは Svelte…]]></description><link>https://ny-a.github.io/blog2/2020-01/svelte-webpack/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/svelte-webpack/</guid><pubDate>Sun, 19 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://medium.com/codingthesmartway-com-blog/building-a-svelte-3-todo-app-from-start-to-deployment-1737f72c23a6&quot;&gt;Building A Svelte 3 Todo App From Start To Deployment&lt;/a&gt;
+に従いつつ、 rollup の代わりに webpack を使って from stratch で作成してみました。&lt;/p&gt;
+&lt;h2&gt;手順&lt;/h2&gt;
+&lt;p&gt;まずは Svelte アプリの作成をします。 webpack を使った template は
+&lt;a href=&quot;https://github.com/sveltejs/template-webpack&quot;&gt;sveltejs/template-webpack&lt;/a&gt;
+にありますが、これを参考に以下のコマンドを実行します。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;mkdir svelte-todo-webpack
+cd svelte-todo-webpack
+yarn init
+git init
+yarn add -D webpack{,-cli,-dev-server} svelte{,-loader} {css,style}-loader mini-css-extract-plugin&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;今回は &lt;code class=&quot;language-text&quot;&gt;cross-env&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;serve&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;sirv-cli&lt;/code&gt; などを使わないようにするため、いくつか変更している箇所があります。
+とは言っても、 &lt;code class=&quot;language-text&quot;&gt;serve&lt;/code&gt; はどこで使っているか分からなかったので、単に webpack の設定を function にして、
+&lt;code class=&quot;language-text&quot;&gt;--env.NODE_ENV=development&lt;/code&gt; という風に渡すように変更しただけですが。……多分。&lt;/p&gt;
+&lt;p&gt;あとはシュッと ToDo アプリの実装をします。簡単でしたね。&lt;/p&gt;
+&lt;h2&gt;HMR でのエラー&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;TypeError: &amp;quot;todoitem.$on is not a function&amp;quot;&lt;/code&gt;
+というようなエラーがブラウザのコンソールに出ていました。
+どうやら HMR に対応していないようなので、 HMR を無効にすることで対応しました。&lt;/p&gt;
+&lt;h2&gt;感想&lt;/h2&gt;
+&lt;p&gt;他のフレームワークで webpack+babel+typescript といった構成にすることが多いので、 rollup のときよりも理解がしやすい
+構成になっているかなと思いました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[esModuleInteropを使わないようにしました]]></title><description><![CDATA[このブログに Typescript を導入したとき、 default import でエラーが出ていたので一旦
  に  を追加して対処していました。 ただ、デフォルトの設定を変更するのはあまり好ましくないと感じたので、
 microsoft/TypeScript#333…]]></description><link>https://ny-a.github.io/blog2/2020-01/get-rid-of-es-module-interop/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/get-rid-of-es-module-interop/</guid><pubDate>Sat, 18 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;このブログに Typescript を導入したとき、 default import でエラーが出ていたので一旦
 &lt;code class=&quot;language-text&quot;&gt;tsconfig.json&lt;/code&gt; に &lt;code class=&quot;language-text&quot;&gt;esModuleInterop&lt;/code&gt; を追加して対処していました。&lt;/p&gt;
