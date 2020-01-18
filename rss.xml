@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 17 Jan 2020 07:05:31 GMT</lastBuildDate><item><title><![CDATA[Gatsbyのブログにページネーションを追加しました]]></title><description><![CDATA[この Gatsby を使っているブログも10ポストを超えてきました。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 18 Jan 2020 02:00:18 GMT</lastBuildDate><item><title><![CDATA[esModuleInteropを使わないようにしました]]></title><description><![CDATA[このブログに Typescript を導入したとき、 default import でエラーが出ていたので一旦
+ に  を追加して対処していました。 ただ、デフォルトの設定を変更するのはあまり好ましくないと感じたので、
+microsoft/TypeScript#333…]]></description><link>https://ny-a.github.io/blog2/2020-01/get-rid-of-es-module-interop/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/get-rid-of-es-module-interop/</guid><pubDate>Sat, 18 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;このブログに Typescript を導入したとき、 default import でエラーが出ていたので一旦
+&lt;code class=&quot;language-text&quot;&gt;tsconfig.json&lt;/code&gt; に &lt;code class=&quot;language-text&quot;&gt;esModuleInterop&lt;/code&gt; を追加して対処していました。&lt;/p&gt;
+&lt;p&gt;ただ、デフォルトの設定を変更するのはあまり好ましくないと感じたので、
+&lt;a href=&quot;https://github.com/microsoft/TypeScript/issues/3337&quot;&gt;microsoft/TypeScript#3337&lt;/a&gt;
+を参考に、 &lt;code class=&quot;language-text&quot;&gt;import React from &amp;#39;react&lt;/code&gt; を &lt;code class=&quot;language-text&quot;&gt;import * as React from &amp;#39;react&lt;/code&gt; に
+書き換えることで対処しました。&lt;/p&gt;
+&lt;p&gt;これが esModuleInterop に対する正しい対処方法かは分かりませんが……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsbyのブログにページネーションを追加しました]]></title><description><![CDATA[この Gatsby を使っているブログも10ポストを超えてきました。
 そこで、普通のブログのようにページネーションを導入しました。 NickyMeuleman/gatsby-paginated-blog
 を参考に、といっても  と  を編集するだけですが……。
 commit e…]]></description><link>https://ny-a.github.io/blog2/2020-01/add-pagination-to-gatsby-blog/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/add-pagination-to-gatsby-blog/</guid><pubDate>Fri, 17 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;この Gatsby を使っているブログも10ポストを超えてきました。
