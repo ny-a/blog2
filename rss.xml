@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 18 Jan 2020 15:57:42 GMT</lastBuildDate><item><title><![CDATA[Svelteをwebpackで使ってみました]]></title><description><![CDATA[Building A Svelte 3 Todo App From Start To Deployment
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Jan 2020 11:19:01 GMT</lastBuildDate><item><title><![CDATA[Reactを使ってみました]]></title><description><![CDATA[9 Projects you can do to become a Frontend Master in 2020
+を進めています。 Tutorial は
+How to build a movie search app using React Hooks…]]></description><link>https://ny-a.github.io/blog2/2020-01/introduction-of-react/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/introduction-of-react/</guid><pubDate>Mon, 20 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://dev.to/simonholdorf/9-projects-you-can-do-to-become-a-frontend-master-in-2020-n2h&quot;&gt;9 Projects you can do to become a Frontend Master in 2020&lt;/a&gt;
+を進めています。&lt;/p&gt;
+&lt;p&gt;Tutorial は
+&lt;a href=&quot;https://www.freecodecamp.org/news/how-to-build-a-movie-search-app-using-react-hooks-24eb72ddfaf7/&quot;&gt;How to build a movie search app using React Hooks&lt;/a&gt;
+です。&lt;/p&gt;
+&lt;p&gt;今回も &lt;code class=&quot;language-text&quot;&gt;create-react-app&lt;/code&gt; を使わずに from scratch で作成します。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;yarn add -D @babel/core @babel/cli @babel/preset-env @babel/presetpack-dev-server style-loader css-loader babel-loader 
+yarn add react react-dom                                      
+yarn add -D @types/react @types/react-dom ts-loader typescript
+yarn add react-hot-loader&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;styled-components なんかも使っていきたいと思っています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Svelteをwebpackで使ってみました]]></title><description><![CDATA[Building A Svelte 3 Todo App From Start To Deployment
 に従いつつ、 rollup の代わりに webpack を使って from stratch で作成してみました。 手順 まずは Svelte…]]></description><link>https://ny-a.github.io/blog2/2020-01/svelte-webpack/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/svelte-webpack/</guid><pubDate>Sun, 19 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://medium.com/codingthesmartway-com-blog/building-a-svelte-3-todo-app-from-start-to-deployment-1737f72c23a6&quot;&gt;Building A Svelte 3 Todo App From Start To Deployment&lt;/a&gt;
 に従いつつ、 rollup の代わりに webpack を使って from stratch で作成してみました。&lt;/p&gt;
 &lt;h2&gt;手順&lt;/h2&gt;
