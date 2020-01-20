@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Jan 2020 11:19:01 GMT</lastBuildDate><item><title><![CDATA[Reactを使ってみました]]></title><description><![CDATA[9 Projects you can do to become a Frontend Master in 2020
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Jan 2020 15:11:15 GMT</lastBuildDate><item><title><![CDATA[JSXを単体で使ってみました]]></title><description><![CDATA[JSX といえば React というイメージですが、別に一緒に使わないといけないわけではないと思うので、
+,  あたりを使って試してみました。  相当のライブラリは一旦  を使ってみました。
+Lessons learned using JSX without React…]]></description><link>https://ny-a.github.io/blog2/2020-01/introduction-of-jsx/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/introduction-of-jsx/</guid><pubDate>Tue, 21 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JSX といえば React というイメージですが、別に一緒に使わないといけないわけではないと思うので、
+&lt;code class=&quot;language-text&quot;&gt;webpack&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;babel&lt;/code&gt; あたりを使って試してみました。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;React.createElement&lt;/code&gt; 相当のライブラリは一旦 &lt;code class=&quot;language-text&quot;&gt;jsx-render&lt;/code&gt; を使ってみました。
+&lt;a href=&quot;https://itnext.io/lessons-learned-using-jsx-without-react-bbddb6c28561&quot;&gt;Lessons learned using JSX without React&lt;/a&gt;
+を参考にしましたが、レポジトリが消えているようなので代替を探す必要があるかもしれません。&lt;/p&gt;
+&lt;p&gt;また、 &lt;code class=&quot;language-text&quot;&gt;eslint&lt;/code&gt; や &lt;code class=&quot;language-text&quot;&gt;prettier&lt;/code&gt; もよく使うのでインストールしました。
+eslint で JSX はサポートされているようですが、 unused-var になるなど問題点もあるようです。&lt;/p&gt;
+&lt;p&gt;Aurelia などもありますが、できるだけフロントエンドフレームワークを使わないで Web 標準を使って
+Web アプリを作る方法を模索してみるのもよいかもしれません。(JSX, Web components など。)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Reactを使ってみました]]></title><description><![CDATA[9 Projects you can do to become a Frontend Master in 2020
 を進めています。 Tutorial は
 How to build a movie search app using React Hooks…]]></description><link>https://ny-a.github.io/blog2/2020-01/introduction-of-react/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/introduction-of-react/</guid><pubDate>Mon, 20 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://dev.to/simonholdorf/9-projects-you-can-do-to-become-a-frontend-master-in-2020-n2h&quot;&gt;9 Projects you can do to become a Frontend Master in 2020&lt;/a&gt;
 を進めています。&lt;/p&gt;
