@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Jan 2020 15:11:15 GMT</lastBuildDate><item><title><![CDATA[JSXを単体で使ってみました]]></title><description><![CDATA[JSX といえば React というイメージですが、別に一緒に使わないといけないわけではないと思うので、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 21 Jan 2020 15:16:41 GMT</lastBuildDate><item><title><![CDATA[W3Techsを見つけました]]></title><description><![CDATA[PHPはもうダメだ、PHP万歳！ - POSTD
+を読んでいるときに、
+W3Techs
+の調査を見つけました。
+最近 POSTD をあまり見ていなかったのですが、 2019/04 から更新がないようですね……。 W3Techs の調査を見てみると、PHP や jQuery…]]></description><link>https://ny-a.github.io/blog2/2020-01/found-w3techs/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/found-w3techs/</guid><pubDate>Wed, 22 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://postd.cc/php-is-dead-viva-le-php/&quot;&gt;PHPはもうダメだ、PHP万歳！ - POSTD&lt;/a&gt;
+を読んでいるときに、
+&lt;a href=&quot;https://w3techs.com/&quot;&gt;W3Techs&lt;/a&gt;
+の調査を見つけました。
+最近 POSTD をあまり見ていなかったのですが、 2019/04 から更新がないようですね……。&lt;/p&gt;
+&lt;p&gt;W3Techs の調査を見てみると、PHP や jQuery の使用率が 70% を超えていて、
+身の周りで感じる感覚とは全く違う値が示されています。
+もしかしたら、 uglify や minify の影響を受けているのかもしれません。
+ただ、既存プロジェクトで PHP などを使っている場面は普通に見かけるので、
+身の周りで新規に作っているもの以外で考えると一般的なのかもしれません。&lt;/p&gt;
+&lt;p&gt;最近は &lt;code class=&quot;language-text&quot;&gt;ecmascript&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;typescript&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;webpack&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;babel&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;core-js&lt;/code&gt; などがあるので、
+jquery を少しずつ新しい技術に移行していくことも可能だと思っています。
+時間を作って試してみたいと思います。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://youmightnotneedjquery.com/&quot;&gt;You might not need jQuery&lt;/a&gt;
+も移行に役立ちそうです。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JSXを単体で使ってみました]]></title><description><![CDATA[JSX といえば React というイメージですが、別に一緒に使わないといけないわけではないと思うので、
 ,  あたりを使って試してみました。  相当のライブラリは一旦  を使ってみました。
 Lessons learned using JSX without React…]]></description><link>https://ny-a.github.io/blog2/2020-01/introduction-of-jsx/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/introduction-of-jsx/</guid><pubDate>Tue, 21 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JSX といえば React というイメージですが、別に一緒に使わないといけないわけではないと思うので、
 &lt;code class=&quot;language-text&quot;&gt;webpack&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;babel&lt;/code&gt; あたりを使って試してみました。&lt;/p&gt;
