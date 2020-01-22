@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 21 Jan 2020 15:16:41 GMT</lastBuildDate><item><title><![CDATA[W3Techsを見つけました]]></title><description><![CDATA[PHPはもうダメだ、PHP万歳！ - POSTD
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 22 Jan 2020 16:50:13 GMT</lastBuildDate><item><title><![CDATA[ヒューリスティック質問]]></title><description><![CDATA[なぜ「事実」と「意見」を区別して話せない人がいるのか。 - Books&Apps
+を読んで、ターゲット質問とヒューリスティック質問というものを知りました。 Daniel Kahneman, Thinking, Fast and Slow…]]></description><link>https://ny-a.github.io/blog2/2020-01/heuristic-question/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/heuristic-question/</guid><pubDate>Thu, 23 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://blog.tinect.jp/?p=62453&quot;&gt;なぜ「事実」と「意見」を区別して話せない人がいるのか。 - Books&amp;#x26;Apps&lt;/a&gt;
+を読んで、ターゲット質問とヒューリスティック質問というものを知りました。&lt;/p&gt;
+&lt;p&gt;Daniel Kahneman, Thinking, Fast and Slow に書いてあるようで、原文の引用は以下にあります。
+&lt;a href=&quot;https://jamesmacmillan.wordpress.com/2015/01/29/target-question-vs-heuristic-question/&quot;&gt;Target question vs. Heuristic question - Bologna&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;確かに脳がこういう動きをしている気はします。脳の動きについては自分自身のことでも完全には理解できていないので、
+当てはまりそうなものを見つけて分析していきたいと思っています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[W3Techsを見つけました]]></title><description><![CDATA[PHPはもうダメだ、PHP万歳！ - POSTD
 を読んでいるときに、
 W3Techs
 の調査を見つけました。
