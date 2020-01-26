@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 25 Jan 2020 15:01:56 GMT</lastBuildDate><item><title><![CDATA[gridsomeを使ってみました]]></title><description><![CDATA[いつものように
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 26 Jan 2020 18:12:04 GMT</lastBuildDate><item><title><![CDATA[6gramとPCI-DSS]]></title><description><![CDATA[twitter で流れてきた
+グループウォレットアプリ6gramの運用をはじめてみた / 6gram SRE NEXT 2020
+を見ました。 PCI DSS の概要については
+PCI DSS Quick Reference Guide…]]></description><link>https://ny-a.github.io/blog2/2020-01/6gram-pci-dss/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/6gram-pci-dss/</guid><pubDate>Mon, 27 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;twitter で流れてきた
+&lt;a href=&quot;https://speakerdeck.com/ryosan470/6gram-sre-next-2020&quot;&gt;グループウォレットアプリ6gramの運用をはじめてみた / 6gram SRE NEXT 2020&lt;/a&gt;
+を見ました。&lt;/p&gt;
+&lt;p&gt;PCI DSS の概要については
+&lt;a href=&quot;https://www.pcisecuritystandards.org/documents/PCI_DSS-QRG-v3_2_1.pdf&quot;&gt;PCI DSS Quick Reference Guide&lt;/a&gt;
+これなんかに書いてある感じなんですかね？
+PCI DSS については、クレジットカード情報の非保持化などは聞いたことがありますが、
+具体的にまともに対応する場合の戦略などは聞いたことがなかったので、興味深いと感じました。&lt;/p&gt;
+&lt;p&gt;また、
+&lt;a href=&quot;https://speakerdeck.com/enerick/elixir-dejue-ji-sabisuwotukututemita&quot;&gt;Elixir で決済サービスをつくってみた&lt;/a&gt;
+によると、Elixir を使っているようで、私は Elixir を使ったことがないので使ってみたいと思いました。&lt;/p&gt;
+&lt;p&gt;Developers Summit でも 6gram のセッションがあるようなので、聞いてみたいと思いました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[gridsomeを使ってみました]]></title><description><![CDATA[いつものように
 9 Projects you can do to become a Frontend Master in 2020
 を進めていっています。
 今回は gridsome を使ったブログです。 だいたい gatsby…]]></description><link>https://ny-a.github.io/blog2/2020-01/introduction-of-gridsome/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/introduction-of-gridsome/</guid><pubDate>Sun, 26 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;いつものように
