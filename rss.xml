@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 26 Jan 2020 18:12:04 GMT</lastBuildDate><item><title><![CDATA[6gramとPCI-DSS]]></title><description><![CDATA[twitter で流れてきた
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 27 Jan 2020 15:22:57 GMT</lastBuildDate><item><title><![CDATA[grpc-nodeのビルドに失敗する]]></title><description><![CDATA[npm install grpc build from source fails
+に書いてある通りなのですが……。 node v13 ではソースからのビルドになってインストールに失敗します。
+node v10 を使えばバイナリパッケージがあるようです。 nvm…]]></description><link>https://ny-a.github.io/blog2/2020-01/can-not-build-grpc-node/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/can-not-build-grpc-node/</guid><pubDate>Tue, 28 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://github.com/grpc/grpc-node/issues/922&quot;&gt;npm install grpc build from source fails&lt;/a&gt;
+に書いてある通りなのですが……。&lt;/p&gt;
+&lt;p&gt;node v13 ではソースからのビルドになってインストールに失敗します。
+node v10 を使えばバイナリパッケージがあるようです。&lt;/p&gt;
+&lt;p&gt;nvm をインストールしてとりあえずの対処をしようと思います。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[6gramとPCI-DSS]]></title><description><![CDATA[twitter で流れてきた
 グループウォレットアプリ6gramの運用をはじめてみた / 6gram SRE NEXT 2020
 を見ました。 PCI DSS の概要については
 PCI DSS Quick Reference Guide…]]></description><link>https://ny-a.github.io/blog2/2020-01/6gram-pci-dss/</link><guid isPermaLink="false">https://ny-a.github.io/blog2/2020-01/6gram-pci-dss/</guid><pubDate>Mon, 27 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;twitter で流れてきた
