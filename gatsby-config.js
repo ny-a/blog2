@@ -11,10 +11,18 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-source-git`,
+      options: {
+        name: `blog`,
+        remote: `https://github.com/ny-a/blog-content.git`,
+        branch: `master`,
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/dummy`,
+        name: `dummy`,
       },
     },
     {
