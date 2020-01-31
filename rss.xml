@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 30 Jan 2020 15:05:03 GMT</lastBuildDate><item><title><![CDATA[GitHubActionsでGridsomeのブログのビルドを設定しました]]></title><description><![CDATA[昨日に続いて Gridsome のブログのビルドも自動化しました。 やっていることはほとんど Gatsby の場合と同じなので、設定ファイルを追加するだけです。 Jekyll のブログのビルドも一緒にやってしまおうと思っていたのですが、Jekyll…]]></description><link>https://ny-a.github.io/blog22020-01/config-gridsome-cd/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-01/config-gridsome-cd/</guid><pubDate>Fri, 31 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;昨日に続いて Gridsome のブログのビルドも自動化しました。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 31 Jan 2020 17:16:29 GMT</lastBuildDate><item><title><![CDATA[6gramを使ってみました]]></title><description><![CDATA[mixi の新しいアプリの 6gram というアプリを使ってみました。
+サービス内容はおおまかには kyash と似ていると言えますが、
+グループでお金を出し合うことができる、インスタントカードを30枚まで発行できる、
+発行カードがJCB…]]></description><link>https://ny-a.github.io/blog22020-02/6gram-app/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/6gram-app/</guid><pubDate>Sat, 01 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;mixi の新しいアプリの &lt;a href=&quot;https://6gr.am/&quot;&gt;6gram&lt;/a&gt; というアプリを使ってみました。
+サービス内容はおおまかには &lt;a href=&quot;https://kyash.co/&quot;&gt;kyash&lt;/a&gt; と似ていると言えますが、
+グループでお金を出し合うことができる、インスタントカードを30枚まで発行できる、
+発行カードがJCBプリペイドである、といった違いがあります。&lt;/p&gt;
+&lt;p&gt;リアルカードは後日受付開始ということなので、現在はバーチャルカードでのオンライン決済と
+QUICPay を使用した実店舗での決済が可能なようです。
+QUICPay の決済速度は、一度試した感じだと kyash の高速化後のイメージが近いかなと思いました。&lt;/p&gt;
+&lt;p&gt;アカウント登録時に発行されるバーチャルカードにはグループのカードを紐付けることができ、
+紐付けると QUICPay で決済が可能になります。
+任意に発行できるインスタントカードは紐付けることはできず、オンライン決済専用なようです。
+考えてみれば QUICPay での支払い用にインスタントカードを発行する必要はありませんが……
+食費など Wallet を分ける用途で使えると思っていたので少し期待外れではありました。&lt;/p&gt;
+&lt;p&gt;また、インスタントカードやグループカードには100円単位でお金を出し入れすることが
+できます。グループの説明に「自由に出し入れ」「割り勘不要」とあるように、
+グループメンバー全員が自発的に入金して大まかに出し合うような仲のいいメンバーでの
+使用がターゲットなように感じます。&lt;/p&gt;
+&lt;p&gt;2月に入る前に iPhone 版もリリースされたので、気軽に勧められるようになりました。
+公式の招待も割と早く届くようなので、気軽に招待リクエストを送ってみたらよさそうです。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[GitHubActionsでGridsomeのブログのビルドを設定しました]]></title><description><![CDATA[昨日に続いて Gridsome のブログのビルドも自動化しました。 やっていることはほとんど Gatsby の場合と同じなので、設定ファイルを追加するだけです。 Jekyll のブログのビルドも一緒にやってしまおうと思っていたのですが、Jekyll…]]></description><link>https://ny-a.github.io/blog22020-01/config-gridsome-cd/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-01/config-gridsome-cd/</guid><pubDate>Fri, 31 Jan 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;昨日に続いて Gridsome のブログのビルドも自動化しました。&lt;/p&gt;
 &lt;p&gt;やっていることはほとんど Gatsby の場合と同じなので、設定ファイルを追加するだけです。&lt;/p&gt;
 &lt;p&gt;Jekyll のブログのビルドも一緒にやってしまおうと思っていたのですが、Jekyll のサブディレクトリの扱いが
 Gatsby/Gridsome と違っていたので一旦後回しにしようと思います。
