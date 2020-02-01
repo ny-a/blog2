@@ -6,7 +6,7 @@ module.exports = {
     description: `My study log of software development`,
     siteUrl: `https://ny-a.github.io/blog2/`,
     social: {
-      twitter: `nekoko_ny_a`,
+      twitter: `nyaw_ny_a`,
     },
   },
   plugins: [
