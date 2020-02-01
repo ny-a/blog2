@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 31 Jan 2020 17:16:29 GMT</lastBuildDate><item><title><![CDATA[6gramを使ってみました]]></title><description><![CDATA[mixi の新しいアプリの 6gram というアプリを使ってみました。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 01 Feb 2020 15:47:34 GMT</lastBuildDate><item><title><![CDATA[Yubikeyのファームウェア5.2.3がリリースされていました]]></title><description><![CDATA[Yubikey を持っていますが、現在はあまり活用できていません。
+その理由の1つに、普段使っている ed25519 なキーに Yubikey が対応していないことがあります。 今日ふとそのことについてもう一度調べていたら、
+What’s New in YubiKey…]]></description><link>https://ny-a.github.io/blog22020-02/yubikey-firmware-5-2-3/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/yubikey-firmware-5-2-3/</guid><pubDate>Sun, 02 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Yubikey を持っていますが、現在はあまり活用できていません。
+その理由の1つに、普段使っている ed25519 なキーに Yubikey が対応していないことがあります。&lt;/p&gt;
+&lt;p&gt;今日ふとそのことについてもう一度調べていたら、
+&lt;a href=&quot;https://www.yubico.com/blog/whats-new-in-yubikey-firmware-5-2-3/&quot;&gt;What’s New in YubiKey Firmware 5.2.3&lt;/a&gt;
+というブログ記事を見つけました。
+知らない間に ed25519 にも対応していたようです。
+とはいえ、そのためだけに Yubikey を新調するのも気が進まないので、しばらくの間は
+NIST P-384 や RSA-4096 を使おうと思います。&lt;/p&gt;
+&lt;p&gt;エアギャップコンピュータを使って GPG の primary key の管理などをしようと思いつつなかなかできていないのですが、
+キーのバックアップのことなどを考えて悩んでいます。紙に印刷する/光学メディアに書き込むなどの方法が一般的(？)な
+ようですが、紙や光学メディアも耐久性に不安があります。
+金属板にレーザーで QR コードを印刷できれば……とは思いますが、さすがにコストがかかりすぎるので……&lt;/p&gt;</content:encoded></item><item><title><![CDATA[6gramを使ってみました]]></title><description><![CDATA[mixi の新しいアプリの 6gram というアプリを使ってみました。
 サービス内容はおおまかには kyash と似ていると言えますが、
 グループでお金を出し合うことができる、インスタントカードを30枚まで発行できる、
 発行カードがJCB…]]></description><link>https://ny-a.github.io/blog22020-02/6gram-app/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/6gram-app/</guid><pubDate>Sat, 01 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;mixi の新しいアプリの &lt;a href=&quot;https://6gr.am/&quot;&gt;6gram&lt;/a&gt; というアプリを使ってみました。
