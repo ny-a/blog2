@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 01 Feb 2020 16:14:52 GMT</lastBuildDate><item><title><![CDATA[Yubikeyのファームウェア5.2.3がリリースされていました]]></title><description><![CDATA[Yubikey を持っていますが、現在はあまり活用できていません。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 02 Feb 2020 15:28:30 GMT</lastBuildDate><item><title><![CDATA[RasPiでcryptsetup benchmarkを実行してみました]]></title><description><![CDATA[タイトルの通りですが……
+RaspberryPi 3B+ で  を実行してみました。 メインのマシンより1-2桁くらい遅くてびっくりしました。
+RasPi でフルディスク暗号化とか少し検討していたのですが、これでは実用性が怪しいですね……
+メモリがもっと潤沢にあれば PXE…]]></description><link>https://ny-a.github.io/blog22020-02/cryptsetup-benchmark-on-raspi/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/cryptsetup-benchmark-on-raspi/</guid><pubDate>Mon, 03 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;タイトルの通りですが……
+RaspberryPi 3B+ で &lt;code class=&quot;language-text&quot;&gt;cryptsetup benchmark&lt;/code&gt; を実行してみました。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shellscript&quot;&gt;&lt;pre class=&quot;language-shellscript&quot;&gt;&lt;code class=&quot;language-shellscript&quot;&gt;$ cryptsetup benchmark
+# Tests are approximate using memory only (no storage IO).
+PBKDF2-sha1       206738 iterations per second for 256-bit key
+PBKDF2-sha256     316599 iterations per second for 256-bit key
+PBKDF2-sha512     200415 iterations per second for 256-bit key
+PBKDF2-ripemd160  174529 iterations per second for 256-bit key
+PBKDF2-whirlpool   29153 iterations per second for 256-bit key
+argon2i       4 iterations, 172077 memory, 4 parallel threads (CPUs) for 256-bit key (requested 2000 ms time)
+argon2id      4 iterations, 177813 memory, 4 parallel threads (CPUs) for 256-bit key (requested 2000 ms time)
+#     Algorithm |       Key |      Encryption |      Decryption
+        aes-cbc        128b        28.2 MiB/s        56.6 MiB/s
+    serpent-cbc        128b               N/A               N/A
+    twofish-cbc        128b               N/A               N/A
+        aes-cbc        256b        22.6 MiB/s        42.7 MiB/s
+    serpent-cbc        256b               N/A               N/A
+    twofish-cbc        256b               N/A               N/A
+        aes-xts        256b        63.9 MiB/s        55.9 MiB/s
+    serpent-xts        256b               N/A               N/A
+    twofish-xts        256b               N/A               N/A
+        aes-xts        512b        48.2 MiB/s        42.3 MiB/s
+    serpent-xts        512b               N/A               N/A
+    twofish-xts        512b               N/A               N/A&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;メインのマシンより1-2桁くらい遅くてびっくりしました。
+RasPi でフルディスク暗号化とか少し検討していたのですが、これでは実用性が怪しいですね……
+メモリがもっと潤沢にあれば PXE ブートなんかでディスクレスにしてもよさそうなんですが、RasPi4 でも 4GB とかなので、
+もう少し欲しいな……と思っています。まあ USB ストレージから起動できるし当面問題はなさそうですが。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Yubikeyのファームウェア5.2.3がリリースされていました]]></title><description><![CDATA[Yubikey を持っていますが、現在はあまり活用できていません。
 その理由の1つに、普段使っている ed25519 なキーに Yubikey が対応していないことがあります。 今日ふとそのことについてもう一度調べていたら、
 What’s New in YubiKey…]]></description><link>https://ny-a.github.io/blog22020-02/yubikey-firmware-5-2-3/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/yubikey-firmware-5-2-3/</guid><pubDate>Sun, 02 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Yubikey を持っていますが、現在はあまり活用できていません。
 その理由の1つに、普段使っている ed25519 なキーに Yubikey が対応していないことがあります。&lt;/p&gt;
