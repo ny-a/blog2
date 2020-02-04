@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 03 Feb 2020 16:02:38 GMT</lastBuildDate><item><title><![CDATA[新しいGPGキーを作成しました]]></title><description><![CDATA[Yubikey もあることですし、そろそろ GPG や SSH の秘密鍵を統一しようと思います。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 04 Feb 2020 15:54:12 GMT</lastBuildDate><item><title><![CDATA[YubikeyにGPGキーを登録しました]]></title><description><![CDATA[新しいGPGキーを作成しました
+で GPG キーを作成しましたが、 Yubikey も活用できるように Yubikey にも GPG キーを登録してみました。 マスターキーの入っている環境で新しくサブキーを作成します。
+ や  コマンドで試した感じでは、手元の Yubikey…]]></description><link>https://ny-a.github.io/blog22020-02/save-gpg-key-on-yubikey/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/save-gpg-key-on-yubikey/</guid><pubDate>Wed, 05 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;/blog2/2020-02/create-new-gpg-key/&quot;&gt;新しいGPGキーを作成しました&lt;/a&gt;
+で GPG キーを作成しましたが、 Yubikey も活用できるように Yubikey にも GPG キーを登録してみました。&lt;/p&gt;
+&lt;p&gt;マスターキーの入っている環境で新しくサブキーを作成します。
+&lt;code class=&quot;language-text&quot;&gt;ykman piv&lt;/code&gt; や &lt;code class=&quot;language-text&quot;&gt;gpg&lt;/code&gt; コマンドで試した感じでは、手元の Yubikey には RSA 以外の ECDSA/EdDSA のキーを
+登録することができませんでした。
+(Yubikey5 NFC, Firmware 5.1.2 なのでできると思ったのですが……)
+そのため、 RSA 4096bit のサブキーを3種類作成します。&lt;/p&gt;
+&lt;p&gt;そして、それぞれ &lt;code class=&quot;language-text&quot;&gt;keytocard&lt;/code&gt; を実行して、 Yubikey に秘密鍵を移動します。
+移動すると &lt;code class=&quot;language-text&quot;&gt;ssb&amp;gt;&lt;/code&gt; と表示され、 &lt;code class=&quot;language-text&quot;&gt;Card serial No.&lt;/code&gt;  が表示されます(このあたりがどう保存されているか気になっています)。&lt;/p&gt;
+&lt;p&gt;あとは PIN を適宜変更するのですが、 &lt;code class=&quot;language-text&quot;&gt;gpg --edit-card&lt;/code&gt; と &lt;code class=&quot;language-text&quot;&gt;ykman piv&lt;/code&gt; で PIN の管理が別なのかはよく分かっていません。
+(登録してみた感じだと別で管理されているようですが、きちんと調べられていません)
+&lt;code class=&quot;language-text&quot;&gt;gpg&lt;/code&gt; の PIN, Admin PIN, &lt;code class=&quot;language-text&quot;&gt;ykman piv&lt;/code&gt; の PIN, PUK に加え、 Management Key というものがありますが、
+これは &lt;code class=&quot;language-text&quot;&gt;ykman piv change-management-key -p&lt;/code&gt; を実行して PIN を入力することで、 PIN から生成して PIN で認証するように
+することができます。&lt;/p&gt;
+&lt;p&gt;無事登録できたので、&lt;code class=&quot;language-text&quot;&gt;password-store&lt;/code&gt; では PC に保存しているサブキーと Yubikey に移動したサブキーの両方で
+使えるようにしようと思ったのですが、 gpg では最新の暗号化用のキーを使って暗号化するようで、 キー ID の末尾に &lt;code class=&quot;language-text&quot;&gt;!&lt;/code&gt; を
+つけないと意図した通りに動きませんでした。&lt;/p&gt;
+&lt;p&gt;これで、普段使いのマシンではローカルのサブキーを使って復号化し、それ以外のマシンでは(秘密鍵をインポートしなくても)
+Yubikey を使って復号化できるようになりました。
+Android では Yubico Authenticator も使ってみようと思いますが、
+&lt;code class=&quot;language-text&quot;&gt;password-store&lt;/code&gt; で Yubikey を使えると嬉しいなという思いもあり……
+PIV 対応アプリがあるのかは探してみますが、自分で作ることも考えています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[新しいGPGキーを作成しました]]></title><description><![CDATA[Yubikey もあることですし、そろそろ GPG や SSH の秘密鍵を統一しようと思います。
 GPGで自分用の秘密鍵を…]]></description><link>https://ny-a.github.io/blog22020-02/create-new-gpg-key/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/create-new-gpg-key/</guid><pubDate>Tue, 04 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Yubikey もあることですし、そろそろ GPG や SSH の秘密鍵を統一しようと思います。
 &lt;a href=&quot;http://joemphilips.com/post/gpg_memo/&quot;&gt;GPGで自分用の秘密鍵を1つに統一する&lt;/a&gt;
 を参考に進めていきました。&lt;/p&gt;
