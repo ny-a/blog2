@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 04 Feb 2020 15:54:12 GMT</lastBuildDate><item><title><![CDATA[YubikeyにGPGキーを登録しました]]></title><description><![CDATA[新しいGPGキーを作成しました
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 05 Feb 2020 17:35:58 GMT</lastBuildDate><item><title><![CDATA[ターミナルでEnterが^Mになってしまうときの対処法]]></title><description><![CDATA[コマンドなどでターミナルにバイナリ(制御文字)を吐いてしまうと、 Enter キーを押しても
+ などのパスワード入力を確定できなくなることがあります。
+(前使っていた xterm ではコマンドの入力もできなくなっていた気がしますが、 rxvt-unicode…]]></description><link>https://ny-a.github.io/blog22020-02/stty-to-fix-enter-key/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/stty-to-fix-enter-key/</guid><pubDate>Thu, 06 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;cat&lt;/code&gt; コマンドなどでターミナルにバイナリ(制御文字)を吐いてしまうと、 Enter キーを押しても
+&lt;code class=&quot;language-text&quot;&gt;sudo&lt;/code&gt; などのパスワード入力を確定できなくなることがあります。
+(前使っていた xterm ではコマンドの入力もできなくなっていた気がしますが、 rxvt-unicode ではコマンドは使えるようです。)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://askubuntu.com/questions/441744/pressing-enter-produces-m-instead-of-a-newline/454663&quot;&gt;Pressing enter produces ^M instead of a newline - Ask Ubuntu&lt;/a&gt;
+に書いてある通りですが、
+&lt;code class=&quot;language-text&quot;&gt;stty sane&lt;/code&gt; (全てデフォルト値に戻す) か &lt;code class=&quot;language-text&quot;&gt;stty icrnl&lt;/code&gt; (CR を new line として扱う) を実行すれば直るようです。&lt;/p&gt;
+&lt;p&gt;これで遠慮なくバイナリを吐かせることができますね。
+と思ったのですが、
+&lt;a href=&quot;https://security.stackexchange.com/questions/56307/can-cat-ing-a-file-be-a-potential-security-risk&quot;&gt;Can “cat-ing” a file be a potential security risk?&lt;/a&gt;
+などを見るとセキュリティ上あまり好ましくないようですね……&lt;/p&gt;</content:encoded></item><item><title><![CDATA[YubikeyにGPGキーを登録しました]]></title><description><![CDATA[新しいGPGキーを作成しました
 で GPG キーを作成しましたが、 Yubikey も活用できるように Yubikey にも GPG キーを登録してみました。 マスターキーの入っている環境で新しくサブキーを作成します。
  や  コマンドで試した感じでは、手元の Yubikey…]]></description><link>https://ny-a.github.io/blog22020-02/save-gpg-key-on-yubikey/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/save-gpg-key-on-yubikey/</guid><pubDate>Wed, 05 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;/blog2/2020-02/create-new-gpg-key/&quot;&gt;新しいGPGキーを作成しました&lt;/a&gt;
 で GPG キーを作成しましたが、 Yubikey も活用できるように Yubikey にも GPG キーを登録してみました。&lt;/p&gt;
