@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 05 Feb 2020 17:35:58 GMT</lastBuildDate><item><title><![CDATA[ターミナルでEnterが^Mになってしまうときの対処法]]></title><description><![CDATA[コマンドなどでターミナルにバイナリ(制御文字)を吐いてしまうと、 Enter キーを押しても
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 06 Feb 2020 15:46:12 GMT</lastBuildDate><item><title><![CDATA[DevelopersSummitに申し込みました]]></title><description><![CDATA[Developers Summit、略してデブサミですが、今まで名前は聞いたことはあったものの参加したことはなかったので、
+今年こそはと申し込んでみました。 Developers Summit 202…]]></description><link>https://ny-a.github.io/blog22020-02/applied-to-developers-summit/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/applied-to-developers-summit/</guid><pubDate>Fri, 07 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Developers Summit、略してデブサミですが、今まで名前は聞いたことはあったものの参加したことはなかったので、
+今年こそはと申し込んでみました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://event.shoeisha.jp/devsumi/20200213/timetable&quot;&gt;Developers Summit 2020 のタイムテーブル&lt;/a&gt; を見ると、
+ほとんどのセッションが満員かほぼ満員になっているようです。
+あまりこのような大規模なイベントに参加したことがないので驚きました。&lt;/p&gt;
+&lt;p&gt;ただ、申し込み締め切りの1週間前(イベントの2週間前)に申し込んだときには、セッションのいくつかが調整中になっていたのが
+気になってしまいました。
+もちろん、イベントの主催側に回ったこともあるので苦労はよく分かっているつもりですが、ここまで大規模なイベントに
+なっても同じような悩みというか、直前まで準備に忙しいような感じになるのは仕方ないのかな……という気持ちになりました。&lt;/p&gt;
+&lt;p&gt;イベントの開催も来週に迫りましたし、主催や出展のある方は頑張ってください！
+初参加なので楽しみにしています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ターミナルでEnterが^Mになってしまうときの対処法]]></title><description><![CDATA[コマンドなどでターミナルにバイナリ(制御文字)を吐いてしまうと、 Enter キーを押しても
  などのパスワード入力を確定できなくなることがあります。
 (前使っていた xterm ではコマンドの入力もできなくなっていた気がしますが、 rxvt-unicode…]]></description><link>https://ny-a.github.io/blog22020-02/stty-to-fix-enter-key/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/stty-to-fix-enter-key/</guid><pubDate>Thu, 06 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;cat&lt;/code&gt; コマンドなどでターミナルにバイナリ(制御文字)を吐いてしまうと、 Enter キーを押しても
 &lt;code class=&quot;language-text&quot;&gt;sudo&lt;/code&gt; などのパスワード入力を確定できなくなることがあります。
