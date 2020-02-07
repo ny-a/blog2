@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 06 Feb 2020 15:46:12 GMT</lastBuildDate><item><title><![CDATA[DevelopersSummitに申し込みました]]></title><description><![CDATA[Developers Summit、略してデブサミですが、今まで名前は聞いたことはあったものの参加したことはなかったので、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 Feb 2020 17:30:48 GMT</lastBuildDate><item><title><![CDATA[RaspberryPi(Raspbian)にRTCモジュール(DS3231)を接続しました]]></title><description><![CDATA[エアギャップコンピュータを準備するにあたって、時刻合わせは面倒な課題です。
+特に GPG などで証明書を発行する場合、発行する日の情報は必要不可欠だからです。 ただ、普通のコンピュータは NTP などでインターネットから時刻情報を取得できますが、
+Raspberry Pi…]]></description><link>https://ny-a.github.io/blog22020-02/connect-rtc-ds3231-to-raspberry-pi/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/connect-rtc-ds3231-to-raspberry-pi/</guid><pubDate>Sat, 08 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;エアギャップコンピュータを準備するにあたって、時刻合わせは面倒な課題です。
+特に GPG などで証明書を発行する場合、発行する日の情報は必要不可欠だからです。&lt;/p&gt;
+&lt;p&gt;ただ、普通のコンピュータは NTP などでインターネットから時刻情報を取得できますが、
+Raspberry Pi をオフラインで使用すると、 RTC モジュールが搭載されていないため、
+毎回時刻を手動で合わせる必要があります。&lt;/p&gt;
+&lt;p&gt;そこで、 I2C 接続で 1000円程度で買うことができる RTC モジュールを接続してみました。&lt;/p&gt;
+&lt;p&gt;Raspbian での設定は
+&lt;a href=&quot;https://www.raspberrypi.org/forums/viewtopic.php?t=161133&quot;&gt;Install DS3231 Real Time Clock - Latest Info&lt;/a&gt;
+に書いてある通りです。
+ArchLinux だと &lt;code class=&quot;language-text&quot;&gt;/boot/config.txt&lt;/code&gt; の1行だけでいけたかもしれません。明日もう一度確認してみます。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[DevelopersSummitに申し込みました]]></title><description><![CDATA[Developers Summit、略してデブサミですが、今まで名前は聞いたことはあったものの参加したことはなかったので、
 今年こそはと申し込んでみました。 Developers Summit 202…]]></description><link>https://ny-a.github.io/blog22020-02/applied-to-developers-summit/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/applied-to-developers-summit/</guid><pubDate>Fri, 07 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Developers Summit、略してデブサミですが、今まで名前は聞いたことはあったものの参加したことはなかったので、
 今年こそはと申し込んでみました。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://event.shoeisha.jp/devsumi/20200213/timetable&quot;&gt;Developers Summit 2020 のタイムテーブル&lt;/a&gt; を見ると、
