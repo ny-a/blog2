@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 07 Feb 2020 17:30:48 GMT</lastBuildDate><item><title><![CDATA[RaspberryPi(Raspbian)にRTCモジュール(DS3231)を接続しました]]></title><description><![CDATA[エアギャップコンピュータを準備するにあたって、時刻合わせは面倒な課題です。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 08 Feb 2020 15:40:19 GMT</lastBuildDate><item><title><![CDATA[DNSSEC validation failed エラー]]></title><description><![CDATA[Raspberry Pi に ArchLinux をインストールして RTC モジュールの設定をしてみたのですがうまくいかず、
+DNSSEC…]]></description><link>https://ny-a.github.io/blog22020-02/dnssec-error/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/dnssec-error/</guid><pubDate>Sun, 09 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Raspberry Pi に ArchLinux をインストールして RTC モジュールの設定をしてみたのですがうまくいかず、
+DNSSEC のエラーでホスト名の解決ができない問題に遭遇しました。&lt;/p&gt;
+&lt;p&gt;始めの問題としては、 &lt;code class=&quot;language-text&quot;&gt;pacman -Syu&lt;/code&gt; が通りませんでした。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shellscript&quot;&gt;&lt;pre class=&quot;language-shellscript&quot;&gt;&lt;code class=&quot;language-shellscript&quot;&gt;$ sudo pacman -Syu
+:: Synchronizing package databases...
+error: failed retrieving file &amp;#39;core.db&amp;#39; from mirror.archlinuxarm.org : Could not resolve host: mirror.archlinuxarm.org
+error: failed to update core (invalid url for server)
+error: failed retrieving file &amp;#39;extra.db&amp;#39; from mirror.archlinuxarm.org : Could not resolve host: mirror.archlinuxarm.org
+error: failed to update extra (invalid url for server)
+error: failed retrieving file &amp;#39;community.db&amp;#39; from mirror.archlinuxarm.org : Could not resolve host: mirror.archlinuxarm.org
+error: failed to update community (invalid url for server)
+error: failed retrieving file &amp;#39;alarm.db&amp;#39; from mirror.archlinuxarm.org : Could not resolve host: mirror.archlinuxarm.org
+error: failed to update alarm (invalid url for server)
+error: failed retrieving file &amp;#39;aur.db&amp;#39; from mirror.archlinuxarm.org : Could not resolve host: mirror.archlinuxarm.org
+error: failed to update aur (invalid url for server)
+error: failed to synchronize all databases&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;/etc/resolv.conf&lt;/code&gt; の内容は問題なさそうですし、 &lt;code class=&quot;language-text&quot;&gt;systemd-networkd&lt;/code&gt; と &lt;code class=&quot;language-text&quot;&gt;systemd-resolved&lt;/code&gt; も問題なく動いていて、
+その2つを restart してみても変わりませんでした。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;dig&lt;/code&gt; コマンドを入れようにも pacman が通らないのですが、 &lt;code class=&quot;language-text&quot;&gt;systemd-resolve&lt;/code&gt; コマンドでホスト名の解決ができるようです。
+試してみると、&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shellscript&quot;&gt;&lt;pre class=&quot;language-shellscript&quot;&gt;&lt;code class=&quot;language-shellscript&quot;&gt;$ systemd-resolve ntp.org
+ntp.org: resolve call failed: DNSSEC validation failed: no-signature&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;などと出てホスト名が解決できないようです。
+&lt;code class=&quot;language-text&quot;&gt;systemctl status systemd-resolved&lt;/code&gt; を見てみると、他のホスト名も同様にエラーになっています。
+(初めの方は &lt;code class=&quot;language-text&quot;&gt;no-signature&lt;/code&gt; ではなく &lt;code class=&quot;language-text&quot;&gt;signature-expired&lt;/code&gt; が出ていました)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://archlinuxarm.org/forum/viewtopic.php?f=9&amp;#x26;t=13614&quot;&gt;[SOLVED] DNS not working after pacman -Syu&lt;/a&gt;
+に &lt;code class=&quot;language-text&quot;&gt;systemd-resolved&lt;/code&gt; を止めるという解決方法が書かれていたので試したところ、うまくいきました。&lt;/p&gt;
+&lt;p&gt;DNSSEC についてあまり詳しくないので、きちんと調べてみようと思いました……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[RaspberryPi(Raspbian)にRTCモジュール(DS3231)を接続しました]]></title><description><![CDATA[エアギャップコンピュータを準備するにあたって、時刻合わせは面倒な課題です。
 特に GPG などで証明書を発行する場合、発行する日の情報は必要不可欠だからです。 ただ、普通のコンピュータは NTP などでインターネットから時刻情報を取得できますが、
 Raspberry Pi…]]></description><link>https://ny-a.github.io/blog22020-02/connect-rtc-ds3231-to-raspberry-pi/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/connect-rtc-ds3231-to-raspberry-pi/</guid><pubDate>Sat, 08 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;エアギャップコンピュータを準備するにあたって、時刻合わせは面倒な課題です。
 特に GPG などで証明書を発行する場合、発行する日の情報は必要不可欠だからです。&lt;/p&gt;
