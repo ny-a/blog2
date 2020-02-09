@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 08 Feb 2020 15:40:19 GMT</lastBuildDate><item><title><![CDATA[DNSSEC validation failed エラー]]></title><description><![CDATA[Raspberry Pi に ArchLinux をインストールして RTC モジュールの設定をしてみたのですがうまくいかず、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 09 Feb 2020 18:52:12 GMT</lastBuildDate><item><title><![CDATA[Android用e-Taxアプリで確定申告をしようとしてハマりました]]></title><description><![CDATA[今年からマイナンバーカードと Android 端末 / iPhone を使って確定申告ができるようになりましたが、
+Android の e-Tax アプリから確定申告をしようとしても辿りつけませんでした。 e-Tax アプリを起動すると、 e-Taxソフト(SP…]]></description><link>https://ny-a.github.io/blog22020-02/e-tax-for-android/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/e-tax-for-android/</guid><pubDate>Mon, 10 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;今年からマイナンバーカードと Android 端末 / iPhone を使って確定申告ができるようになりましたが、
+Android の e-Tax アプリから確定申告をしようとしても辿りつけませんでした。&lt;/p&gt;
+&lt;p&gt;e-Tax アプリを起動すると、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;e-Taxソフト(SP版)&lt;/li&gt;
+&lt;li&gt;確定申告書等の送信結果一覧&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;の2つのメニューが表示され、 e-Tax ソフトを選べば確定申告ができると思ったのですが、そうではありませんでした。&lt;/p&gt;
+&lt;p&gt;確定申告をするには、 PC と同じく
+&lt;a href=&quot;https://www.keisan.nta.go.jp/kyoutu/ky/sm/top#bsctrl&quot;&gt;国税庁 確定申告書等作成コーナー&lt;/a&gt;
+から作成する必要があるようです。
+e-Tax アプリと JPKIMobile は、単にカードを読み取るときに呼び出されるという形のようです。&lt;/p&gt;
+&lt;p&gt;e-Tax アプリに確定申告書等作成コーナーへのリンクをつけることはできなかったんでしょうか……
+e-Tax ソフト(SP版) のメニューをくまなく探してしまったので、少しがっかりしました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[DNSSEC validation failed エラー]]></title><description><![CDATA[Raspberry Pi に ArchLinux をインストールして RTC モジュールの設定をしてみたのですがうまくいかず、
 DNSSEC…]]></description><link>https://ny-a.github.io/blog22020-02/dnssec-error/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/dnssec-error/</guid><pubDate>Sun, 09 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Raspberry Pi に ArchLinux をインストールして RTC モジュールの設定をしてみたのですがうまくいかず、
 DNSSEC のエラーでホスト名の解決ができない問題に遭遇しました。&lt;/p&gt;
 &lt;p&gt;始めの問題としては、 &lt;code class=&quot;language-text&quot;&gt;pacman -Syu&lt;/code&gt; が通りませんでした。&lt;/p&gt;
