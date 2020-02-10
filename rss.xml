@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 09 Feb 2020 18:52:12 GMT</lastBuildDate><item><title><![CDATA[Android用e-Taxアプリで確定申告をしようとしてハマりました]]></title><description><![CDATA[今年からマイナンバーカードと Android 端末 / iPhone を使って確定申告ができるようになりましたが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 10 Feb 2020 16:33:29 GMT</lastBuildDate><item><title><![CDATA[ブラウザ上でssh-keygenができるツール]]></title><description><![CDATA[ssh-keygenをブラウザだけでローカルで安全に鍵生成するWebアプリ
+を見つけました。 Secure ssh-keygen only on Web browser Web Crypto API
+を使って実現しているようです。 上記の Web アプリでは RSA…]]></description><link>https://ny-a.github.io/blog22020-02/npm-ssh-keygen/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/npm-ssh-keygen/</guid><pubDate>Tue, 11 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://scrapbox.io/nwtgck/ssh-keygen%E3%82%92%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%A0%E3%81%91%E3%81%A7%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%A7%E5%AE%89%E5%85%A8%E3%81%AB%E9%8D%B5%E7%94%9F%E6%88%90%E3%81%99%E3%82%8BWeb%E3%82%A2%E3%83%97%E3%83%AA&quot;&gt;ssh-keygenをブラウザだけでローカルで安全に鍵生成するWebアプリ&lt;/a&gt;
+を見つけました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://ssh-keygen.netlify.com/&quot;&gt;Secure ssh-keygen only on Web browser&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API&quot;&gt;Web Crypto API&lt;/a&gt;
+を使って実現しているようです。&lt;/p&gt;
+&lt;p&gt;上記の Web アプリでは RSA にしか対応していませんが、 Web Crypto は ECDSA にも対応しているようです。
+EdDSA には対応していないんでしょうか。
+乱数ソースも提供されているので、 EdDSA は javascript で実装してしまえば……などと思いました。
+EdDSA についてあまりよく分かっていないので調査しようと思いました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Android用e-Taxアプリで確定申告をしようとしてハマりました]]></title><description><![CDATA[今年からマイナンバーカードと Android 端末 / iPhone を使って確定申告ができるようになりましたが、
 Android の e-Tax アプリから確定申告をしようとしても辿りつけませんでした。 e-Tax アプリを起動すると、 e-Taxソフト(SP…]]></description><link>https://ny-a.github.io/blog22020-02/e-tax-for-android/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/e-tax-for-android/</guid><pubDate>Mon, 10 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;今年からマイナンバーカードと Android 端末 / iPhone を使って確定申告ができるようになりましたが、
 Android の e-Tax アプリから確定申告をしようとしても辿りつけませんでした。&lt;/p&gt;
 &lt;p&gt;e-Tax アプリを起動すると、&lt;/p&gt;
