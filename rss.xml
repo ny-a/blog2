@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 10 Feb 2020 16:33:29 GMT</lastBuildDate><item><title><![CDATA[ブラウザ上でssh-keygenができるツール]]></title><description><![CDATA[ssh-keygenをブラウザだけでローカルで安全に鍵生成するWebアプリ
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 11 Feb 2020 15:43:04 GMT</lastBuildDate><item><title><![CDATA[Removing diversion by rpikernelhack]]></title><description><![CDATA[Raspbian のインストールをしていたのですが、  を実行すると見慣れない  という文字を
+見掛けました。 検索してみると、Stack Exchange で fake package だという情報が
+見つかりました。
+fat32 では Hard link…]]></description><link>https://ny-a.github.io/blog22020-02/rpikernelhack/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/rpikernelhack/</guid><pubDate>Wed, 12 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Raspbian のインストールをしていたのですが、 &lt;code class=&quot;language-text&quot;&gt;apt-get upgrade&lt;/code&gt; を実行すると見慣れない &lt;code class=&quot;language-text&quot;&gt;rpikernelhack&lt;/code&gt; という文字を
+見掛けました。&lt;/p&gt;
+&lt;p&gt;検索してみると、&lt;a href=&quot;https://raspberrypi.stackexchange.com/a/94827&quot;&gt;Stack Exchange&lt;/a&gt; で fake package だという情報が
+見つかりました。
+fat32 では Hard link がサポートされていないから、  dpkg の diversion という機能を使用(濫用？)しているようです。&lt;/p&gt;
+&lt;p&gt;RPi forum の &lt;a href=&quot;https://www.raspberrypi.org/forums/viewtopic.php?t=99264&quot;&gt;upgrade to unbootable&lt;/a&gt;
+と同じようなメッセージを見かけたのですが、どうもファイルシステムのサイズを拡張する前にアップグレードすると
+このようなメッセージが出ると書いてあります。&lt;/p&gt;
+&lt;p&gt;初回起動時にファイルシステムのサイズが調整されると思っていて、それは済んでいるはずですがそれとは違うんでしょうか。
+今のところ再起動しても起動しなくなるようなことはないですが、初回アップグレード前に一度再起動する必要があると
+いうことなんでしょうかね。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ブラウザ上でssh-keygenができるツール]]></title><description><![CDATA[ssh-keygenをブラウザだけでローカルで安全に鍵生成するWebアプリ
 を見つけました。 Secure ssh-keygen only on Web browser Web Crypto API
 を使って実現しているようです。 上記の Web アプリでは RSA…]]></description><link>https://ny-a.github.io/blog22020-02/npm-ssh-keygen/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/npm-ssh-keygen/</guid><pubDate>Tue, 11 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://scrapbox.io/nwtgck/ssh-keygen%E3%82%92%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%A0%E3%81%91%E3%81%A7%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%A7%E5%AE%89%E5%85%A8%E3%81%AB%E9%8D%B5%E7%94%9F%E6%88%90%E3%81%99%E3%82%8BWeb%E3%82%A2%E3%83%97%E3%83%AA&quot;&gt;ssh-keygenをブラウザだけでローカルで安全に鍵生成するWebアプリ&lt;/a&gt;
 を見つけました。&lt;/p&gt;
