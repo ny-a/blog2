@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 11 Feb 2020 15:43:04 GMT</lastBuildDate><item><title><![CDATA[Removing diversion by rpikernelhack]]></title><description><![CDATA[Raspbian のインストールをしていたのですが、  を実行すると見慣れない  という文字を
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 12 Feb 2020 15:26:01 GMT</lastBuildDate><item><title><![CDATA[手元のYubikey5NFCのECCの対応状況を調べました]]></title><description><![CDATA[Yubikeyのファームウェア5.2.3がリリースされていました
+で、新しい Yubikey では Ed25519 などの ECC (楕円曲線暗号) に対応していることを知りましたが、
+手元にある v5.1.2 の Yubikey の対応状況を調べてみました。 Yubikey…]]></description><link>https://ny-a.github.io/blog22020-02/yubikey-5-1-2-ecc-capabilities/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/yubikey-5-1-2-ecc-capabilities/</guid><pubDate>Thu, 13 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;/blog2/2020-02/yubikey-firmware-5-2-3/&quot;&gt;Yubikeyのファームウェア5.2.3がリリースされていました&lt;/a&gt;
+で、新しい Yubikey では Ed25519 などの ECC (楕円曲線暗号) に対応していることを知りましたが、
+手元にある v5.1.2 の Yubikey の対応状況を調べてみました。&lt;/p&gt;
+&lt;p&gt;Yubikey の商品説明のページには、
+&lt;code class=&quot;language-text&quot;&gt;RSA 2048, RSA 4096 (PGP), ECC p256, ECC p384&lt;/code&gt;
+と書いてあります。私はてっきり OpenPGP モードでも ECC p384 が使えると思っていたのですが、
+どうやら OpenPGP では RSA 2048/4096 、 PIV では 3DES, RSA 1024/2048, ECC p256/384 が使えるようです。&lt;/p&gt;
+&lt;p&gt;ますます新しい Yubikey が欲しくなってきたのですが、まだまだ PIV あたりの仕様や PGP Smartcard などについても
+慣れていないので、まずはいろいろ試してみようと思いました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Removing diversion by rpikernelhack]]></title><description><![CDATA[Raspbian のインストールをしていたのですが、  を実行すると見慣れない  という文字を
 見掛けました。 検索してみると、Stack Exchange で fake package だという情報が
 見つかりました。
 fat32 では Hard link…]]></description><link>https://ny-a.github.io/blog22020-02/rpikernelhack/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/rpikernelhack/</guid><pubDate>Wed, 12 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Raspbian のインストールをしていたのですが、 &lt;code class=&quot;language-text&quot;&gt;apt-get upgrade&lt;/code&gt; を実行すると見慣れない &lt;code class=&quot;language-text&quot;&gt;rpikernelhack&lt;/code&gt; という文字を
