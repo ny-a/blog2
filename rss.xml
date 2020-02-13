@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 12 Feb 2020 15:26:01 GMT</lastBuildDate><item><title><![CDATA[手元のYubikey5NFCのECCの対応状況を調べました]]></title><description><![CDATA[Yubikeyのファームウェア5.2.3がリリースされていました
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 13 Feb 2020 15:37:41 GMT</lastBuildDate><item><title><![CDATA[DevelopersSummitの1日目に行きました]]></title><description><![CDATA[Developers Summit の1日目に行ってきました。
+楽しみにしていた 6gram のセッションを聞くことができました。 基本は SRE Next のスライドとほぼ同じような内容でしたが、
+ApplePay/GooglePay との Token Service…]]></description><link>https://ny-a.github.io/blog22020-02/developers-summit-day-1/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/developers-summit-day-1/</guid><pubDate>Fri, 14 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Developers Summit の1日目に行ってきました。
+楽しみにしていた 6gram のセッションを聞くことができました。&lt;/p&gt;
+&lt;p&gt;基本は SRE Next のスライドとほぼ同じような内容でしたが、
+ApplePay/GooglePay との Token Service Provider 連携の方法で、
+決済速度や PCI DSS 準拠部分の切り出しなどの比較があり、kyash の高速化も同じようなことをしたのかななどと考えていました。&lt;/p&gt;
+&lt;p&gt;LINE のプライベートクラウドや、星野リゾートの話も参考になりました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[手元のYubikey5NFCのECCの対応状況を調べました]]></title><description><![CDATA[Yubikeyのファームウェア5.2.3がリリースされていました
 で、新しい Yubikey では Ed25519 などの ECC (楕円曲線暗号) に対応していることを知りましたが、
 手元にある v5.1.2 の Yubikey の対応状況を調べてみました。 Yubikey…]]></description><link>https://ny-a.github.io/blog22020-02/yubikey-5-1-2-ecc-capabilities/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/yubikey-5-1-2-ecc-capabilities/</guid><pubDate>Thu, 13 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;/blog2/2020-02/yubikey-firmware-5-2-3/&quot;&gt;Yubikeyのファームウェア5.2.3がリリースされていました&lt;/a&gt;
 で、新しい Yubikey では Ed25519 などの ECC (楕円曲線暗号) に対応していることを知りましたが、
