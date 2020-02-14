@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 13 Feb 2020 15:37:41 GMT</lastBuildDate><item><title><![CDATA[DevelopersSummitの1日目に行きました]]></title><description><![CDATA[Developers Summit の1日目に行ってきました。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 14 Feb 2020 17:10:36 GMT</lastBuildDate><item><title><![CDATA[NFCカードリーダーを買いました]]></title><description><![CDATA[PaSoRi でいいのでは？と思ったけど ACR122U の方が安いみたい？だったのでそっちを買ってみました。
+マイナンバーカードとかも読めるようです。 届いたのでいろいろ触ってみているのですが、どうも期待していたマイナンバーカードや Smart Card…]]></description><link>https://ny-a.github.io/blog22020-02/acr122-nfc-reader/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/acr122-nfc-reader/</guid><pubDate>Sat, 15 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;PaSoRi でいいのでは？と思ったけど ACR122U の方が安いみたい？だったのでそっちを買ってみました。
+マイナンバーカードとかも読めるようです。&lt;/p&gt;
+&lt;p&gt;届いたのでいろいろ触ってみているのですが、どうも期待していたマイナンバーカードや Smart Card の読み取りを
+うまくさせることができません。 acsccid とかいろいろ入れてみたのですが……&lt;/p&gt;
+&lt;p&gt;PaSoRi 買いましょう。多分そっちの方が早い。
+(libnfc ではちゃんと読めてるようなんですが…… PIV とか使いたいので微妙な気持ち。)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[DevelopersSummitの1日目に行きました]]></title><description><![CDATA[Developers Summit の1日目に行ってきました。
 楽しみにしていた 6gram のセッションを聞くことができました。 基本は SRE Next のスライドとほぼ同じような内容でしたが、
 ApplePay/GooglePay との Token Service…]]></description><link>https://ny-a.github.io/blog22020-02/developers-summit-day-1/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/developers-summit-day-1/</guid><pubDate>Fri, 14 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Developers Summit の1日目に行ってきました。
 楽しみにしていた 6gram のセッションを聞くことができました。&lt;/p&gt;
