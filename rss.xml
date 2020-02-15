@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 14 Feb 2020 17:10:36 GMT</lastBuildDate><item><title><![CDATA[NFCカードリーダーを買いました]]></title><description><![CDATA[PaSoRi でいいのでは？と思ったけど ACR122U の方が安いみたい？だったのでそっちを買ってみました。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 15 Feb 2020 17:40:43 GMT</lastBuildDate><item><title><![CDATA[Git rerereサブコマンドを知りました]]></title><description><![CDATA[The Git Rerere Command — Automate Solutions to Fix Merge Conflicts
+を見て  サブコマンドを知りました。
+と言ってもまだ experimental…]]></description><link>https://ny-a.github.io/blog22020-02/git-rerere/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/git-rerere/</guid><pubDate>Sun, 16 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://levelup.gitconnected.com/the-git-rerere-command-automate-solutions-to-fix-merge-conflicts-d501a9ab9007&quot;&gt;The Git Rerere Command — Automate Solutions to Fix Merge Conflicts&lt;/a&gt;
+を見て &lt;code class=&quot;language-text&quot;&gt;git-rerere&lt;/code&gt; サブコマンドを知りました。
+と言ってもまだ experimental なようで、 &lt;code class=&quot;language-text&quot;&gt;git config [--global] rerere.enabled true&lt;/code&gt; を実行しないと使えないようです。&lt;/p&gt;
+&lt;p&gt;上記の記事を見て少し試してみましたが、業務では今のところ使おうとは思いませんでした。
+conflict したときに &lt;code class=&quot;language-text&quot;&gt;git consult&lt;/code&gt; みたいなコマンドを呼んで、過去の似た conflict 解消を含む merge commit を参照して、
+似たような解決を試みるようなものが欲しいのかなと思いました。
+といっても、それだと rebase なんかを consult できないので、 rerere の方が少し強力ではありますが。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://git-scm.com/docs/git-rerere&quot;&gt;git-rerere のドキュメント&lt;/a&gt; をちらっと見てみて、他にもいろいろな
+サブコマンドがあるのでそれを見てみたら、 &lt;code class=&quot;language-text&quot;&gt;git-worktree&lt;/code&gt; など知らないコマンドを知ることができて楽しいです。&lt;/p&gt;
+&lt;p&gt;とはいえ、 git も複雑になりすぎているのでは……と思うこともあります。
+サブコマンドに分かれているとはいえ……&lt;/p&gt;</content:encoded></item><item><title><![CDATA[NFCカードリーダーを買いました]]></title><description><![CDATA[PaSoRi でいいのでは？と思ったけど ACR122U の方が安いみたい？だったのでそっちを買ってみました。
 マイナンバーカードとかも読めるようです。 届いたのでいろいろ触ってみているのですが、どうも期待していたマイナンバーカードや Smart Card…]]></description><link>https://ny-a.github.io/blog22020-02/acr122-nfc-reader/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/acr122-nfc-reader/</guid><pubDate>Sat, 15 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;PaSoRi でいいのでは？と思ったけど ACR122U の方が安いみたい？だったのでそっちを買ってみました。
 マイナンバーカードとかも読めるようです。&lt;/p&gt;
 &lt;p&gt;届いたのでいろいろ触ってみているのですが、どうも期待していたマイナンバーカードや Smart Card の読み取りを
