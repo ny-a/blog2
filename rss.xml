@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 15 Feb 2020 17:40:43 GMT</lastBuildDate><item><title><![CDATA[Git rerereサブコマンドを知りました]]></title><description><![CDATA[The Git Rerere Command — Automate Solutions to Fix Merge Conflicts
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 16 Feb 2020 17:38:22 GMT</lastBuildDate><item><title><![CDATA[OpenSSH8.2でfido2/u2fを試そうとしました]]></title><description><![CDATA[OpenSSH 8.2 がリリースされ、 fido2/u2f が公式にサポートされたようなので試してみました。 私は ArchLinux を使っているので比較的早くパッケージが降ってきます。
+具体的には、 2020-02-14 にリリースされ、当日中には
+testing…]]></description><link>https://ny-a.github.io/blog22020-02/tried-to-openssh-8-2-fido/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/tried-to-openssh-8-2-fido/</guid><pubDate>Mon, 17 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;OpenSSH 8.2 がリリースされ、 fido2/u2f が公式にサポートされたようなので試してみました。&lt;/p&gt;
+&lt;p&gt;私は ArchLinux を使っているので比較的早くパッケージが降ってきます。
+具体的には、 2020-02-14 にリリースされ、当日中には
+testing レポジトリに入り、 2020-02-16 03:30Z に core レポジトリに入りました。
+core に入ったことにより &lt;code class=&quot;language-text&quot;&gt;pacman -Syu&lt;/code&gt; でインストールできるようになったので試してみましょう。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.openssh.com/txt/release-8.2&quot;&gt;OpenSSH 8.2 のリリースノート&lt;/a&gt; を見ると、
+&lt;code class=&quot;language-text&quot;&gt;ssh-keygen -t ecdsa-sk&lt;/code&gt; で FIDO token backed key を生成することができるようですが、
+試してみると、&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shellscript&quot;&gt;&lt;pre class=&quot;language-shellscript&quot;&gt;&lt;code class=&quot;language-shellscript&quot;&gt;$ ssh-keygen -t ecdsa-sk                                                                   :(
+Generating public/private ecdsa-sk key pair.
+You may need to touch your authenticator to authorize key generation.
+Provider &amp;quot;&amp;quot; dlsym(sk_api_version) failed: /usr/lib/ssh/ssh-sk-helper: undefined symbol: sk_api_version
+Key enrollment failed: invalid format&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;となり失敗します。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/Yubico/libfido2/issues/116&quot;&gt;Yubico/libfido2 Issue#116&lt;/a&gt;
+を見ると、 &lt;code class=&quot;language-text&quot;&gt;ssh-keygen -t ecdsa-sk -w /usr/lib/libsk-libfido2.so&lt;/code&gt; を実行すると以下のようなエラーが出ると書かれています。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shellscript&quot;&gt;&lt;pre class=&quot;language-shellscript&quot;&gt;&lt;code class=&quot;language-shellscript&quot;&gt;$ ssh-keygen -t ecdsa-sk -w /usr/lib/libsk-libfido2.so                                     :(
+Generating public/private ecdsa-sk key pair.
+You may need to touch your authenticator to authorize key generation.
+Provider &amp;quot;/usr/lib/libsk-libfido2.so&amp;quot; implements unsupported version 0x00020000 (supported: 0x00040000)
+Key enrollment failed: invalid format&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://bugs.archlinux.org/task/65513&quot;&gt;FS#65513&lt;/a&gt;
+にも書かれていますが、これは OpenSSH の configure 時に &lt;code class=&quot;language-text&quot;&gt;--with-security-key-builtin&lt;/code&gt; オプションを付けてビルドすると
+-w オプションなしで使えるようになるようです。
+上記でパッケージのバグとコメントされているので、数日中に直るでしょう。&lt;/p&gt;
+&lt;p&gt;リビルドすれば試せますが、現状は Yubikey で間に合っているので降ってきたら試そうと思っています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Git rerereサブコマンドを知りました]]></title><description><![CDATA[The Git Rerere Command — Automate Solutions to Fix Merge Conflicts
 を見て  サブコマンドを知りました。
 と言ってもまだ experimental…]]></description><link>https://ny-a.github.io/blog22020-02/git-rerere/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/git-rerere/</guid><pubDate>Sun, 16 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://levelup.gitconnected.com/the-git-rerere-command-automate-solutions-to-fix-merge-conflicts-d501a9ab9007&quot;&gt;The Git Rerere Command — Automate Solutions to Fix Merge Conflicts&lt;/a&gt;
 を見て &lt;code class=&quot;language-text&quot;&gt;git-rerere&lt;/code&gt; サブコマンドを知りました。
