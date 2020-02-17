@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 16 Feb 2020 17:38:22 GMT</lastBuildDate><item><title><![CDATA[OpenSSH8.2でfido2/u2fを試そうとしました]]></title><description><![CDATA[OpenSSH 8.2 がリリースされ、 fido2/u2f が公式にサポートされたようなので試してみました。 私は ArchLinux を使っているので比較的早くパッケージが降ってきます。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 17 Feb 2020 17:44:55 GMT</lastBuildDate><item><title><![CDATA[OpenSSH8.2でFIDO2を試しました]]></title><description><![CDATA[といってもキーの生成だけですが…… とりあえず手元にある古い(？) Yubikey を使って ecdsa-sk のキーの生成ができることを確認してみます。 256 bit になってしまいました、 Yubikey 側の制限ですかね？ 念のため？ ed25519-sk…]]></description><link>https://ny-a.github.io/blog22020-02/tried-openssh-8-2-fido/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/tried-openssh-8-2-fido/</guid><pubDate>Tue, 18 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;といってもキーの生成だけですが……&lt;/p&gt;
+&lt;p&gt;とりあえず手元にある古い(？) Yubikey を使って ecdsa-sk のキーの生成ができることを確認してみます。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shellscript&quot;&gt;&lt;pre class=&quot;language-shellscript&quot;&gt;&lt;code class=&quot;language-shellscript&quot;&gt;$ ssh-keygen -t ecdsa-sk -b 521
+Generating public/private ecdsa-sk key pair.
+You may need to touch your authenticator to authorize key generation.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in ...
+Your public key has been saved in ...
+The key fingerprint is:
+SHA256:LHym5H0zQ6tvRXNZp/bMEUy7F1WN6tUicAGJMjxSOZQ ...
+The key&amp;#39;s randomart image is:
++-[ECDSA-SK 256]--+
+|     +oo ..o..oo=|
+|    . E . o . .o*|
+|     . =   o . Bo|
+|     . .    = B.+|
+|      + S .o * *o|
+|     o * . .o   =|
+|      o . *.     |
+|         o.+     |
+|        .o.      |
++----[SHA256]-----+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;256 bit になってしまいました、 Yubikey 側の制限ですかね？&lt;/p&gt;
+&lt;p&gt;念のため？ ed25519-sk のキーも生成してみます。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shellscript&quot;&gt;&lt;pre class=&quot;language-shellscript&quot;&gt;&lt;code class=&quot;language-shellscript&quot;&gt;$ ssh-keygen -t ed25519-sk -b 521
+Generating public/private ed25519-sk key pair.
+You may need to touch your authenticator to authorize key generation.
+Key enrollment failed: requested feature not supported&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Yubikey が ed25519 に対応していないのでこちらは当然失敗しました。&lt;/p&gt;
+&lt;p&gt;生成に成功した ecdsa-sk キーを使って ssh しようとしてみましたが、相手が openssh7.9p1 だったので失敗しました。&lt;/p&gt;
+&lt;p&gt;とはいえ Yubikey の SmartCard の方が〜〜〜、というか対応サーバーが十分普及したら使うか考えましょう。&lt;/p&gt;
+&lt;p&gt;リリースノート、FIDO2/U2F と書いている部分と FIDO2 しか書いていない部分があって、 U2F しか書いていない部分はない？ので、
+U2F についてはよく分かっていません……というか、認証周りいろいろややこしすぎて……追い追い調べてまとめようと思います。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[OpenSSH8.2でfido2/u2fを試そうとしました]]></title><description><![CDATA[OpenSSH 8.2 がリリースされ、 fido2/u2f が公式にサポートされたようなので試してみました。 私は ArchLinux を使っているので比較的早くパッケージが降ってきます。
 具体的には、 2020-02-14 にリリースされ、当日中には
 testing…]]></description><link>https://ny-a.github.io/blog22020-02/tried-to-openssh-8-2-fido/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/tried-to-openssh-8-2-fido/</guid><pubDate>Mon, 17 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;OpenSSH 8.2 がリリースされ、 fido2/u2f が公式にサポートされたようなので試してみました。&lt;/p&gt;
 &lt;p&gt;私は ArchLinux を使っているので比較的早くパッケージが降ってきます。
