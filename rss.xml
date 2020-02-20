@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 18 Feb 2020 15:40:30 GMT</lastBuildDate><item><title><![CDATA[ターミナルの色をAppSignalベースに変更しました]]></title><description><![CDATA[ターミナルエミュレータは rxvt-unicode を使っていて、デフォルトの白背景で使っているのですが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 20 Feb 2020 05:45:04 GMT</lastBuildDate><item><title><![CDATA[RootKeySigningKeyCeremonyの延期]]></title><description><![CDATA[DNSSEC の Root KSK Ceremony が、金庫が開かなくなったため延期されていたようです。 Rescheduling Root KSK Ceremony 40
+で告知されていますが、
+@joao_damas…]]></description><link>https://ny-a.github.io/blog22020-02/rescheduling-root-ksk-ceremony-40/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/rescheduling-root-ksk-ceremony-40/</guid><pubDate>Thu, 20 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;DNSSEC の Root KSK Ceremony が、金庫が開かなくなったため延期されていたようです。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://mm.icann.org/pipermail/root-dnssec-announce/2020/000121.html&quot;&gt;Rescheduling Root KSK Ceremony 40&lt;/a&gt;
+で告知されていますが、
+&lt;a href=&quot;https://twitter.com/joao_damas/status/1228382028808114177&quot;&gt;@joao_damas さんのツイート&lt;/a&gt;
+で写真を見ると分かりやすいですね。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.iana.org/dnssec/ceremonies/40&quot;&gt;IANA のサイト&lt;/a&gt; では、延期されたセレモニーの動画を見ることができます。
+HSM を使っていたり、かなり厳重なセキュリティを確保しているのが分かりました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ターミナルの色をAppSignalベースに変更しました]]></title><description><![CDATA[ターミナルエミュレータは rxvt-unicode を使っていて、デフォルトの白背景で使っているのですが、
 黄色の文字がどうにも見えなくて困っていました。 ターミナルの基本的な ANSI escape sequence に対応する色は
 ANSIescapecode…]]></description><link>https://ny-a.github.io/blog22020-02/terminal-color-from-appsignal/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/terminal-color-from-appsignal/</guid><pubDate>Wed, 19 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ターミナルエミュレータは rxvt-unicode を使っていて、デフォルトの白背景で使っているのですが、
 黄色の文字がどうにも見えなくて困っていました。&lt;/p&gt;
