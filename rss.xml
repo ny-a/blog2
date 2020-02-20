@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 20 Feb 2020 05:45:04 GMT</lastBuildDate><item><title><![CDATA[RootKeySigningKeyCeremonyの延期]]></title><description><![CDATA[DNSSEC の Root KSK Ceremony が、金庫が開かなくなったため延期されていたようです。 Rescheduling Root KSK Ceremony 40
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 20 Feb 2020 15:19:54 GMT</lastBuildDate><item><title><![CDATA[XRandRが自動で解像度を変えてくれると思ったら勘違いでした]]></title><description><![CDATA[Linux…]]></description><link>https://ny-a.github.io/blog22020-02/xrandr-changes-resolution/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/xrandr-changes-resolution/</guid><pubDate>Fri, 21 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Linux でマルチモニタ環境で使用する場合、モニタの設定は &lt;code class=&quot;language-text&quot;&gt;xrandr&lt;/code&gt; などを使って行いますが、
+解像度の高い設定にしている状態でケーブルを抜き、解像度の低いモニタに接続した場合、
+前は割とひどいことになったような気がしていたのですが、今試したところ最適な感じで縮小されて
+表示されたので、動作を調べてみました。&lt;/p&gt;
+&lt;p&gt;既にタイトルに書いてある通りこれは勘違いで、 xrandr は設定してある解像度で出力しているだけで、
+モニタ側が自動で縮小してくれていたようでした。
+モニタで縮小していても、 &lt;code class=&quot;language-text&quot;&gt;xrandr --output DP-1 --scale-from 1920x1080&lt;/code&gt; のように xrandr で縮小しても、
+見た目は変わらないので……。&lt;/p&gt;
+&lt;p&gt;全部 FullHD のモニタで統一すれば何も問題はないですが、現状そうなってはいないので……
+まあモニタの接続を変更することは基本的にないので、出先等で何かする場合以外は特に問題になることもなさそうではあります。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[RootKeySigningKeyCeremonyの延期]]></title><description><![CDATA[DNSSEC の Root KSK Ceremony が、金庫が開かなくなったため延期されていたようです。 Rescheduling Root KSK Ceremony 40
 で告知されていますが、
 @joao_damas…]]></description><link>https://ny-a.github.io/blog22020-02/rescheduling-root-ksk-ceremony-40/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/rescheduling-root-ksk-ceremony-40/</guid><pubDate>Thu, 20 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;DNSSEC の Root KSK Ceremony が、金庫が開かなくなったため延期されていたようです。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://mm.icann.org/pipermail/root-dnssec-announce/2020/000121.html&quot;&gt;Rescheduling Root KSK Ceremony 40&lt;/a&gt;
