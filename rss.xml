@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 23 Feb 2020 19:52:54 GMT</lastBuildDate><item><title><![CDATA[AWS CLIでAssumeRole]]></title><description><![CDATA[AWS のアカウントを CLI から操作することが多いので credentials を保存しているのですが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 24 Feb 2020 20:08:30 GMT</lastBuildDate><item><title><![CDATA[EC2にECDSAのキーを使ってSSHできるようにしました]]></title><description><![CDATA[AWS のキーペアは RSA しか対応していないと思いますが、最近は RSA を使うこともかなり減っていて、新しくセットアップした
+PC などでは ECDSA/Ed25519 のキーしか作っていないこともあります。
+そこで、 UserData を使って普段使いの SSH…]]></description><link>https://ny-a.github.io/blog22020-02/use-ecdsa-key-on-ec2/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/use-ecdsa-key-on-ec2/</guid><pubDate>Tue, 25 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;AWS のキーペアは RSA しか対応していないと思いますが、最近は RSA を使うこともかなり減っていて、新しくセットアップした
+PC などでは ECDSA/Ed25519 のキーしか作っていないこともあります。
+そこで、 UserData を使って普段使いの SSH キーを取得して SSH できるようにしました。&lt;/p&gt;
+&lt;h2&gt;UserData&lt;/h2&gt;
+&lt;p&gt;AmazonLinux2 を使っているので、ログインユーザーは &lt;code class=&quot;language-text&quot;&gt;ec2-user&lt;/code&gt; です。&lt;/p&gt;
+&lt;p&gt;UserData を以下のようにします。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shellscript&quot;&gt;&lt;pre class=&quot;language-shellscript&quot;&gt;&lt;code class=&quot;language-shellscript&quot;&gt;#!/bin/bash
+
+set -eu
+
+curl https://github.com/ny-a.keys &amp;gt;&amp;gt; /home/ec2-user/.ssh/authorized_keys&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;AmazonLinux に入っている OpenSSH のバージョンが古くて RSA にしか対応していないわけではないので、
+&lt;code class=&quot;language-text&quot;&gt;authorized_keys&lt;/code&gt; に入れてあげさえすれば使うことができます。&lt;/p&gt;
+&lt;p&gt;AWS のキーペアで管理しないため、本番環境などでは何か問題があるかも……とは思いますが、普段使いのキーを使える上に、
+普段使いのキーを更新したあとに起動したインスタンスは新しいキーを使えるようになるので、利便性は高いんじゃないかなと
+思います。&lt;/p&gt;
+&lt;p&gt;とりあえず、開発中などはこのようにすると便利そうだと思いました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[AWS CLIでAssumeRole]]></title><description><![CDATA[AWS のアカウントを CLI から操作することが多いので credentials を保存しているのですが、
 権限を多く持ったユーザーの認証情報を持っておくのは少し不安になったので、 AssumeRole…]]></description><link>https://ny-a.github.io/blog22020-02/aws-cli-assume-role/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/aws-cli-assume-role/</guid><pubDate>Mon, 24 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;AWS のアカウントを CLI から操作することが多いので credentials を保存しているのですが、
 権限を多く持ったユーザーの認証情報を持っておくのは少し不安になったので、 AssumeRole を使って普段はあまり権限を
 持たないユーザーの認証情報を持っておくことにしました。&lt;/p&gt;
