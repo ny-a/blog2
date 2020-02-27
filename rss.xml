@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 25 Feb 2020 23:10:47 GMT</lastBuildDate><item><title><![CDATA[Xorgの仮想ディスプレイについて調べました]]></title><description><![CDATA[Linux デスクトップで、他のデバイスを VNC などを使って仮想的にワイアレスディスプレイとして使うために、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 27 Feb 2020 02:37:48 GMT</lastBuildDate><item><title><![CDATA[DNSSECの設定をしました]]></title><description><![CDATA[クライアント側もドメイン側も、設定するだけで DNSSEC が使える状態になっていたので、両方とも設定して
+DNSSEC を有効にしてみました。 クライアント設定 DNS リゾルバは  を使っているので、 DNSSEC 対応の DNS サーバーが使われていれば DNSSEC…]]></description><link>https://ny-a.github.io/blog22020-02/set-up-dnssec/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/set-up-dnssec/</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;クライアント側もドメイン側も、設定するだけで DNSSEC が使える状態になっていたので、両方とも設定して
+DNSSEC を有効にしてみました。&lt;/p&gt;
+&lt;h2&gt;クライアント設定&lt;/h2&gt;
+&lt;p&gt;DNS リゾルバは &lt;code class=&quot;language-text&quot;&gt;systemd-resolved&lt;/code&gt; を使っているので、 DNSSEC 対応の DNS サーバーが使われていれば DNSSEC が有効になります。
+&lt;code class=&quot;language-text&quot;&gt;1.1.1.1&lt;/code&gt; や &lt;code class=&quot;language-text&quot;&gt;8.8.8.8&lt;/code&gt; は DNSSEC に対応しています。
+しかし、ルーターなどが提供するリゾルバは対応していないことが多いので、それをデフォルトで使っていて無効になっていました。
+&lt;code class=&quot;language-text&quot;&gt;1.1.1.1&lt;/code&gt; を直接使うように設定するには、 &lt;code class=&quot;language-text&quot;&gt;/etc/systemd/resolved.conf&lt;/code&gt; に以下の行を追加します。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;DNS=1.1.1.1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;あとは &lt;code class=&quot;language-text&quot;&gt;sudo systemctl restart systemd-resolve&lt;/code&gt; を実行して、 &lt;code class=&quot;language-text&quot;&gt;systemd-resolved&lt;/code&gt; サービスを再起動すれば有効になります。&lt;/p&gt;
+&lt;p&gt;有効になっていれば、 &lt;code class=&quot;language-text&quot;&gt;resolvectl query sigfail.verteiltesysteme.net&lt;/code&gt; を実行すると &lt;code class=&quot;language-text&quot;&gt;invalid&lt;/code&gt; とエラーが出るはずです。&lt;/p&gt;
+&lt;h2&gt;ドメインの設定&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://hnw.hatenablog.com/entry/20160321&quot;&gt;DNSSEC対応の独自ドメインを年額$0.88で運用できるよという話&lt;/a&gt;
+を見ると、海外のレジストラは DNSSEC に対応しているところが多いようです。
+私の使っている &lt;code class=&quot;language-text&quot;&gt;nyaw.dev&lt;/code&gt; は Gandi で取得したため、ボタン1つで有効化することができました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://dnsviz.net/d/nyaw.dev/dnssec/&quot;&gt;nyaw.dev - dnsviz&lt;/a&gt;
+を確認すると、正常に設定されていることが確認できます。&lt;/p&gt;
+&lt;p&gt;といっても、リダイレクトさせているのであんまり嬉しくはないんですが……。&lt;/p&gt;
+&lt;p&gt;ブログだけではなくポートフォリオも含めてページを充実させていって、ドメイン設定もきちんとしていこうと思っています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Xorgの仮想ディスプレイについて調べました]]></title><description><![CDATA[Linux デスクトップで、他のデバイスを VNC などを使って仮想的にワイアレスディスプレイとして使うために、
 仮想ディスプレイを追加する方法を調べました。 余っているディスプレイ出力を使う [SOLVED] Creating a Virtual Display/monitor…]]></description><link>https://ny-a.github.io/blog22020-02/virtual-heads-of-xf86-video-intel/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/virtual-heads-of-xf86-video-intel/</guid><pubDate>Wed, 26 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Linux デスクトップで、他のデバイスを VNC などを使って仮想的にワイアレスディスプレイとして使うために、
 仮想ディスプレイを追加する方法を調べました。&lt;/p&gt;
 &lt;h2&gt;余っているディスプレイ出力を使う&lt;/h2&gt;
