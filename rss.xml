@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 28 Feb 2020 02:58:43 GMT</lastBuildDate><item><title><![CDATA[GitHubのdependabotにPRをもらったのでマージしました]]></title><description><![CDATA[Jekyll で作ったブログのレポジトリに dependabot から PullRequest が来ていたのでマージしてみました。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 28 Feb 2020 18:28:22 GMT</lastBuildDate><item><title><![CDATA[sudoに-iオプションをつけるとクオートの挙動が変わってハマりました]]></title><description><![CDATA[コマンドには  オプションがあり、コマンドを走らせるユーザー(デフォルトは root)のログインシェルを
+使ってコマンドを実行できますが、このオプションを指定する場合としない場合でクオートの扱いが変わってハマってしまいました。 具体的には、EC2 の root…]]></description><link>https://ny-a.github.io/blog22020-02/sudo-with-login-option-behavior-of-quote/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/sudo-with-login-option-behavior-of-quote/</guid><pubDate>Sat, 29 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;sudo&lt;/code&gt; コマンドには &lt;code class=&quot;language-text&quot;&gt;-i/--login&lt;/code&gt; オプションがあり、コマンドを走らせるユーザー(デフォルトは root)のログインシェルを
+使ってコマンドを実行できますが、このオプションを指定する場合としない場合でクオートの扱いが変わってハマってしまいました。&lt;/p&gt;
+&lt;p&gt;具体的には、EC2 の root で実行される user_data スクリプトで、 パスフレーズなしのキーペアを生成する際に&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shellscript&quot;&gt;&lt;pre class=&quot;language-shellscript&quot;&gt;&lt;code class=&quot;language-shellscript&quot;&gt;sudo -u ec2-user -i ssh-keygen -f .ssh/id_rsa -N &amp;#39;&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;とすると、 &lt;code class=&quot;language-text&quot;&gt;option requires an argument -- N&lt;/code&gt; というエラーが発生してしまいます。&lt;/p&gt;
+&lt;p&gt;(ちなみにここで生成したキーペアは、 git clone をするための deploy key として使おうとしています。
+user&lt;em&gt;data とはいえ private key を含めたくなかったので、インスタンスで生成して public key を登録する形にしました。
+結局 API を叩くときなどに使用する token/secret は user&lt;/em&gt;data に含めることになるんですが……)&lt;/p&gt;
+&lt;h2&gt;issues&lt;/h2&gt;
+&lt;p&gt;この問題ズバリの issue が5年前に出ていますが、1つもコメントはついていません。
+&lt;a href=&quot;https://bugzilla.sudo.ws/show_bug.cgi?id=679&quot;&gt;Bug 679 - sudo -i ignores empty arguments&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;10 年前の
+&lt;a href=&quot;https://bugzilla.sudo.ws/show_bug.cgi?id=413&quot;&gt;Bug 413 - Unexpected change in quoting behaviour with -i flag&lt;/a&gt;
+も同じ問題を指しているように読めますが、こちらも1ヶ月経たずに放置されてしまっています。&lt;/p&gt;
+&lt;h2&gt;workaround&lt;/h2&gt;
+&lt;p&gt;とりあえずの解決策としては、
+&lt;a href=&quot;https://bugzilla.sudo.ws/show_bug.cgi?id=679&quot;&gt;#679&lt;/a&gt;
+にある stackoverflow へのリンク
+&lt;a href=&quot;https://stackoverflow.com/questions/27892812/passing-empty-arguments-to-sudo-i&quot;&gt;Passing empty arguments to sudo -i&lt;/a&gt;
+にある通り、 &lt;code class=&quot;language-text&quot;&gt;sudo -i sh -c &amp;#39;foo &amp;quot;bar&amp;quot; &amp;quot;&amp;quot;&amp;#39;&lt;/code&gt; などとすればうまく動くようです。&lt;/p&gt;
+&lt;p&gt;ただ、あまり嬉しい見た目ではないので、私は &lt;code class=&quot;language-text&quot;&gt;-i&lt;/code&gt; オプションを使わないで、
+&lt;code class=&quot;language-text&quot;&gt;sudo -u ec2-user ssh-keygen -f /home/ec2-user/.ssh/id_rsa -N &amp;#39;&amp;#39;&lt;/code&gt;
+とすることにしました。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;sudo&lt;/code&gt; がデファクトスタンダードのようなものと認識していて、何の疑問もなく使っていたのですが、
+脆弱性の問題なども見かけるので &lt;code class=&quot;language-text&quot;&gt;doas&lt;/code&gt; なども使ってみようかなと思いました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[GitHubのdependabotにPRをもらったのでマージしました]]></title><description><![CDATA[Jekyll で作ったブログのレポジトリに dependabot から PullRequest が来ていたのでマージしてみました。
 今回はついでに他の Gem もアップデートしたので、コマンドラインからマージしました。 来た PullRequest は
 Bump nokogiri…]]></description><link>https://ny-a.github.io/blog22020-02/github-dependabot/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/github-dependabot/</guid><pubDate>Fri, 28 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Jekyll で作ったブログのレポジトリに dependabot から PullRequest が来ていたのでマージしてみました。
 今回はついでに他の Gem もアップデートしたので、コマンドラインからマージしました。&lt;/p&gt;
