@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 27 Feb 2020 02:37:48 GMT</lastBuildDate><item><title><![CDATA[DNSSECの設定をしました]]></title><description><![CDATA[クライアント側もドメイン側も、設定するだけで DNSSEC が使える状態になっていたので、両方とも設定して
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 28 Feb 2020 02:58:43 GMT</lastBuildDate><item><title><![CDATA[GitHubのdependabotにPRをもらったのでマージしました]]></title><description><![CDATA[Jekyll で作ったブログのレポジトリに dependabot から PullRequest が来ていたのでマージしてみました。
+今回はついでに他の Gem もアップデートしたので、コマンドラインからマージしました。 来た PullRequest は
+Bump nokogiri…]]></description><link>https://ny-a.github.io/blog22020-02/github-dependabot/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/github-dependabot/</guid><pubDate>Fri, 28 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Jekyll で作ったブログのレポジトリに dependabot から PullRequest が来ていたのでマージしてみました。
+今回はついでに他の Gem もアップデートしたので、コマンドラインからマージしました。&lt;/p&gt;
+&lt;p&gt;来た PullRequest は
+&lt;a href=&quot;https://github.com/ny-a/blog/pull/1&quot;&gt;Bump nokogiri from 1.10.7 to 1.10.8 #1&lt;/a&gt;
+です。&lt;/p&gt;
+&lt;p&gt;PR のブランチは &lt;code class=&quot;language-text&quot;&gt;dependabot/bundler/nokogiri-1.10.8&lt;/code&gt; に切られていました。
+単に &lt;code class=&quot;language-text&quot;&gt;git fetch&lt;/code&gt; すれば降ってきます。
+&lt;code class=&quot;language-text&quot;&gt;git merge dependabot/bundler/nokogiri-1.10.8&lt;/code&gt; すれば手元でのマージができるので、
+&lt;code class=&quot;language-text&quot;&gt;git push origin master&lt;/code&gt; して PullRequest のマージが完了します。
+PR のブランチは push 時に自動で削除されました。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;git fetch -p&lt;/code&gt; すればリモートトラッキングブランチが削除されて、全て完了します。&lt;/p&gt;
+&lt;p&gt;CVE などを購読して使っているソフトウェアのバージョンを管理するのは大変なので、
+(GitHub 上の OSS に限りますが)セキュリティの問題を監視してもらえるのは助かります。
+(今回は static なページだったのであまり影響はないと思いますが……。)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[DNSSECの設定をしました]]></title><description><![CDATA[クライアント側もドメイン側も、設定するだけで DNSSEC が使える状態になっていたので、両方とも設定して
 DNSSEC を有効にしてみました。 クライアント設定 DNS リゾルバは  を使っているので、 DNSSEC 対応の DNS サーバーが使われていれば DNSSEC…]]></description><link>https://ny-a.github.io/blog22020-02/set-up-dnssec/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-02/set-up-dnssec/</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;クライアント側もドメイン側も、設定するだけで DNSSEC が使える状態になっていたので、両方とも設定して
 DNSSEC を有効にしてみました。&lt;/p&gt;
 &lt;h2&gt;クライアント設定&lt;/h2&gt;
