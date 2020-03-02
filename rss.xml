@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 01 Mar 2020 15:07:33 GMT</lastBuildDate><item><title><![CDATA[Scala.js 1.0 がリリースされました]]></title><description><![CDATA[ずっと待っていたのですが、ついに Scala.js の v1.0 がリリースされていたようです。 Announcing Scala.js 1.0.0 Scala などに慣れてしまって、 javascript や python…]]></description><link>https://ny-a.github.io/blog22020-03/scalajs-1-0-released/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/scalajs-1-0-released/</guid><pubDate>Mon, 02 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ずっと待っていたのですが、ついに Scala.js の v1.0 がリリースされていたようです。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 02 Mar 2020 18:33:21 GMT</lastBuildDate><item><title><![CDATA[passmenu をカスタマイズしてみました]]></title><description><![CDATA[パスワードマネージャーには Pass / password-store を使っていて、
+GUI 環境での入力には  を使っているのですが、 passmenu…]]></description><link>https://ny-a.github.io/blog22020-03/customize-passmenu/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/customize-passmenu/</guid><pubDate>Tue, 03 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;パスワードマネージャーには &lt;a href=&quot;https://www.passwordstore.org/&quot;&gt;Pass / password-store&lt;/a&gt; を使っていて、
+GUI 環境での入力には &lt;code class=&quot;language-text&quot;&gt;passmenu&lt;/code&gt; を使っているのですが、 passmenu のデフォルト動作は クリップボードへのコピーで、
+直接入力させるには &lt;code class=&quot;language-text&quot;&gt;--type&lt;/code&gt; オプションを付ける必要があり少し面倒だったので、動作をカスタマイズしてみました。&lt;/p&gt;
+&lt;p&gt;オリジナルのソースは &lt;a href=&quot;https://git.zx2c4.com/password-store/tree/contrib/dmenu/passmenu&quot;&gt;contrib/dmenu&lt;/a&gt; にあります。
+pass は全体がそうなのですが、中身はシンプルな bash スクリプトなので、好きなように修正してしまいます。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shellscript&quot;&gt;&lt;pre class=&quot;language-shellscript&quot;&gt;&lt;code class=&quot;language-shellscript&quot;&gt;#!/usr/bin/env bash
+
+shopt -s nullglob globstar
+
+line=1
+if [[ &amp;quot;$1&amp;quot; =~ ^[0-9]+$ ]]; then
+  line=$1
+  shift
+fi
+
+prefix=${PASSWORD_STORE_DIR-~/.password-store}
+password_files=( &amp;quot;$prefix&amp;quot;/**/*.gpg )
+password_files=( &amp;quot;${password_files[@]#&amp;quot;$prefix&amp;quot;/}&amp;quot; )
+password_files=( &amp;quot;${password_files[@]%.gpg}&amp;quot; )
+
+password=$(printf &amp;#39;%s\n&amp;#39; &amp;quot;${password_files[@]}&amp;quot; | dmenu)
+
+[[ -n $password ]] || exit
+
+pass $@ &amp;quot;$password&amp;quot; | tail -n+$line | head -n1 | tr -d &amp;#39;\n&amp;#39; | xdotool type --clearmodifiers --file -&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;直接 type して欲しいときの方が多いのでデフォルト動作を type に変更
+(コピーしたかったら pass コマンドを使うので、というか直接 type させる以外する必要ない気が……)&lt;/li&gt;
+&lt;li&gt;複数行に対応するため、1つめの引数が数字であればその行を出力するように変更&lt;/li&gt;
+&lt;li&gt;otp なども入力できるように、以降の引数は dmenu ではなく pass に渡すように変更&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;などをしました。&lt;/p&gt;
+&lt;p&gt;dmenu にオプション渡してどうしたいんだろう……と思ってしまいました。 dmenu に慣れていないだけなんでしょうか？
+それはともかく、パスワードを pass にがっつり依存してしまっているので、このスクリプトでかなり便利になりました。&lt;/p&gt;
+&lt;p&gt;pass was written by Jason A. Donenfeld of zx2c4.com and is licensed under the &lt;a href=&quot;http://www.gnu.org/licenses/gpl-2.0.html&quot;&gt;GPLv2&lt;/a&gt;+&lt;/p&gt;
+&lt;p&gt;contrib なのでライセンス違うような気もしますがそうでもない気もします。contrib だから違うってことはないか。はい。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Scala.js 1.0 がリリースされました]]></title><description><![CDATA[ずっと待っていたのですが、ついに Scala.js の v1.0 がリリースされていたようです。 Announcing Scala.js 1.0.0 Scala などに慣れてしまって、 javascript や python…]]></description><link>https://ny-a.github.io/blog22020-03/scalajs-1-0-released/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/scalajs-1-0-released/</guid><pubDate>Mon, 02 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ずっと待っていたのですが、ついに Scala.js の v1.0 がリリースされていたようです。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.scala-js.org/news/2020/02/25/announcing-scalajs-1.0.0/&quot;&gt;Announcing Scala.js 1.0.0&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Scala などに慣れてしまって、 javascript や python などは書きにくく感じてくるようになりました。
 Scala.js が 1.0 になったことで業務にも採用しやすくなったかな？と思います。
