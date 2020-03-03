@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 02 Mar 2020 18:33:21 GMT</lastBuildDate><item><title><![CDATA[passmenu をカスタマイズしてみました]]></title><description><![CDATA[パスワードマネージャーには Pass / password-store を使っていて、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 03 Mar 2020 15:01:58 GMT</lastBuildDate><item><title><![CDATA[earlyoomがcommunityレポジトリに入っていました]]></title><description><![CDATA[earlyoom が
+Fedora32 でデフォルトで有効化
+されるようですが、 ArchLinux には AUR にあって公式レポジトリにない状況でした。 しかし、つい2時間前に community/earlyoom
+に入っていたようです。 最近ではほとんど AUR…]]></description><link>https://ny-a.github.io/blog22020-03/earlyoom-in-community-repo/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/earlyoom-in-community-repo/</guid><pubDate>Wed, 04 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://github.com/rfjakob/earlyoom&quot;&gt;earlyoom&lt;/a&gt; が
+&lt;a href=&quot;https://fedoraproject.org/wiki/Changes/EnableEarlyoom&quot;&gt;Fedora32 でデフォルトで有効化&lt;/a&gt;
+されるようですが、 ArchLinux には AUR にあって公式レポジトリにない状況でした。&lt;/p&gt;
+&lt;p&gt;しかし、つい2時間前に &lt;a href=&quot;https://www.archlinux.org/packages/community/x86_64/earlyoom/&quot;&gt;community/earlyoom&lt;/a&gt;
+に入っていたようです。&lt;/p&gt;
+&lt;p&gt;最近ではほとんど AUR のパッケージを利用することはないような気がしています。
+Trusted User の皆さんに感謝しないといけないですね。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[passmenu をカスタマイズしてみました]]></title><description><![CDATA[パスワードマネージャーには Pass / password-store を使っていて、
 GUI 環境での入力には  を使っているのですが、 passmenu…]]></description><link>https://ny-a.github.io/blog22020-03/customize-passmenu/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/customize-passmenu/</guid><pubDate>Tue, 03 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;パスワードマネージャーには &lt;a href=&quot;https://www.passwordstore.org/&quot;&gt;Pass / password-store&lt;/a&gt; を使っていて、
 GUI 環境での入力には &lt;code class=&quot;language-text&quot;&gt;passmenu&lt;/code&gt; を使っているのですが、 passmenu のデフォルト動作は クリップボードへのコピーで、
 直接入力させるには &lt;code class=&quot;language-text&quot;&gt;--type&lt;/code&gt; オプションを付ける必要があり少し面倒だったので、動作をカスタマイズしてみました。&lt;/p&gt;
