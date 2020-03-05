@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 05 Mar 2020 02:04:28 GMT</lastBuildDate><item><title><![CDATA[earlyoomに投げたPRがマージされました]]></title><description><![CDATA[earlyoomがcommunityレポジトリに入っていました
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 05 Mar 2020 16:45:58 GMT</lastBuildDate><item><title><![CDATA[Dockerの最新版をCentOSにインストールしてみました]]></title><description><![CDATA[CentOS のパッケージは、普段使っている ArchLinux に比べるとかなり古いです。
+しかし、 epel などのレポジトリを使うことで、比較的新しいバージョンを使うことができます。 docker は CentOS…]]></description><link>https://ny-a.github.io/blog22020-03/install-latest-docker-on-centos/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/install-latest-docker-on-centos/</guid><pubDate>Fri, 06 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;CentOS のパッケージは、普段使っている ArchLinux に比べるとかなり古いです。
+しかし、 epel などのレポジトリを使うことで、比較的新しいバージョンを使うことができます。&lt;/p&gt;
+&lt;p&gt;docker は &lt;a href=&quot;https://docs.docker.com/install/linux/docker-ce/centos/&quot;&gt;CentOS 用のインストールマニュアル&lt;/a&gt;
+があるので、これに従えばよいです。&lt;/p&gt;
+&lt;p&gt;まず、既に docker がインストールされている場合は &lt;code class=&quot;language-text&quot;&gt;yum remove&lt;/code&gt; コマンドで削除します。
+そして、 &lt;code class=&quot;language-text&quot;&gt;yum-utils&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;device-mapper-persistent-data&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;lvm2&lt;/code&gt; パッケージをインストールします。
+(手元の環境では全て最新版がインストールされていました。)
+次に、 Docker CE のレポジトリを追加します。
+&lt;code class=&quot;language-text&quot;&gt;yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;あとは &lt;code class=&quot;language-text&quot;&gt;yum install docker-ce docker-ce-cli containerd.io&lt;/code&gt; を実行すれば最新版がインストールされます。&lt;/p&gt;
+&lt;p&gt;また、 &lt;code class=&quot;language-text&quot;&gt;docker-compose&lt;/code&gt; はこの状態で yum でインストールしようとすると古いバージョンが入るので、
+&lt;code class=&quot;language-text&quot;&gt;pip&lt;/code&gt; を使ってインストールしてあげると最新版がインストールされます。
+ただ、インストールが &lt;code class=&quot;language-text&quot;&gt;/usr/local/bin/&lt;/code&gt; 以下になることがあり、 &lt;code class=&quot;language-text&quot;&gt;sudo&lt;/code&gt; 時の PATH に含まれていないことがあるので
+注意が必要です。(とりあえずはフルパスで指定すると動きます。)&lt;/p&gt;
+&lt;p&gt;ArchLinux を使っていると pip も 3 が標準な気がしてしまいますが、他の disto では 3 の suffix がついているんですね。
+そろそろ 2 系も EOL なので、 suffix なしの 3 系が標準になってほしいものです。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[earlyoomに投げたPRがマージされました]]></title><description><![CDATA[earlyoomがcommunityレポジトリに入っていました
 に書いた通り、  が community レポジトリに入ったので、  の README のリンクを修正して
 PullRequest を投げました。 README: Update Arch Linux package…]]></description><link>https://ny-a.github.io/blog22020-03/merged-my-pull-request-for-earlyoom/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/merged-my-pull-request-for-earlyoom/</guid><pubDate>Thu, 05 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;/blog2/2020-03/earlyoom-in-community-repo/&quot;&gt;earlyoomがcommunityレポジトリに入っていました&lt;/a&gt;
 に書いた通り、 &lt;code class=&quot;language-text&quot;&gt;earlyoom&lt;/code&gt; が community レポジトリに入ったので、 &lt;code class=&quot;language-text&quot;&gt;earlyoom&lt;/code&gt; の README のリンクを修正して
