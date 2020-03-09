@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 08 Mar 2020 19:08:04 GMT</lastBuildDate><item><title><![CDATA[ブログのビルドが失敗するようになったのでnpmパッケージをアップデートしました]]></title><description><![CDATA[この Gatsby のブログは Github Actions でビルドしているのですが、…]]></description><link>https://ny-a.github.io/blog22020-03/update-npm-packages-for-gatsby/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/update-npm-packages-for-gatsby/</guid><pubDate>Mon, 09 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;この Gatsby のブログは Github Actions でビルドしているのですが、5日くらい前からビルドに失敗するようになっていました。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 09 Mar 2020 16:20:26 GMT</lastBuildDate><item><title><![CDATA[AmazonLinux2-minimalについて調べました]]></title><description><![CDATA[AmazonLinux 自体は知っていましたが、どんなバリエーションがあるかなどはあまり知らず、
+Docker を使いたいときは始めから入っている ECS optimized な AMI を選ぶなど適当だったので調べてみました。 まず、メジャーバージョンとしては現在1と…]]></description><link>https://ny-a.github.io/blog22020-03/amazon-linux-2-minimal/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/amazon-linux-2-minimal/</guid><pubDate>Tue, 10 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;AmazonLinux 自体は知っていましたが、どんなバリエーションがあるかなどはあまり知らず、
+Docker を使いたいときは始めから入っている ECS optimized な AMI を選ぶなど適当だったので調べてみました。&lt;/p&gt;
+&lt;p&gt;まず、メジャーバージョンとしては現在1と2があるようで、
+1 の方は 2020/12/31 に &lt;a href=&quot;https://aws.amazon.com/blogs/aws/update-on-amazon-linux-ami-end-of-life/&quot;&gt;EOL&lt;/a&gt;
+となって、 2023/06/30 までメンテナンスサポートフェーズとなるようです。
+そのため、これから使い始めるのであれば AmazonLinux2 にしておいた方がよさそうですね。&lt;/p&gt;
+&lt;p&gt;AmazonLinux2 は 通常版と minimal のものがあり、通常版でも標準で入っているパッケージは少なめなようですが
+minimal の方はさらに少なくなっています。
+とはいえ、 bash や curl は始めから入っていますし、気になるのは awscli が入っていないことくらいでしょうか。
+普段 docker で alpine をよく使っているので、むしろ minimal がまだ削れそうに感じます。&lt;/p&gt;
+&lt;p&gt;また、 &lt;code class=&quot;language-text&quot;&gt;amazon-linux-extras&lt;/code&gt; コマンドから追加のソフトウェアをインストールすることができるので、
+困ることはほとんどないと思います。
+&lt;code class=&quot;language-text&quot;&gt;docker&lt;/code&gt; や &lt;code class=&quot;language-text&quot;&gt;epel&lt;/code&gt; もコマンド1つで入りますし、変わったものでは &lt;code class=&quot;language-text&quot;&gt;ecs&lt;/code&gt; クライアントもインストールすることができます。&lt;/p&gt;
+&lt;p&gt;今まで適当に ECS Optimized な AMI を使っていましたが、 AmazonLinux2-minimal を積極的に使っていこうと思いました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ブログのビルドが失敗するようになったのでnpmパッケージをアップデートしました]]></title><description><![CDATA[この Gatsby のブログは Github Actions でビルドしているのですが、…]]></description><link>https://ny-a.github.io/blog22020-03/update-npm-packages-for-gatsby/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/update-npm-packages-for-gatsby/</guid><pubDate>Mon, 09 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;この Gatsby のブログは Github Actions でビルドしているのですが、5日くらい前からビルドに失敗するようになっていました。
 手元ではビルドできるので、 &lt;code class=&quot;language-text&quot;&gt;npm run deploy&lt;/code&gt; を手動で実行してデプロイしていたのですが、
 ずっと放置しているわけにはいかないので直しました。&lt;/p&gt;
 &lt;p&gt;本当は &lt;a href=&quot;https://github.com/mxschmitt/action-tmate&quot;&gt;mxschmitt/action-tmate - GitHub&lt;/a&gt;
