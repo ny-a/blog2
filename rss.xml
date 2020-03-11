@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 09 Mar 2020 16:20:26 GMT</lastBuildDate><item><title><![CDATA[AmazonLinux2-minimalについて調べました]]></title><description><![CDATA[AmazonLinux 自体は知っていましたが、どんなバリエーションがあるかなどはあまり知らず、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 11 Mar 2020 03:02:43 GMT</lastBuildDate><item><title><![CDATA[losetupで複数パーティションを持ったイメージファイルをマウントする]]></title><description><![CDATA[シングルパーティションのイメージファイルをマウントするのは今まで何度もやっていましたが、
+ディスク丸ごとのイメージファイルをマウントした記憶は……あまりありません。
+強いて言えば VM…]]></description><link>https://ny-a.github.io/blog22020-03/losetup-p-option/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/losetup-p-option/</guid><pubDate>Wed, 11 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;シングルパーティションのイメージファイルをマウントするのは今まで何度もやっていましたが、
+ディスク丸ごとのイメージファイルをマウントした記憶は……あまりありません。
+強いて言えば VM にアタッチして起動したくらいでしょうか。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;losetup -fP&lt;/code&gt; を使うと複数のパーティションを含んだイメージファイルでループバックデバイスを
+セットアップできます。
+&lt;code class=&quot;language-text&quot;&gt;-P&lt;/code&gt; オプションを指定すると、セットアップ後にカーネルにパーティションをスキャンさせるようです。
+あとは普通に &lt;code class=&quot;language-text&quot;&gt;mount /dev/loop2p1 /mnt&lt;/code&gt; などとするとマウントできました。&lt;/p&gt;
+&lt;p&gt;手元の環境では起動時から /dev/loop0-7 が自動で作られていますが、これは誰が作っているのかなどは
+分かっていないので、まだまだ知識の不足を感じますね……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[AmazonLinux2-minimalについて調べました]]></title><description><![CDATA[AmazonLinux 自体は知っていましたが、どんなバリエーションがあるかなどはあまり知らず、
 Docker を使いたいときは始めから入っている ECS optimized な AMI を選ぶなど適当だったので調べてみました。 まず、メジャーバージョンとしては現在1と…]]></description><link>https://ny-a.github.io/blog22020-03/amazon-linux-2-minimal/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/amazon-linux-2-minimal/</guid><pubDate>Tue, 10 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;AmazonLinux 自体は知っていましたが、どんなバリエーションがあるかなどはあまり知らず、
 Docker を使いたいときは始めから入っている ECS optimized な AMI を選ぶなど適当だったので調べてみました。&lt;/p&gt;
 &lt;p&gt;まず、メジャーバージョンとしては現在1と2があるようで、
