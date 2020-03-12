@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 11 Mar 2020 03:02:43 GMT</lastBuildDate><item><title><![CDATA[losetupで複数パーティションを持ったイメージファイルをマウントする]]></title><description><![CDATA[シングルパーティションのイメージファイルをマウントするのは今まで何度もやっていましたが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 12 Mar 2020 02:54:56 GMT</lastBuildDate><item><title><![CDATA[ArchBSDプロジェクトのWebページ]]></title><description><![CDATA[毎度のことで気付くのが遅いのですが、 ArchBSD プロジェクトの Web サイト archbsd.net がなくなっていました。
+GitHub の方にはいくつかレポジトリがあるようなので、プロジェクト自体はどこかで継続しているのかもしれませんが、
+プロジェクトの Web…]]></description><link>https://ny-a.github.io/blog22020-03/archbsd-net/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/archbsd-net/</guid><pubDate>Thu, 12 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;毎度のことで気付くのが遅いのですが、 ArchBSD プロジェクトの Web サイト archbsd.net がなくなっていました。
+GitHub の方にはいくつかレポジトリがあるようなので、プロジェクト自体はどこかで継続しているのかもしれませんが、
+プロジェクトの Web サイトがなくなってしまっているのは残念です。&lt;/p&gt;
+&lt;p&gt;ところで、現在その URL にアクセスすると、不自然な日本語の記述された PR のようなサイトになっています。
+ただ、特にアフィリエイトリンクがあるわけではなく、 SNS のシェアボタンがあるだけなので目的はよく分かりません。
+不自然な日本語については、適当な文を抜き出して検索すると他でもヒットすることから、何らかの文章をベースに
+トピックごとに単語の置き換えなどで文章を生成しているように感じられます。
+また、ベースの文章自体も、機械学習などを使って生成しているようにも感じられます。&lt;/p&gt;
+&lt;p&gt;Web に増え続けるスパム系のコンテンツはある程度見てきたつもりでしたが、こういうものは初めて見ました。
+これによって得られる利益は不明ですが、自動生成っぽいスパムに時代の変化を感じました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[losetupで複数パーティションを持ったイメージファイルをマウントする]]></title><description><![CDATA[シングルパーティションのイメージファイルをマウントするのは今まで何度もやっていましたが、
 ディスク丸ごとのイメージファイルをマウントした記憶は……あまりありません。
 強いて言えば VM…]]></description><link>https://ny-a.github.io/blog22020-03/losetup-p-option/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/losetup-p-option/</guid><pubDate>Wed, 11 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;シングルパーティションのイメージファイルをマウントするのは今まで何度もやっていましたが、
 ディスク丸ごとのイメージファイルをマウントした記憶は……あまりありません。
