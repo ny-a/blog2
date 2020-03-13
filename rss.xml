@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 12 Mar 2020 15:02:43 GMT</lastBuildDate><item><title><![CDATA[HackMDでブログを書いてみました]]></title><description><![CDATA[HackMD は、ブラウザ上で Markdown の編集・閲覧を複数人同時にできるサービスです。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 13 Mar 2020 16:06:55 GMT</lastBuildDate><item><title><![CDATA[ArchLinuxの日本コミュニティに貢献します]]></title><description><![CDATA[ArchLinux を使い始めてもう5年以上経ちますが、今まではあまりコミュニティに貢献していませんでした。
+今まで ArchWiki などにたくさん助けられてきたので、これからは自分も貢献して恩返しをしていこうと思います。 まず、 ArchWiki…]]></description><link>https://ny-a.github.io/blog22020-03/started-contributing-to-archlinuxjp/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/started-contributing-to-archlinuxjp/</guid><pubDate>Sat, 14 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ArchLinux を使い始めてもう5年以上経ちますが、今まではあまりコミュニティに貢献していませんでした。
+今まで ArchWiki などにたくさん助けられてきたので、これからは自分も貢献して恩返しをしていこうと思います。&lt;/p&gt;
+&lt;p&gt;まず、 ArchWiki の日本語版が英語版に追従できていないのが少し気になりました。
+&lt;a href=&quot;https://kusakata.com/arch-description-translation-project/&quot;&gt;Arch Description Translation Project 他&lt;/a&gt;
+で kusakata さんが書かれている通り、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;日本語版の ArchWiki の古さに眉を顰めている読者の方がいれば、編集に参加していただると幸いです&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;というわけなので、これからできるだけ毎日編集に参加しようと思います。
+英語力に自信があるわけではありませんが、英語に触れる時間を増やすことで向上させていければなと思っています。&lt;/p&gt;
+&lt;p&gt;また、 Orphaned な AUR のパッケージのメンテナになることも平行して進めていこうと思っています。
+こちらは生半可な気持ちで引き受けていいのかあまり自信がなく、更新時にどこまでテストすればいいのかも
+あまりよく分かっていない/自分の中でも決め切れていませんが、とりあえず古いまま放置されるよりかは更新する方がいいかと
+思って引き受けてみようと考えています。もちろん、 upsteam の release を watch することもセットで。&lt;/p&gt;
+&lt;p&gt;というわけで、(もし ArchLinux 関係の方がこのポストを見ることがあれば)これからよろしくお願いします。
+ある程度雰囲気には慣れているつもりなので突拍子もないことはしないと思いますが、
+間違っていること・直した方がいいことがあれば気軽に連絡ください。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[HackMDでブログを書いてみました]]></title><description><![CDATA[HackMD は、ブラウザ上で Markdown の編集・閲覧を複数人同時にできるサービスです。
 HackMD には Markdown を GitHub に push…]]></description><link>https://ny-a.github.io/blog22020-03/write-blog-with-hackmd/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/write-blog-with-hackmd/</guid><pubDate>Fri, 13 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://hackmd.io/&quot;&gt;HackMD&lt;/a&gt; は、ブラウザ上で Markdown の編集・閲覧を複数人同時にできるサービスです。
 HackMD には Markdown を GitHub に push できる機能があるので、これを使ってブログを書いてみました。&lt;/p&gt;
 &lt;p&gt;メリットとしては、ライブプレビューができる、などがありますが、モダンなエディターだとライブプレビューが可能だったりするので、……メリットは特にないかもしれません。
