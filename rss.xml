@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 13 Mar 2020 16:30:52 GMT</lastBuildDate><item><title><![CDATA[ArchLinuxの日本コミュニティに貢献します]]></title><description><![CDATA[ArchLinux を使い始めてもう5年以上経ちますが、今まではあまりコミュニティに貢献していませんでした。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 15 Mar 2020 04:34:01 GMT</lastBuildDate><item><title><![CDATA[久しぶりにArchLinuxのインストールをしました]]></title><description><![CDATA[知人から古い MacBookAir をいただいたので、 ArchLinux をインストールしてみました。
+私は MacBook を所有したことがないので、これが1台目です。 いただいたのは10年前のモデルで、 MacBookAir3,2 (13inch, Late 201…]]></description><link>https://ny-a.github.io/blog22020-03/arch-linux-install-challenge-on-mba/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/arch-linux-install-challenge-on-mba/</guid><pubDate>Sun, 15 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;知人から古い MacBookAir をいただいたので、 ArchLinux をインストールしてみました。
+私は MacBook を所有したことがないので、これが1台目です。&lt;/p&gt;
+&lt;p&gt;いただいたのは10年前のモデルで、 MacBookAir3,2 (13inch, Late 2010) です。詳細スペックは、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU: Intel Core2Duo 2.13GHz&lt;/li&gt;
+&lt;li&gt;RAM: 4GB&lt;/li&gt;
+&lt;li&gt;SSD: 256GB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;といった感じです。&lt;/p&gt;
+&lt;p&gt;Arch は何回も壊してインストールし直しているので、久しぶりですが何も見ずにサクサク進めることができます。
+……という慢心がいけないんですよね、grub の設定をある程度忘れていたのと、ネットワーク設定を忘れて再起動してしまいました。&lt;/p&gt;
+&lt;p&gt;諦めが悪いので、USB キーを差して airootfs をマウントして netctl を叩いてみたのですが、 chroot だと全て ignore されてしまい、
+chroot なしで実行しようとすると netctl や wpa_supplicant 関連のファイルをコピーしないといけないため、面倒になって諦めました。&lt;/p&gt;
+&lt;p&gt;その後 netctl と wpa_supplicant をインストールして再起動したのですが、 dhcpcd がインストールされていませんでした。
+過去のインストールでは明示的にインストールした覚えがないのですが、依存などが変わったのでしょうか。
+後で ArchWiki を見てみようと思います。&lt;/p&gt;
+&lt;p&gt;また、 CPU は rdrand をサポートしておらず、 /dev/hwrng は生えているものの rng-tools を入れても使えなかった(cat してみても
+エラーが出る)ので、乱数生成は遅い感じになりつらいですね(まあ実際何がつらいかと言われればあまりないのですが……。)&lt;/p&gt;
+&lt;p&gt;AUR のメンテナになるときに検証環境は qemu/kvm などでいいかなと思っていたのですが、やっぱりハードウェア関連など実機で
+検証しないといけないなと実感しました。&lt;/p&gt;
+&lt;p&gt;ひとまず、気軽に再インストールができるように環境の整理と再構築の自動化などを進めていこうと思っています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ArchLinuxの日本コミュニティに貢献します]]></title><description><![CDATA[ArchLinux を使い始めてもう5年以上経ちますが、今まではあまりコミュニティに貢献していませんでした。
 今まで ArchWiki などにたくさん助けられてきたので、これからは自分も貢献して恩返しをしていこうと思います。 まず、 ArchWiki…]]></description><link>https://ny-a.github.io/blog22020-03/started-contributing-to-archlinuxjp/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/started-contributing-to-archlinuxjp/</guid><pubDate>Sat, 14 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ArchLinux を使い始めてもう5年以上経ちますが、今まではあまりコミュニティに貢献していませんでした。
 今まで ArchWiki などにたくさん助けられてきたので、これからは自分も貢献して恩返しをしていこうと思います。&lt;/p&gt;
 &lt;p&gt;まず、 ArchWiki の日本語版が英語版に追従できていないのが少し気になりました。
