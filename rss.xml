@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 18 Mar 2020 02:38:28 GMT</lastBuildDate><item><title><![CDATA[モバイルPASMOの提供が開始されました]]></title><description><![CDATA[10年前くらいから希望があったような気がしますが、ようやくモバイル PASMO の提供が開始されたようです。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 18 Mar 2020 15:43:27 GMT</lastBuildDate><item><title><![CDATA[Arch Linux のメーリングリストを購読し始めました]]></title><description><![CDATA[今まで Arch Linux は使っていましたが、コミュニティにはずっと触れておらず、 ArchWiki を読むくらいでした。 最近になってやっと ArchWiki の編集をしたり、 AUR…]]></description><link>https://ny-a.github.io/blog22020-03/subscribe-arch-mailing-lists/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/subscribe-arch-mailing-lists/</guid><pubDate>Thu, 19 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;今まで Arch Linux は使っていましたが、コミュニティにはずっと触れておらず、 ArchWiki を読むくらいでした。&lt;/p&gt;
+&lt;p&gt;最近になってやっと ArchWiki の編集をしたり、 AUR のパッケージのメンテナになったりしていますが、
+まだまだコミュニティに参加できているとは言い難い気がします。
+そこで、ひとまずコミュニティの雰囲気に慣れようと思い、 Arch Linux のメーリングリストをほぼ全て購読しました。&lt;/p&gt;
+&lt;p&gt;AUR Request などはかなり Archive が大きく、1日に何十通もメールが来るのかとドキドキしていましたが、
+全てのメールにさっと目を通すくらいはできる量だったので安心しました。
+フォーラムの方が投稿が多いくらいだと思いました。&lt;/p&gt;
+&lt;p&gt;フォーラムの方も、最近の更新をいくつかかいつまんで目を通してみています。が、あまり手助けできそうな話題は
+ないのが現状です……。ひとまず、英文の理解の速度の向上なども含めて慣れていこうと思いました。 &lt;/p&gt;</content:encoded></item><item><title><![CDATA[モバイルPASMOの提供が開始されました]]></title><description><![CDATA[10年前くらいから希望があったような気がしますが、ようやくモバイル PASMO の提供が開始されたようです。
 当面は Android のみのようですね。 対応機種は、おサイフケータイ対応で Android 6.0 以降プリインストールの機種のようです。
 また、 Xperia…]]></description><link>https://ny-a.github.io/blog22020-03/mobile-pasmo/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/mobile-pasmo/</guid><pubDate>Wed, 18 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;10年前くらいから希望があったような気がしますが、ようやくモバイル PASMO の提供が開始されたようです。
 当面は Android のみのようですね。&lt;/p&gt;
