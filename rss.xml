@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 18 Mar 2020 15:43:27 GMT</lastBuildDate><item><title><![CDATA[Arch Linux のメーリングリストを購読し始めました]]></title><description><![CDATA[今まで Arch Linux は使っていましたが、コミュニティにはずっと触れておらず、 ArchWiki を読むくらいでした。 最近になってやっと ArchWiki の編集をしたり、 AUR…]]></description><link>https://ny-a.github.io/blog22020-03/subscribe-arch-mailing-lists/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/subscribe-arch-mailing-lists/</guid><pubDate>Thu, 19 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;今まで Arch Linux は使っていましたが、コミュニティにはずっと触れておらず、 ArchWiki を読むくらいでした。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 20 Mar 2020 06:17:26 GMT</lastBuildDate><item><title><![CDATA[Firefox の GUI を docker コンテナ内で起動する]]></title><description><![CDATA[Qubes OS はアプリケーションを VM で分離しますが、 Arch Linux 上で Docker コンテナを利用して
+同じようなことを試してみました。 例えば、 Firefox を起動するには以下のようにします。 Dockerfile には USER…]]></description><link>https://ny-a.github.io/blog22020-03/run-firefox-in-docker/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/run-firefox-in-docker/</guid><pubDate>Fri, 20 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.qubes-os.org/&quot;&gt;Qubes OS&lt;/a&gt; はアプリケーションを VM で分離しますが、 Arch Linux 上で Docker コンテナを利用して
+同じようなことを試してみました。&lt;/p&gt;
+&lt;p&gt;例えば、 Firefox を起動するには以下のようにします。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shellscript&quot;&gt;&lt;pre class=&quot;language-shellscript&quot;&gt;&lt;code class=&quot;language-shellscript&quot;&gt;sudo docker run --rm \
+  -v /tmp/.X11-unix \
+  -v ~/.Xauthority:/home/user/.Xauthority \
+  -e DISPLAY \
+  -e XAUTHORITY=/home/user/.Xauthority \
+  --net host \
+  archlinux/base \
+  sh -c &amp;#39;pacman -Syu --noconfirm firefox; useradd user; chown user:user /home/user; su user firefox&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Dockerfile には USER instruction があるので、それを使って Xorg を起動中の UID と一致させればよいはずです。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;-v /home/user/.Xauthority&lt;/code&gt; だけだとディレクトリとしてマウントされてしまってうまくいきませんでした。
+&lt;code class=&quot;language-text&quot;&gt;--net host&lt;/code&gt; を付けないと、リモートホストからの X 接続と認識されるため、 xhost などが必要になると思います。&lt;/p&gt;
+&lt;p&gt;また、ウィンドウサイズを FullHD 程度にするとクラッシュしてしまう問題もあります。これはまだ解決法が分かっていませんが、
+SSH の X 転送を使って他のマシンの Firefox を起動したときは起きないため、Docker のメモリか cgroup か何かが原因かなと
+思っています。&lt;/p&gt;
+&lt;p&gt;Arch Linux のインストールプロセスは overlayfs と親和性が高そうなので、 pacman のインストールを docker のレイヤーに
+置き換えたようなコンテナシステムを作りたいと思っていますが、 alpm hook 周りを理解しないといけなかったり、
+まだまだ先は長そうです。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Arch Linux のメーリングリストを購読し始めました]]></title><description><![CDATA[今まで Arch Linux は使っていましたが、コミュニティにはずっと触れておらず、 ArchWiki を読むくらいでした。 最近になってやっと ArchWiki の編集をしたり、 AUR…]]></description><link>https://ny-a.github.io/blog22020-03/subscribe-arch-mailing-lists/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/subscribe-arch-mailing-lists/</guid><pubDate>Thu, 19 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;今まで Arch Linux は使っていましたが、コミュニティにはずっと触れておらず、 ArchWiki を読むくらいでした。&lt;/p&gt;
 &lt;p&gt;最近になってやっと ArchWiki の編集をしたり、 AUR のパッケージのメンテナになったりしていますが、
 まだまだコミュニティに参加できているとは言い難い気がします。
 そこで、ひとまずコミュニティの雰囲気に慣れようと思い、 Arch Linux のメーリングリストをほぼ全て購読しました。&lt;/p&gt;
