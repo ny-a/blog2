@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 22 Mar 2020 14:21:59 GMT</lastBuildDate><item><title><![CDATA[6gram の決済速度が遅くなっている気がしました]]></title><description><![CDATA[iPhone の方で QUICPay の決済速度が割と遅いという報告を受けたので、手元の Android 端末でも QUICPay の決済の速度を確認してみました。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 23 Mar 2020 13:24:47 GMT</lastBuildDate><item><title><![CDATA[AmazonLinux2-minimal に docker-compose をインストールしてみました]]></title><description><![CDATA[AmazonLinux では、  を使って docker は簡単にインストールすることができますが、
+ のインストールは少しハマる場合がありました。  から epel リポジトリを有効化すると、 yum で docker-compose…]]></description><link>https://ny-a.github.io/blog22020-03/install-docker-compose-on-amazon-linux/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/install-docker-compose-on-amazon-linux/</guid><pubDate>Mon, 23 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;AmazonLinux では、 &lt;code class=&quot;language-text&quot;&gt;amazon-linux-extras&lt;/code&gt; を使って docker は簡単にインストールすることができますが、
+&lt;code class=&quot;language-text&quot;&gt;docker-compose&lt;/code&gt; のインストールは少しハマる場合がありました。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;amazon-linux-extras&lt;/code&gt; から epel リポジトリを有効化すると、 yum で docker-compose が利用可能になりますが、
+これはアーキテクチャに関わらず現在インストールすることができません(python3.6 系に依存しているため)。&lt;/p&gt;
+&lt;h2&gt;x86_64&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;pip3 install docker-compose&lt;/code&gt; で素直に入ります。特にハマることはないと思います。&lt;/p&gt;
+&lt;h2&gt;aarch64&lt;/h2&gt;
+&lt;p&gt;x86_64 と同じように &lt;code class=&quot;language-text&quot;&gt;pip3&lt;/code&gt; でインストールはできますが、依存ライブラリのビルドに必要な依存関係を解決しておく必要があります。
+以下のコマンドでインストール可能です。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shellscript&quot;&gt;&lt;pre class=&quot;language-shellscript&quot;&gt;&lt;code class=&quot;language-shellscript&quot;&gt;yum install gcc libffi-devel openssl-devel python3-devel
+pip3 install docker-compose &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;ビルドが走るので少し時間がかかります。頻繁に使うのであれば AMI を作成しておく方が便利だと思います。&lt;/p&gt;
+&lt;p&gt;今回は minimal で試しましたが、normal の方では試していないため、また必要になったら試してみようと思います。&lt;/p&gt;
+&lt;p&gt;といっても、docker-compose を直接インスタンスで使うよりも、最近では ECS や Kubernetes を使うことの方が多そうですね……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[6gram の決済速度が遅くなっている気がしました]]></title><description><![CDATA[iPhone の方で QUICPay の決済速度が割と遅いという報告を受けたので、手元の Android 端末でも QUICPay の決済の速度を確認してみました。
 といっても N=1 なのであまり信頼できる値ではないですが……。 先月に決済を試した感じだと、kyash…]]></description><link>https://ny-a.github.io/blog22020-03/6gram-quicpay-speed/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/6gram-quicpay-speed/</guid><pubDate>Sun, 22 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;iPhone の方で QUICPay の決済速度が割と遅いという報告を受けたので、手元の Android 端末でも QUICPay の決済の速度を確認してみました。
 といっても N=1 なのであまり信頼できる値ではないですが……。&lt;/p&gt;
 &lt;p&gt;先月に決済を試した感じだと、kyash の高速化後の水準(2秒程度)だったと記憶しているのですが、
