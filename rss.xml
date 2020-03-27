@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 26 Mar 2020 14:21:06 GMT</lastBuildDate><item><title><![CDATA[6gram のグループとインスタントカードの違い]]></title><description><![CDATA[6gram をしばらく使っていて、グループとインスタンスカードの違いについても少しずつ分かってきました。 インスタンスカードは QUICPay に紐付けることができず、オンライン決済で使用できるカード番号のみが発行されます。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 27 Mar 2020 13:08:16 GMT</lastBuildDate><item><title><![CDATA[10個の AUR パッケージのメンテナになりました]]></title><description><![CDATA[Orphan になっていてアップデートのある AUR パッケージを少しずつ adopt してみていたのですが、その数が10個になりました。
+アップストリームの更新が途絶えていたり、既に最新になっているものは adopt…]]></description><link>https://ny-a.github.io/blog22020-03/maintain-10-aur-packages/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/maintain-10-aur-packages/</guid><pubDate>Fri, 27 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Orphan になっていてアップデートのある AUR パッケージを少しずつ adopt してみていたのですが、その数が10個になりました。
+アップストリームの更新が途絶えていたり、既に最新になっているものは adopt しても何も更新することがない(と思う)ので、
+今のところそういったパッケージはそのままにしてあります。&lt;/p&gt;
+&lt;p&gt;また、公式リポジトリに入っている AUR パッケージを掃除する手助けなど、できることからし始めてみています。
+Arch Linux コミュニティは日本のローカルコミュニティに比べれば人はたくさんいますが、それでもまだまだ足りないな……という
+感じがします。
+私の貢献が少しでも手助けになっていれば嬉しいです。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[6gram のグループとインスタントカードの違い]]></title><description><![CDATA[6gram をしばらく使っていて、グループとインスタンスカードの違いについても少しずつ分かってきました。 インスタンスカードは QUICPay に紐付けることができず、オンライン決済で使用できるカード番号のみが発行されます。
 グループは QUICPay…]]></description><link>https://ny-a.github.io/blog22020-03/6gram-group/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/6gram-group/</guid><pubDate>Thu, 26 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;6gram をしばらく使っていて、グループとインスタンスカードの違いについても少しずつ分かってきました。&lt;/p&gt;
 &lt;p&gt;インスタンスカードは QUICPay に紐付けることができず、オンライン決済で使用できるカード番号のみが発行されます。
 グループは QUICPay に紐付けることができるのに加えて、メンバーそれぞれにカード番号が発行でき、使用者を追跡できます。&lt;/p&gt;
