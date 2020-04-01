@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 31 Mar 2020 04:59:59 GMT</lastBuildDate><item><title><![CDATA[2019年度の終わり]]></title><description><![CDATA[早いもので2019年度ももう終わってしまいます。 1月に目標を立ててアウトプットを継続してきましたが、ブログは1日1回相当で3ヶ月続けることができました。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 01 Apr 2020 14:07:57 GMT</lastBuildDate><item><title><![CDATA[AlpineLinux のパッケージのシステムは ArchLinux 由来です！]]></title><description><![CDATA[エイプリルフールネタです、と言いたいところなんですが、どうやら事実のようです……。 AlpineLinux の Wiki
+によると、 , , , ,  あたりと非常に
+似たシステムになっているようです(もっとも、コンテナで使うときは initramfs…]]></description><link>https://ny-a.github.io/blog22020-04/alpine-packaging-system/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/alpine-packaging-system/</guid><pubDate>Wed, 01 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;エイプリルフールネタです、と言いたいところなんですが、どうやら事実のようです……。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://wiki.alpinelinux.org/wiki/Alpine_Linux:Overview#Technical_overview&quot;&gt;AlpineLinux の Wiki&lt;/a&gt;
+によると、 &lt;code class=&quot;language-text&quot;&gt;makeinitcpio&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;makepkg&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;pacman&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;PKGBUILD&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;ABS&lt;/code&gt; あたりと非常に
+似たシステムになっているようです(もっとも、コンテナで使うときは initramfs は
+使いませんが……。)&lt;/p&gt;
+&lt;p&gt;AlpineLinux はコンテナ上でよく使っているので、これからコミュニティの雰囲気に
+慣れていって、少しずつ貢献を始めていこうと思いました。
+ただ、 ArchLinux への貢献も続けていきたいので、どう両立させていくかというのは
+今後の課題です……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[2019年度の終わり]]></title><description><![CDATA[早いもので2019年度ももう終わってしまいます。 1月に目標を立ててアウトプットを継続してきましたが、ブログは1日1回相当で3ヶ月続けることができました。
 また、 ArchLinux コミュニティへの貢献も継続的に始めることができました。 今までは ArchLinux…]]></description><link>https://ny-a.github.io/blog22020-03/end-of-2019-fiscal-year/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-03/end-of-2019-fiscal-year/</guid><pubDate>Tue, 31 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;早いもので2019年度ももう終わってしまいます。&lt;/p&gt;
 &lt;p&gt;1月に目標を立ててアウトプットを継続してきましたが、ブログは1日1回相当で3ヶ月続けることができました。
 また、 ArchLinux コミュニティへの貢献も継続的に始めることができました。&lt;/p&gt;
