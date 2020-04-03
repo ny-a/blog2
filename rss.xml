@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Apr 2020 00:57:51 GMT</lastBuildDate><item><title><![CDATA[日本語版 ArchWiki の連続編集記録が切れてしまいました]]></title><description><![CDATA[wiki のデフォルトのタイムゾーンが JST だったので JST 基準かと思っていたら、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Apr 2020 23:56:44 GMT</lastBuildDate><item><title><![CDATA[RaspberryPi の乱数生成の速度をテストしてみました]]></title><description><![CDATA[まず、比較のための普段使いのマシンで  を
+実行した結果です。rngd のソースにはx86_64 の  を使っています。 平均 12Mibits/s ですね、信頼性はよくわかりませんが……。 次に、RaspberryPi 3B…]]></description><link>https://ny-a.github.io/blog22020-04/rngd-generate-speed/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/rngd-generate-speed/</guid><pubDate>Sat, 04 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;まず、比較のための普段使いのマシンで &lt;code class=&quot;language-text&quot;&gt;rngtest -c 1000 &amp;lt; /dev/random&lt;/code&gt; を
+実行した結果です。rngd のソースにはx86_64 の &lt;code class=&quot;language-text&quot;&gt;rdrand&lt;/code&gt; を使っています。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;rngtest 6.10
+Copyright (c) 2004 by Henrique de Moraes Holschuh
+This is free software; see the source for copying conditions.  There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+rngtest: starting FIPS tests...
+rngtest: bits received from input: 20000032
+rngtest: FIPS 140-2 successes: 1000
+rngtest: FIPS 140-2 failures: 0
+rngtest: FIPS 140-2(2001-10-10) Monobit: 0
+rngtest: FIPS 140-2(2001-10-10) Poker: 0
+rngtest: FIPS 140-2(2001-10-10) Runs: 0
+rngtest: FIPS 140-2(2001-10-10) Long run: 0
+rngtest: FIPS 140-2(2001-10-10) Continuous run: 0
+rngtest: input channel speed: (min=6.199; avg=12.255; max=13.673)Mibits/s
+rngtest: FIPS tests speed: (min=53.278; avg=113.896; max=138.214)Mibits/s
+rngtest: Program run time: 1724040 microseconds&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;平均 12Mibits/s ですね、信頼性はよくわかりませんが……。&lt;/p&gt;
+&lt;p&gt;次に、RaspberryPi 3B+ での結果です。 &lt;code class=&quot;language-text&quot;&gt;/dev/hwrng&lt;/code&gt; をソースに使っています。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;rngtest 6.10
+Copyright (c) 2004 by Henrique de Moraes Holschuh
+This is free software; see the source for copying conditions.  There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+rngtest: starting FIPS tests...
+rngtest: bits received from input: 20000032
+rngtest: FIPS 140-2 successes: 1000
+rngtest: FIPS 140-2 failures: 0
+rngtest: FIPS 140-2(2001-10-10) Monobit: 0
+rngtest: FIPS 140-2(2001-10-10) Poker: 0
+rngtest: FIPS 140-2(2001-10-10) Runs: 0
+rngtest: FIPS 140-2(2001-10-10) Long run: 0
+rngtest: FIPS 140-2(2001-10-10) Continuous run: 0
+rngtest: input channel speed: (min=169.756; avg=203.404; max=252.963)Kibits/s
+rngtest: FIPS tests speed: (min=48.533; avg=66.353; max=67.160)Mibits/s
+rngtest: Program run time: 96309980 microseconds&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;平均 203Kibits/s です。だいたい 1/60 といったところでしょうか。&lt;/p&gt;
+&lt;p&gt;これくらい出ればエアギャップコンピュータとして GPG 鍵の生成などを
+行ってもストレスないでしょうか。試してみようと思いました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[日本語版 ArchWiki の連続編集記録が切れてしまいました]]></title><description><![CDATA[wiki のデフォルトのタイムゾーンが JST だったので JST 基準かと思っていたら、
 サーバーは UTC で、 bot も UTC だったというお話っぽいですね……。 一時期スマートフォンのタイムゾーンを UTC…]]></description><link>https://ny-a.github.io/blog22020-04/archwiki-jp-streak/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/archwiki-jp-streak/</guid><pubDate>Fri, 03 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;wiki のデフォルトのタイムゾーンが JST だったので JST 基準かと思っていたら、
 サーバーは UTC で、 bot も UTC だったというお話っぽいですね……。&lt;/p&gt;
 &lt;p&gt;一時期スマートフォンのタイムゾーンを UTC にして生活していた時期があったのですが、
