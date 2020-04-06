@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 05 Apr 2020 14:50:36 GMT</lastBuildDate><item><title><![CDATA[東京都 新型コロナウイルス感染症対策サイトに貢献しました]]></title><description><![CDATA[少し前ですが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 06 Apr 2020 15:29:30 GMT</lastBuildDate><item><title><![CDATA[Alpine の pacman パッケージに PR を投げました]]></title><description><![CDATA[Alpine には pacman というパッケージがあり、名前の通り ArchLinux の
+パッケージマネージャなのですが、依存関係が不足していたのでパッチを
+送りました。  や  などは単純な bash スクリプトになっています。
+しかし、Alpine の標準状態では sh…]]></description><link>https://ny-a.github.io/blog22020-04/contributed-to-alpine-pacman-package/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/contributed-to-alpine-pacman-package/</guid><pubDate>Mon, 06 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Alpine には pacman というパッケージがあり、名前の通り ArchLinux の
+パッケージマネージャなのですが、依存関係が不足していたのでパッチを
+送りました。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;makepkg&lt;/code&gt; や &lt;code class=&quot;language-text&quot;&gt;pacman-key&lt;/code&gt; などは単純な bash スクリプトになっています。
+しかし、Alpine の標準状態では sh のみがインストールされていて、
+bash は入っていません。また、 pacman パッケージの依存関係にも
+bash が入っていませんでした。そのため、明示的に bash をインストール
+しないと、それらのスクリプトが実行できませんでした。&lt;/p&gt;
+&lt;p&gt;そこで、まず issue を立てて PR (Alpine は GitLab を使っているため
+正確には MR) を投げていいかどうか確認しました。
+いきなり PR を投げても問題はないと思いますが、一般的にはまず
+issue を立てて問題を提示してから、PR でそれを解決するような形に
+するのが適切かと思っています。&lt;/p&gt;
+&lt;p&gt;issue を作成したところ、いつも pacman パッケージの更新をしている
+方に親切に慣習を教えていただき、すぐにマージしていただけました。&lt;/p&gt;
+&lt;p&gt;Alpine Linux に貢献するのは初めてでしたが、私のコミュニティに対する
+第一印象はすごくよかったです。見習いたいところですね。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[東京都 新型コロナウイルス感染症対策サイトに貢献しました]]></title><description><![CDATA[少し前ですが、
 tokyo-metropolitan-gov/covid19
 に PR を投げて、マージされました。 ブラウザを英語設定にした状態で、初回訪問時にエラーが発生して遷移しなくなるというバグがありました。
 issue…]]></description><link>https://ny-a.github.io/blog22020-04/contributed-to-tokyo-metropolitan-gov-covid19/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/contributed-to-tokyo-metropolitan-gov-covid19/</guid><pubDate>Sun, 05 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;少し前ですが、
