@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 06 Apr 2020 15:29:30 GMT</lastBuildDate><item><title><![CDATA[Alpine の pacman パッケージに PR を投げました]]></title><description><![CDATA[Alpine には pacman というパッケージがあり、名前の通り ArchLinux の
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 07 Apr 2020 14:52:47 GMT</lastBuildDate><item><title><![CDATA[GW-US54GXS を ArchLinux で使う]]></title><description><![CDATA[かなり前に買った WiFi ドングルですが、Linux で使うには追加のファームウェアが必要なのでメモしておきます。 基板に書いてある zd1211 で検索すると、
+zd1211-firmware(AUR)
+があるのでインストールします。 昔は WiFi…]]></description><link>https://ny-a.github.io/blog22020-04/use-gw-us54gxs-on-archlinux/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/use-gw-us54gxs-on-archlinux/</guid><pubDate>Tue, 07 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;かなり前に買った WiFi ドングルですが、Linux で使うには追加のファームウェアが必要なのでメモしておきます。&lt;/p&gt;
+&lt;p&gt;基板に書いてある zd1211 で検索すると、
+&lt;a href=&quot;https://aur.archlinux.org/packages/zd1211-firmware/&quot;&gt;zd1211-firmware(AUR)&lt;/a&gt;
+があるのでインストールします。&lt;/p&gt;
+&lt;p&gt;昔は WiFi アダプタを使うのもビルドが必要だったり大変だったような記憶があります(ハードウェア・ディストロの
+選択が悪かっただけかもしれませんが)。今は本当にサポートが進んだな……と感じています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Alpine の pacman パッケージに PR を投げました]]></title><description><![CDATA[Alpine には pacman というパッケージがあり、名前の通り ArchLinux の
 パッケージマネージャなのですが、依存関係が不足していたのでパッチを
 送りました。  や  などは単純な bash スクリプトになっています。
 しかし、Alpine の標準状態では sh…]]></description><link>https://ny-a.github.io/blog22020-04/contributed-to-alpine-pacman-package/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/contributed-to-alpine-pacman-package/</guid><pubDate>Mon, 06 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Alpine には pacman というパッケージがあり、名前の通り ArchLinux の
