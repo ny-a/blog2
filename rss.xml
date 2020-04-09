@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 07 Apr 2020 14:52:47 GMT</lastBuildDate><item><title><![CDATA[GW-US54GXS を ArchLinux で使う]]></title><description><![CDATA[かなり前に買った WiFi ドングルですが、Linux で使うには追加のファームウェアが必要なのでメモしておきます。 基板に書いてある zd1211 で検索すると、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 09 Apr 2020 01:00:20 GMT</lastBuildDate><item><title><![CDATA[RPi 上の ArchLinuxArm での DNSSEC signature expired エラーの対処]]></title><description><![CDATA[DNSSEC validation failed エラー
+に、始めの方は  エラーが出ていたと書いていました。
+再インストールの際も同じ問題に遭遇したので対処法をメモしておきます。 といっても、時間を合わせるだけです。RPi には RTC…]]></description><link>https://ny-a.github.io/blog22020-04/dnssec-signature-expired-on-rpi/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/dnssec-signature-expired-on-rpi/</guid><pubDate>Wed, 08 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;/blog2/2020-02/dnssec-error/&quot;&gt;DNSSEC validation failed エラー&lt;/a&gt;
+に、始めの方は &lt;code class=&quot;language-text&quot;&gt;signature expired&lt;/code&gt; エラーが出ていたと書いていました。
+再インストールの際も同じ問題に遭遇したので対処法をメモしておきます。&lt;/p&gt;
+&lt;p&gt;といっても、時間を合わせるだけです。RPi には RTC が搭載されていないため、
+インターネットに接続するまでは平気で時間が遅れてしまいます。
+そのため、&lt;code class=&quot;language-text&quot;&gt;signature expired&lt;/code&gt; になっているようでした。&lt;/p&gt;
+&lt;p&gt;時間を合わせるだけなので、いくつか方法はありますが、事前に時刻設定して
+おいた RTC モジュールを接続する、CLI で手動で時刻を設定する、など
+でしょうか。&lt;/p&gt;
+&lt;p&gt;あるいは、DNSSEC 非対応のリゾルバ・DNS サーバーを使うなども可能でしょう。
+ArchLinuxARM で割と遭遇しそうな問題なので、フォーラムなど調べてみようと
+思いました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[GW-US54GXS を ArchLinux で使う]]></title><description><![CDATA[かなり前に買った WiFi ドングルですが、Linux で使うには追加のファームウェアが必要なのでメモしておきます。 基板に書いてある zd1211 で検索すると、
 zd1211-firmware(AUR)
 があるのでインストールします。 昔は WiFi…]]></description><link>https://ny-a.github.io/blog22020-04/use-gw-us54gxs-on-archlinux/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/use-gw-us54gxs-on-archlinux/</guid><pubDate>Tue, 07 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;かなり前に買った WiFi ドングルですが、Linux で使うには追加のファームウェアが必要なのでメモしておきます。&lt;/p&gt;
 &lt;p&gt;基板に書いてある zd1211 で検索すると、
