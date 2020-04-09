@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 09 Apr 2020 07:53:09 GMT</lastBuildDate><item><title><![CDATA[RPi に aarch64 の ArchLinux を入れて RTC モジュールを有効化してみる]]></title><description><![CDATA[ArchLinuxARM では簡単に RTC が有効化できた記憶があったのですが、再度試してみると
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 09 Apr 2020 15:27:56 GMT</lastBuildDate><item><title><![CDATA[Qwiklabs を試してみました]]></title><description><![CDATA[COVID-19 の応援でしょうか、Google が Qwiklabs などを1ヶ月間無料提供しているようなので
+試してみました。 Start your learning journey with Google Cloud today…]]></description><link>https://ny-a.github.io/blog22020-04/try-qwiklabs/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/try-qwiklabs/</guid><pubDate>Fri, 10 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;COVID-19 の応援でしょうか、Google が Qwiklabs などを1ヶ月間無料提供しているようなので
+試してみました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://inthecloud.withgoogle.com/training-discount/register.html&quot;&gt;Start your learning journey with Google Cloud today&lt;/a&gt;
+などから無料で開始することができます。&lt;/p&gt;
+&lt;p&gt;ひとまず、Google Cloud Essentials を試してみました。&lt;/p&gt;
+&lt;p&gt;Qwiklabs とは直接関係ないですが、GCP の Cloud Shell ってすごいサクサク動くんですね……
+ローカルと遜色ないほどな気がしました。
+海外の安い VPS などでブラウザ上で VNC するような shell を使っていた時期があったので、
+その進化には驚くばかりです。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[RPi に aarch64 の ArchLinux を入れて RTC モジュールを有効化してみる]]></title><description><![CDATA[ArchLinuxARM では簡単に RTC が有効化できた記憶があったのですが、再度試してみると
 うまくいかなかったのでいろいろ試してみました。 まず、前に設定して動いている Raspbian…]]></description><link>https://ny-a.github.io/blog22020-04/rtc-module-on-archlinuxarm/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/rtc-module-on-archlinuxarm/</guid><pubDate>Thu, 09 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ArchLinuxARM では簡単に RTC が有効化できた記憶があったのですが、再度試してみると
 うまくいかなかったのでいろいろ試してみました。&lt;/p&gt;
 &lt;p&gt;まず、前に設定して動いている Raspbian の &lt;code class=&quot;language-text&quot;&gt;dmesg&lt;/code&gt; を見てみます。&lt;/p&gt;
