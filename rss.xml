@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 09 Apr 2020 01:00:20 GMT</lastBuildDate><item><title><![CDATA[RPi 上の ArchLinuxArm での DNSSEC signature expired エラーの対処]]></title><description><![CDATA[DNSSEC validation failed エラー
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 09 Apr 2020 07:53:09 GMT</lastBuildDate><item><title><![CDATA[RPi に aarch64 の ArchLinux を入れて RTC モジュールを有効化してみる]]></title><description><![CDATA[ArchLinuxARM では簡単に RTC が有効化できた記憶があったのですが、再度試してみると
+うまくいかなかったのでいろいろ試してみました。 まず、前に設定して動いている Raspbian…]]></description><link>https://ny-a.github.io/blog22020-04/rtc-module-on-archlinuxarm/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/rtc-module-on-archlinuxarm/</guid><pubDate>Thu, 09 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ArchLinuxARM では簡単に RTC が有効化できた記憶があったのですが、再度試してみると
+うまくいかなかったのでいろいろ試してみました。&lt;/p&gt;
+&lt;p&gt;まず、前に設定して動いている Raspbian の &lt;code class=&quot;language-text&quot;&gt;dmesg&lt;/code&gt; を見てみます。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[    5.310771] rtc-ds1307 1-0068: registered as rtc0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;このログの通り、 &lt;code class=&quot;language-text&quot;&gt;/dev/rtc0&lt;/code&gt; ができていて、時刻同期はスクリプトで行われます。&lt;/p&gt;
+&lt;p&gt;一方、ArchLinuxARM だと以下のようなログが出ていました。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[    7.114025] hctosys: unable to open rtc device (rtc0
+...
+[    7.258978] i2c-bcm2835 3f805000.i2c: Could not read clock-frequency property&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;/dev/rtc0&lt;/code&gt; も起動時は存在しない状態で、
+&lt;code class=&quot;language-text&quot;&gt;echo &amp;#39;ds1307 0x68&amp;#39; | sudo tee /sys/bus/i2c/devices/i2c-1/new_device&lt;/code&gt;
+を実行しないといけません。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://archlinuxarm.org/forum/viewtopic.php?t=11802&quot;&gt;https://archlinuxarm.org/forum/viewtopic.php?t=11802&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gist.github.com/Alex131089/de45d552372a9296abbbbe407ae52180&quot;&gt;https://gist.github.com/Alex131089/de45d552372a9296abbbbe407ae52180&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://raspberrypi.stackexchange.com/questions/38186/how-to-install-real-time-clock-rtc-on-raspbian&quot;&gt;https://raspberrypi.stackexchange.com/questions/38186/how-to-install-real-time-clock-rtc-on-raspbian&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;上記のようなサイトをいくつか参照したのですが、ずばりの(？)解決策は
+なさそうです。よく考えたら Raspbian と違い aarch64 でした……&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;hctosys&lt;/code&gt; は &lt;code class=&quot;language-text&quot;&gt;systemd&lt;/code&gt; の起動前に(initramfs で)実行されているようです。
+initramfs 内の udev に認識させればいけそうでしょうか。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[RPi 上の ArchLinuxArm での DNSSEC signature expired エラーの対処]]></title><description><![CDATA[DNSSEC validation failed エラー
 に、始めの方は  エラーが出ていたと書いていました。
 再インストールの際も同じ問題に遭遇したので対処法をメモしておきます。 といっても、時間を合わせるだけです。RPi には RTC…]]></description><link>https://ny-a.github.io/blog22020-04/dnssec-signature-expired-on-rpi/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/dnssec-signature-expired-on-rpi/</guid><pubDate>Wed, 08 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;/blog2/2020-02/dnssec-error/&quot;&gt;DNSSEC validation failed エラー&lt;/a&gt;
 に、始めの方は &lt;code class=&quot;language-text&quot;&gt;signature expired&lt;/code&gt; エラーが出ていたと書いていました。
