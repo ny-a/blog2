@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 09 Apr 2020 15:27:56 GMT</lastBuildDate><item><title><![CDATA[Qwiklabs を試してみました]]></title><description><![CDATA[COVID-19 の応援でしょうか、Google が Qwiklabs などを1ヶ月間無料提供しているようなので
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 11 Apr 2020 03:57:03 GMT</lastBuildDate><item><title><![CDATA[新しい Kyash Card が届きました]]></title><description><![CDATA[申し込んでいた新しい Kyash Card が届きました。 カード表面と IC…]]></description><link>https://ny-a.github.io/blog22020-04/new-kyash-card/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/new-kyash-card/</guid><pubDate>Sat, 11 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;申し込んでいた新しい Kyash Card が届きました。&lt;/p&gt;
+&lt;p&gt;カード表面と IC / ストライプの向きが今までのカードと逆なのは、
+実験的要素なんでしょうか？
+正直プリペイドカードでカード表面はあまり重要ではないと
+思っていて、ゴールドカード以上だったら分かるのですが、
+もしかしたら三井住友系で将来導入を検討しているのでしょうか。&lt;/p&gt;
+&lt;p&gt;それと、Google Pay 対応はいつになるんでしょうか……
+(確認はしていないですが、警告が出ていたので……。)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Qwiklabs を試してみました]]></title><description><![CDATA[COVID-19 の応援でしょうか、Google が Qwiklabs などを1ヶ月間無料提供しているようなので
 試してみました。 Start your learning journey with Google Cloud today…]]></description><link>https://ny-a.github.io/blog22020-04/try-qwiklabs/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/try-qwiklabs/</guid><pubDate>Fri, 10 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;COVID-19 の応援でしょうか、Google が Qwiklabs などを1ヶ月間無料提供しているようなので
 試してみました。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://inthecloud.withgoogle.com/training-discount/register.html&quot;&gt;Start your learning journey with Google Cloud today&lt;/a&gt;
