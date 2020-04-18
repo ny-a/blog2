@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 14 Apr 2020 15:51:23 GMT</lastBuildDate><item><title><![CDATA[Kyash の新しいカードで EMV 決済をしてみました]]></title><description><![CDATA[イトーヨーカドーで EMV 決済をしました。普通に PIN なしで EMV 決済できました。 ……本当はコンタクトレスで決済したかったんですが、イトーヨーカドーってまだ
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 18 Apr 2020 04:32:41 GMT</lastBuildDate><item><title><![CDATA[syui さんのスポンサーになってみました]]></title><description><![CDATA[GitHub Sponsors…]]></description><link>https://ny-a.github.io/blog22020-04/sponsor-of-syui/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/sponsor-of-syui/</guid><pubDate>Sat, 18 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;GitHub Sponsors でスポンサーを募集していたので、試しに(？)スポンサーに
+なってみました。&lt;/p&gt;
+&lt;p&gt;私は技術系ばっかりでデザイン系はあまり触れてこなかったので、デザインとか
+できる人はすごいなと思います。
+関係ないですが、過去のイラストアイコンはほとんどフォロワーさんに描いて
+もらっていたくらいです。&lt;/p&gt;
+&lt;p&gt;……普通ならここで syui さんのことを賞賛して褒め称える文章があと10000字くらい
+続くのでしょうが、残念ながらそうではないようです。
+今まで通り毎日芝を生やすのと同じように、気が変わるまでスポンサー続けると思います。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Git に git サブコマンドを追加してみました]]></title><description><![CDATA[私はよくシェルに  と打ち込んでから行う操作を考えて、その後再度  と入力してしまう
+傾向にあります。 を実行するのはほぼ癖といってもいいかもしれません。 よく知られているように、git…]]></description><link>https://ny-a.github.io/blog22020-04/git-git-subcommand/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/git-git-subcommand/</guid><pubDate>Fri, 17 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;私はよくシェルに &lt;code class=&quot;language-text&quot;&gt;git&lt;/code&gt; と打ち込んでから行う操作を考えて、その後再度 &lt;code class=&quot;language-text&quot;&gt;git&lt;/code&gt; と入力してしまう
+傾向にあります。&lt;code class=&quot;language-text&quot;&gt;git git status&lt;/code&gt; を実行するのはほぼ癖といってもいいかもしれません。&lt;/p&gt;
+&lt;p&gt;よく知られているように、git にはカスタマイズ可能なサブコマンド機能があります。
+任意の実行ファイルを起動することも可能です。そこで、この機能を使って &lt;code class=&quot;language-text&quot;&gt;git git&lt;/code&gt; に
+対処してみようと思いました。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git config --global alias.git &amp;#39;!git&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;上記を実行すると、&lt;code class=&quot;language-text&quot;&gt;git&lt;/code&gt; の後に &lt;code class=&quot;language-text&quot;&gt;git&lt;/code&gt; が何回続いても正常に(？)コマンドが実行されるようになります。
+これで &lt;code class=&quot;language-text&quot;&gt;git git status&lt;/code&gt; などと打ってエラーになることもなくなりました。&lt;/p&gt;
+&lt;p&gt;さて、&lt;code class=&quot;language-text&quot;&gt;git git&lt;/code&gt; でエラーになる問題は解決したわけですが、新たに別の問題が出てきました。
+それは……このページが &lt;code class=&quot;language-text&quot;&gt;git git&lt;/code&gt; になっていることです……。&lt;/p&gt;
+&lt;p&gt;不思議なことにこの alias を設定した後は &lt;code class=&quot;language-text&quot;&gt;git git&lt;/code&gt; と打つことも減ったような気がします。
+せっかく設定したんですけどね……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ArchLinux のユーザーは若い人が多いように思いました]]></title><description><![CDATA[なんか若い人が多いような気がしました。それだけです。
+自分も人のことは言えないのですが……。]]></description><link>https://ny-a.github.io/blog22020-04/young-archlinux-users/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/young-archlinux-users/</guid><pubDate>Thu, 16 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;なんか若い人が多いような気がしました。それだけです。
+自分も人のことは言えないのですが……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ブログを毎日書くのがつらくなってきました]]></title><description><![CDATA[いつもツイートくらいの長さなんだからシュッと書けば終わりなのに
+なんかうまく1日の中で時間を見つけて書くのは難しいですね。 ArchWiki はとりあえず続いているのでよしとしたいところですが……
+とはいえ100ポスト超えているので続けるつもりではいます。]]></description><link>https://ny-a.github.io/blog22020-04/time-shortage-to-writing-blog/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/time-shortage-to-writing-blog/</guid><pubDate>Wed, 15 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;いつもツイートくらいの長さなんだからシュッと書けば終わりなのに
+なんかうまく1日の中で時間を見つけて書くのは難しいですね。&lt;/p&gt;
+&lt;p&gt;ArchWiki はとりあえず続いているのでよしとしたいところですが……
+とはいえ100ポスト超えているので続けるつもりではいます。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Kyash の新しいカードで EMV 決済をしてみました]]></title><description><![CDATA[イトーヨーカドーで EMV 決済をしました。普通に PIN なしで EMV 決済できました。 ……本当はコンタクトレスで決済したかったんですが、イトーヨーカドーってまだ
 対応していないんですね……。セブンイレブンも…]]></description><link>https://ny-a.github.io/blog22020-04/kyash-emv/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/kyash-emv/</guid><pubDate>Tue, 14 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;イトーヨーカドーで EMV 決済をしました。普通に PIN なしで EMV 決済できました。&lt;/p&gt;
 &lt;p&gt;……本当はコンタクトレスで決済したかったんですが、イトーヨーカドーってまだ
 対応していないんですね……。セブンイレブンも6月までは対応していないようですし、
