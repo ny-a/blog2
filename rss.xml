@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 18 Apr 2020 15:56:30 GMT</lastBuildDate><item><title><![CDATA[Gatsby のビルドが落ちていたので直しました]]></title><description><![CDATA[node 13.13 に上がってから babel を 7.9.0 に上げるまでの間、ビルドが
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 19 Apr 2020 16:05:42 GMT</lastBuildDate><item><title><![CDATA[systemd-cryptsetup]]></title><description><![CDATA[ArchLinuxARM で初期インストール時から  が入っていて
+気になっていたのですが、systemd が  に依存していることを
+知りました。 ArchLinuxARM を使ってエアギャップコンピュータ上で GPG…]]></description><link>https://ny-a.github.io/blog22020-04/systemd-cryptsetup/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/systemd-cryptsetup/</guid><pubDate>Mon, 20 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ArchLinuxARM で初期インストール時から &lt;code class=&quot;language-text&quot;&gt;cryptsetup&lt;/code&gt; が入っていて
+気になっていたのですが、systemd が &lt;code class=&quot;language-text&quot;&gt;cryptsetup&lt;/code&gt; に依存していることを
+知りました。&lt;/p&gt;
+&lt;p&gt;ArchLinuxARM を使ってエアギャップコンピュータ上で GPG 鍵を管理しようと
+思っていたときに、バックアップ時に &lt;code class=&quot;language-text&quot;&gt;LUKS&lt;/code&gt; を使おうと思ったら既に
+&lt;code class=&quot;language-text&quot;&gt;cryptsetup&lt;/code&gt; が入っていて驚きました。
+メインのマシン上ではフルディスク暗号化を使用しているため明示的に
+インストールしていたので気付きませんでした。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;systemd-cryptsetup&lt;/code&gt;、起動時に &lt;code class=&quot;language-text&quot;&gt;crypttab&lt;/code&gt; に記載されている暗号化
+パーティションをマウントするために使われているようですね。
+私は initramfs 内でマウントしているのでしばらく使うことはなさそうですが……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsby のビルドが落ちていたので直しました]]></title><description><![CDATA[node 13.13 に上がってから babel を 7.9.0 に上げるまでの間、ビルドが
 落ちていました。 node 13.12 に下げてみた後、babel を 7.9.0`に上げて解決しました。 babel/babel #1142…]]></description><link>https://ny-a.github.io/blog22020-04/failing-gatsby-build-on-node-13-13/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/failing-gatsby-build-on-node-13-13/</guid><pubDate>Sun, 19 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;node 13.13 に上がってから babel を 7.9.0 に上げるまでの間、ビルドが
 落ちていました。&lt;/p&gt;
 &lt;p&gt;node 13.12 に下げてみた後、babel を 7.9.0`に上げて解決しました。&lt;/p&gt;
