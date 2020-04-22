@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 21 Apr 2020 15:20:16 GMT</lastBuildDate><item><title><![CDATA[ひかり電話の SIP がちゃんと認証してそうでした]]></title><description><![CDATA[契約しているひかり電話の SIP リクエストをキャプチャしてみたら
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 22 Apr 2020 14:55:37 GMT</lastBuildDate><item><title><![CDATA[dhcpcd が core から extra に移動されるかもしれません]]></title><description><![CDATA[Arch Linux のメーリングリストを眺めていたら、dhcpcd の移動に関する話題が
+上がっていました。 どうやら dhcpcd の利用率が低下していて、core には他の代替がある
+( と書かれていましたが、 のことですかね？)
+ため、extra…]]></description><link>https://ny-a.github.io/blog22020-04/move-dhcpcd-from-core/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/move-dhcpcd-from-core/</guid><pubDate>Wed, 22 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Arch Linux のメーリングリストを眺めていたら、dhcpcd の移動に関する話題が
+上がっていました。&lt;/p&gt;
+&lt;p&gt;どうやら dhcpcd の利用率が低下していて、core には他の代替がある
+(&lt;code class=&quot;language-text&quot;&gt;networkd&lt;/code&gt; と書かれていましたが、&lt;code class=&quot;language-text&quot;&gt;dhclient&lt;/code&gt; のことですかね？)
+ため、extra リポジトリに移動することを提案していました。&lt;/p&gt;
+&lt;p&gt;pacman を使う上では core も extra も変わりはないのですが、
+他のクライアントも使ってみてもいいかもしれませんね。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ひかり電話の SIP がちゃんと認証してそうでした]]></title><description><![CDATA[契約しているひかり電話の SIP リクエストをキャプチャしてみたら
 ちゃんと(？) Digest 認証してありました。 適当に自前 SIP サーバー建てて遊べるかなと思ったのですが、
 ファームウェア解析とかしてパスワード探さないと厳しそうですね……。]]></description><link>https://ny-a.github.io/blog22020-04/ip-phone-for-optical-internet/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/ip-phone-for-optical-internet/</guid><pubDate>Tue, 21 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;契約しているひかり電話の SIP リクエストをキャプチャしてみたら
 ちゃんと(？) Digest 認証してありました。&lt;/p&gt;
