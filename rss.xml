@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 24 Apr 2020 14:14:53 GMT</lastBuildDate><item><title><![CDATA[名前の変更]]></title><description><![CDATA[昨日のポストはとても分かりにくい名前が変わった報告だったのですが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 24 Apr 2020 15:29:29 GMT</lastBuildDate><item><title><![CDATA[Gridsome のビルドが壊れてしまいました]]></title><description><![CDATA[babel のバージョンでビルドが落ちているだけだと思って放置して
+いたのですが、バージョン上げてみても落ちていたので壊れて
+しまった……という感じです。 バージョン下げたりして直そうと思っていますが、gridsome の方を
+放置してしまっているのがそもそもの問題ですよね……。]]></description><link>https://ny-a.github.io/blog22020-04/broken-gridsome-build/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/broken-gridsome-build/</guid><pubDate>Sat, 25 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;babel のバージョンでビルドが落ちているだけだと思って放置して
+いたのですが、バージョン上げてみても落ちていたので壊れて
+しまった……という感じです。&lt;/p&gt;
+&lt;p&gt;バージョン下げたりして直そうと思っていますが、gridsome の方を
+放置してしまっているのがそもそもの問題ですよね……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[名前の変更]]></title><description><![CDATA[昨日のポストはとても分かりにくい名前が変わった報告だったのですが、
 GitHub…]]></description><link>https://ny-a.github.io/blog22020-04/changed-name/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/changed-name/</guid><pubDate>Fri, 24 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;昨日のポストはとても分かりにくい名前が変わった報告だったのですが、
 GitHub の障害でデプロイされていませんでした……。&lt;/p&gt;
 &lt;p&gt;名前が変わって、まあ名前が変わったのですが、手続きが大変ですね。
