@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 22 Apr 2020 14:55:37 GMT</lastBuildDate><item><title><![CDATA[dhcpcd が core から extra に移動されるかもしれません]]></title><description><![CDATA[Arch Linux のメーリングリストを眺めていたら、dhcpcd の移動に関する話題が
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 24 Apr 2020 14:14:53 GMT</lastBuildDate><item><title><![CDATA[名前の変更]]></title><description><![CDATA[昨日のポストはとても分かりにくい名前が変わった報告だったのですが、
+GitHub…]]></description><link>https://ny-a.github.io/blog22020-04/changed-name/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/changed-name/</guid><pubDate>Fri, 24 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;昨日のポストはとても分かりにくい名前が変わった報告だったのですが、
+GitHub の障害でデプロイされていませんでした……。&lt;/p&gt;
+&lt;p&gt;名前が変わって、まあ名前が変わったのですが、手続きが大変ですね。
+ネット銀行はいいんですが、メガバンクの口座は支点に行かないと
+手続きができないようですね。社会情勢も鑑みてネットで済ませられれば
+よいのですが……。&lt;/p&gt;
+&lt;p&gt;仕事は旧姓で続けようかなと思っています。OSS 活動は実名に切り変えても
+いいかなーと思ってはいますが、Arch Linux JP コミュニティだと
+ハンドルネームの方が多いかなという感じなので悩んでいます。
+海外だとどうなんでしょう……ハンドルネームの方が多いように思っていますが、
+実名を少しもじっただけだったりしたら分からないので……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[職権修正]]></title><description><![CDATA[…]]></description><link>https://ny-a.github.io/blog22020-04/amend-ex-oficio/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/amend-ex-oficio/</guid><pubDate>Thu, 23 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;私の語感が気に入っている言葉に「職権修正」というのがあります。&lt;/p&gt;
+&lt;p&gt;あまり聞き慣れない言葉だと思いますが、住民票などに記載されたり
+する場合がありますね。
+ご両親の住民票に載っている方もいるかもしれませんね。&lt;/p&gt;
+&lt;p&gt;私は役所に勤めているわけではないのであまり詳しくありませんが、
+住民票などの記載事項変更には「届出」・「通知」・そして「職権」の
+3種類があるようで、届出は文字通り本人などからの届出、通知は
+他の自治体から(あるいは裁判の結果？)の通知、そしてそれ以外の場合は
+職権ということみたいです。
+住民票以外にもマイナンバーカードなどにも記載されることがあるようで、
+今まで知り合いのカードに記載されているのを見たことがあって、
+羨しく思っていました。&lt;/p&gt;
+&lt;p&gt;「職権修正」ってかっこいいと思いませんか？届出でも通知でもなく、
+普段触れることのできない住民票というシステムを、(見かけは)いとも
+簡単に「職権」により修正してしまうなんて……。&lt;/p&gt;
+&lt;p&gt;さて、その「職権修正」ですが、今日私の住民票とマイナンバーカードにも
+記載されました。新しい住民票の記載内容と共に、これからも頑張って
+いこうと思います。&lt;/p&gt;
+&lt;p&gt;あまり関係はないですが、 &lt;code class=&quot;language-text&quot;&gt;ex officio&lt;/code&gt; という英単語を初めて知りました。
+見ただけで分かるようにラテン語由来ですね。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[dhcpcd が core から extra に移動されるかもしれません]]></title><description><![CDATA[Arch Linux のメーリングリストを眺めていたら、dhcpcd の移動に関する話題が
 上がっていました。 どうやら dhcpcd の利用率が低下していて、core には他の代替がある
 ( と書かれていましたが、 のことですかね？)
 ため、extra…]]></description><link>https://ny-a.github.io/blog22020-04/move-dhcpcd-from-core/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/move-dhcpcd-from-core/</guid><pubDate>Wed, 22 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Arch Linux のメーリングリストを眺めていたら、dhcpcd の移動に関する話題が
