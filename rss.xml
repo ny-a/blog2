@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 27 Apr 2020 05:27:55 GMT</lastBuildDate><item><title><![CDATA[住民票のレシート]]></title><description><![CDATA[最近は便利なものでコンビニのマルチコピー機で取得することができます。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 27 Apr 2020 18:05:01 GMT</lastBuildDate><item><title><![CDATA[CVE の件数]]></title><description><![CDATA[CVE の件数って、日によって全然違うんですね。
+半日で5件くらいしかないときもあれば、10…]]></description><link>https://ny-a.github.io/blog22020-04/cve-amount/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/cve-amount/</guid><pubDate>Tue, 28 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;CVE の件数って、日によって全然違うんですね。
+半日で5件くらいしかないときもあれば、100件くらい出ているときもある感じでしょうか。&lt;/p&gt;
+&lt;p&gt;まあ、報告があった(？)ものをそのまま出していればむらになってしまうのは
+仕方なさそうですね……。
+ただ、ざっとは目を通すようにしているので、どのくらい時間がかかりそうか
+事前に見積っておくのが難しいなと感じました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[住民票のレシート]]></title><description><![CDATA[最近は便利なものでコンビニのマルチコピー機で取得することができます。
 ファミリーマートで住民票を取得したのですが、レシートが B…]]></description><link>https://ny-a.github.io/blog22020-04/receipt-of-copying-certificate-of-residence/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/receipt-of-copying-certificate-of-residence/</guid><pubDate>Mon, 27 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;最近は便利なものでコンビニのマルチコピー機で取得することができます。
 ファミリーマートで住民票を取得したのですが、レシートが B5 の普通紙で
 出てきてびっくりしました。&lt;/p&gt;
