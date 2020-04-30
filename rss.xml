@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 28 Apr 2020 15:09:57 GMT</lastBuildDate><item><title><![CDATA[pangox-compat の削除が提案されています]]></title><description><![CDATA[pangox-compat、ビルドが失敗するので bug 報告が立っていたのですが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 30 Apr 2020 07:18:58 GMT</lastBuildDate><item><title><![CDATA[RPi の MAC アドレスを電源を入れないで確認したい]]></title><description><![CDATA[RPi がたくさんあると MAC アドレスや固体の識別できる情報を
+電源がなくても(ハードウェアの見た目のみで)確認したくなったり
+すると思うのですが、調べてみた限りではそのような方法は
+なさそうでした……。 MAC アドレスは EEPROM ではなく CPU のシリアル No…]]></description><link>https://ny-a.github.io/blog22020-04/want-to-get-rpi-mac-address-from-without-power/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/want-to-get-rpi-mac-address-from-without-power/</guid><pubDate>Thu, 30 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;RPi がたくさんあると MAC アドレスや固体の識別できる情報を
+電源がなくても(ハードウェアの見た目のみで)確認したくなったり
+すると思うのですが、調べてみた限りではそのような方法は
+なさそうでした……。&lt;/p&gt;
+&lt;p&gt;MAC アドレスは EEPROM ではなく CPU のシリアル No を使っている
+ようなので、CPU の情報が基板に記載されていれば……
+その可能性は低そうですね。&lt;/p&gt;
+&lt;p&gt;唯一？あるのは製造番号らしき16桁の番号の入ったデータマトリクスと、
+いくつかの日付のような印字のみでしょうか。
+このあたりの情報も出ていれば嬉しいのですが、まあ誰も
+データマトリクスなんて読まないですよね……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[pangox-compat の削除が提案されています]]></title><description><![CDATA[pangox-compat、ビルドが失敗するので bug 報告が立っていたのですが、
 ついにメーリングリストで削除が提案されていました。 公式リポジトリのパッケージが削除されたら AUR の lib32 の方も
 deletion request 出してよさそうですかね。]]></description><link>https://ny-a.github.io/blog22020-04/dropping-pangox-compat/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-04/dropping-pangox-compat/</guid><pubDate>Wed, 29 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;pangox-compat、ビルドが失敗するので bug 報告が立っていたのですが、
 ついにメーリングリストで削除が提案されていました。&lt;/p&gt;
