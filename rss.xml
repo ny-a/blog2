@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 May 2020 07:13:37 GMT</lastBuildDate><item><title><![CDATA[ArchWiki の ArchWiki 名前空間の同期が終わった気がします]]></title><description><![CDATA[ArchWiki 名前空間の同期が終わった気がします。翻訳の速度が上がってきたのか、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 May 2020 18:32:23 GMT</lastBuildDate><item><title><![CDATA[bluez-alsa-git の最新バージョンが動かない気がします]]></title><description><![CDATA[pulseaudio を避けて bluez-alsa を使っているのですが、bluez-alsa-git の
+最新の 2.1.0.r43.g49ad348-1-x86_64 で bluealsa-aplay の再生に問題が
+あるような気がしました。 とりあえず 2.0.0.r…]]></description><link>https://ny-a.github.io/blog22020-05/bluez-alsa-git-wont-work/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-05/bluez-alsa-git-wont-work/</guid><pubDate>Mon, 04 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;pulseaudio を避けて bluez-alsa を使っているのですが、bluez-alsa-git の
+最新の 2.1.0.r43.g49ad348-1-x86_64 で bluealsa-aplay の再生に問題が
+あるような気がしました。&lt;/p&gt;
+&lt;p&gt;とりあえず 2.0.0.r0 に落としたら動いている気がするのでこれで使おうと
+思います。
+問題切り分けしたいですが、再起動しないと反映しないようなので少し
+面倒だなと思いました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ArchWiki の ArchWiki 名前空間の同期が終わった気がします]]></title><description><![CDATA[ArchWiki 名前空間の同期が終わった気がします。翻訳の速度が上がってきたのか、
 より慣れてきたのか、今までの (ヘルプ名前空間といった) ページよりも早く
 完了できたような気がしています。 いや、単に同期する量が少なかっただけかもしれませんが。]]></description><link>https://ny-a.github.io/blog22020-05/finished-sync-archwiki-namespace/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-05/finished-sync-archwiki-namespace/</guid><pubDate>Sun, 03 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ArchWiki 名前空間の同期が終わった気がします。翻訳の速度が上がってきたのか、
 より慣れてきたのか、今までの (ヘルプ名前空間といった) ページよりも早く
