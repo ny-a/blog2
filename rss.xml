@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 May 2020 18:32:23 GMT</lastBuildDate><item><title><![CDATA[bluez-alsa-git の最新バージョンが動かない気がします]]></title><description><![CDATA[pulseaudio を避けて bluez-alsa を使っているのですが、bluez-alsa-git の
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 04 May 2020 16:06:49 GMT</lastBuildDate><item><title><![CDATA[通信機器の AC アダプタが多すぎる]]></title><description><![CDATA[ONU、TA、スイッチ、外付け HDD ケース…… どれも 12V なのに専用の AC アダプタがついていて、電源タップも
+悲惨なことになってきました。 ATX 電源と DC ジャックで電源をまとめようかなと思い始めました。
+12V のスイッチング電源を考えていたのですが、ATX…]]></description><link>https://ny-a.github.io/blog22020-05/too-many-ac-adaptors/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-05/too-many-ac-adaptors/</guid><pubDate>Tue, 05 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ONU、TA、スイッチ、外付け HDD ケース……&lt;/p&gt;
+&lt;p&gt;どれも 12V なのに専用の AC アダプタがついていて、電源タップも
+悲惨なことになってきました。&lt;/p&gt;
+&lt;p&gt;ATX 電源と DC ジャックで電源をまとめようかなと思い始めました。
+12V のスイッチング電源を考えていたのですが、ATX 電源の方が安価なのと、
+5V が出ているので USB の充電も一緒にまかなえるので、ATX 電源の
+方がよさそうに思いました。&lt;/p&gt;
+&lt;p&gt;……と思っていたら、玄人思考なんかの ATX 電源が品薄になっているよう
+でした。6月になったら入るかな。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[bluez-alsa-git の最新バージョンが動かない気がします]]></title><description><![CDATA[pulseaudio を避けて bluez-alsa を使っているのですが、bluez-alsa-git の
 最新の 2.1.0.r43.g49ad348-1-x86_64 で bluealsa-aplay の再生に問題が
 あるような気がしました。 とりあえず 2.0.0.r…]]></description><link>https://ny-a.github.io/blog22020-05/bluez-alsa-git-wont-work/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-05/bluez-alsa-git-wont-work/</guid><pubDate>Mon, 04 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;pulseaudio を避けて bluez-alsa を使っているのですが、bluez-alsa-git の
 最新の 2.1.0.r43.g49ad348-1-x86_64 で bluealsa-aplay の再生に問題が
