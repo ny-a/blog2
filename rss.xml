@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 06 May 2020 07:10:48 GMT</lastBuildDate><item><title><![CDATA[GPG キーをきちんと管理したい]]></title><description><![CDATA[やっと無線アダプタのない RPi を購入したのでそろそろきちんと管理したいのですが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 06 May 2020 16:10:34 GMT</lastBuildDate><item><title><![CDATA[losetup の -P オプションがうまく働いてくれない]]></title><description><![CDATA[前に  が便利という記事を書いたような気がするのですが、
+今日試したらなぜかうまく動いてくれませんでした。 losetup のデバッグをするのもいいんですが、とりあえず動いてくれないと
+いちいち offset…]]></description><link>https://ny-a.github.io/blog22020-05/losetup-p-did-not-work-properly/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-05/losetup-p-did-not-work-properly/</guid><pubDate>Thu, 07 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;前に &lt;code class=&quot;language-text&quot;&gt;losetup -fP&lt;/code&gt; が便利という記事を書いたような気がするのですが、
+今日試したらなぜかうまく動いてくれませんでした。&lt;/p&gt;
+&lt;p&gt;losetup のデバッグをするのもいいんですが、とりあえず動いてくれないと
+いちいち offset を計算しないといけなくて面倒だったので、手動で
+&lt;code class=&quot;language-text&quot;&gt;partprobe&lt;/code&gt; を呼び出して対応しました。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# losetup -f image.img
+# partprobe /dev/loop1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;という感じでなんとかなってくれると思います。多分。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[GPG キーをきちんと管理したい]]></title><description><![CDATA[やっと無線アダプタのない RPi を購入したのでそろそろきちんと管理したいのですが、
 gpg キーのパスフレーズや暗号化、バックアップのあたりでうまい方法がないか
 探しています。 仕事で使うものや OSS で使うものなど、メールアドレスベースで gpg…]]></description><link>https://ny-a.github.io/blog22020-05/want-to-manage-gpg-key-properly/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-05/want-to-manage-gpg-key-properly/</guid><pubDate>Wed, 06 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;やっと無線アダプタのない RPi を購入したのでそろそろきちんと管理したいのですが、
 gpg キーのパスフレーズや暗号化、バックアップのあたりでうまい方法がないか
