@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 11 May 2020 15:48:04 GMT</lastBuildDate><item><title><![CDATA[マルチアーキテクチャ対応の Docker イメージを作りたい]]></title><description><![CDATA[multi-arch 対応の docker image をビルドしたいと思ったのですが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 13 May 2020 15:17:30 GMT</lastBuildDate><item><title><![CDATA[ノート PC が突然勝手に起動するようになっていました]]></title><description><![CDATA[しばらく放置していたノート PC を久しぶりに起動しようとしたのですが、
+電源ボタンを押しても反応がありませんでした。
+放置していた期間中ずっと AC…]]></description><link>https://ny-a.github.io/blog22020-05/reboot-spontaneously/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-05/reboot-spontaneously/</guid><pubDate>Wed, 13 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;しばらく放置していたノート PC を久しぶりに起動しようとしたのですが、
+電源ボタンを押しても反応がありませんでした。
+放置していた期間中ずっと AC アダプタを接続していたので、電源関係の
+問題ではないと思ったのですが、一旦電源を外してみたり、再度接続して
+充電が完了するまで待ったりしてみても起動しませんでした。&lt;/p&gt;
+&lt;p&gt;諦めてしばらく電源ボタンを連打していたら、いつのまにか起動していました。
+Arch のアップデートなどを済ませて電源を落としたら、今度はなぜか勝手に
+起動するようになってしまいました。
+しかも、しばらく放置していると勝手に電源が落ちているようでした。
+WoL などは設定していないはずで、マジックパケットなども飛んでいないはずですが、
+念のため LAN ケーブルを外して電源だけ接続している状態にしても改善しません
+でした。&lt;/p&gt;
+&lt;p&gt;AC アダプタを外したり、閉じた状態にしておけば……と試してみても、一向に
+改善しませんでした。
+これは電池が空になるまで続くのか……と思っていたのですが、電源を入れたり
+切ったりしてみているうちに起きなくなっていました。&lt;/p&gt;
+&lt;p&gt;今のところどちらの問題も再発はしていないようですが、一体原因は何で、
+PC が壊れているのかどうかも分かりませんが、もうしばらく様子を見ようと
+思います……。
+電源 (少なくとも LED) が消えた状態から勝手に起動するようなロジックが
+存在するのでしょうか、それとも外来ノイズか何かでしょうか。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[リプトンブランドの販売権がキーコーヒーにあることを知りました]]></title><description><![CDATA[…]]></description><link>https://ny-a.github.io/blog22020-05/lipton-keycoffee/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-05/lipton-keycoffee/</guid><pubDate>Tue, 12 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;私はコーヒーより紅茶を飲むことが多く、リプトンのイエローラベルなどを
+買うことがあるのですが、値札を見るとキーコーヒーと書いてあったので
+調べてみました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.keycoffee.co.jp/news/2016/161024.html&quot;&gt;キーコーヒーのニュース&lt;/a&gt;
+を見ると、ユニリーバと販売総代理店契約を結んだと書かれています。&lt;/p&gt;
+&lt;p&gt;パッケージにも製造者であるユニリーバの記載しかないため、今まで気付き
+ませんでした。&lt;/p&gt;
+&lt;p&gt;よく考えるとキーコーヒーのコーヒー(？)もあまり飲んだことがないので、
+機会があれば飲んでみたいと思いました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[マルチアーキテクチャ対応の Docker イメージを作りたい]]></title><description><![CDATA[multi-arch 対応の docker image をビルドしたいと思ったのですが、
 docker manifest サブコマンドや docker buildx サブコマンドはまだ
 experimental な上、manifest を作るには insecure…]]></description><link>https://ny-a.github.io/blog22020-05/want-to-build-multi-arch-docker-image/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-05/want-to-build-multi-arch-docker-image/</guid><pubDate>Mon, 11 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;multi-arch 対応の docker image をビルドしたいと思ったのですが、
 docker manifest サブコマンドや docker buildx サブコマンドはまだ
