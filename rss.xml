@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 15 May 2020 17:28:58 GMT</lastBuildDate><item><title><![CDATA[MOTHER 1+2 を買いました]]></title><description><![CDATA[よく名前の挙がるゲームである MOTHER ですが、今まで遊んだことが
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 17 May 2020 03:06:33 GMT</lastBuildDate><item><title><![CDATA[Chromium の GUI を docker コンテナ内で実行する]]></title><description><![CDATA[前は Firefox でやりましたが、Chromium はサンドボックスがあったりして
+前のままのコマンドでは動いていませんでした。 以下のコマンドで動きました。といっても  を追加しただけですが。
+ なしでも  をつけて chromium…]]></description><link>https://ny-a.github.io/blog22020-05/run-chromium-in-docker/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-05/run-chromium-in-docker/</guid><pubDate>Sun, 17 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;前は Firefox でやりましたが、Chromium はサンドボックスがあったりして
+前のままのコマンドでは動いていませんでした。&lt;/p&gt;
+&lt;p&gt;以下のコマンドで動きました。といっても &lt;code class=&quot;language-text&quot;&gt;--privileged&lt;/code&gt; を追加しただけですが。
+&lt;code class=&quot;language-text&quot;&gt;--privileged&lt;/code&gt; なしでも &lt;code class=&quot;language-text&quot;&gt;--no-sandbox&lt;/code&gt; をつけて chromium を起動すれば
+一応ウィンドウまでは出るのですが、グラフィックドライバがうまく
+読み込まれずに真っ白のままになってしまうという問題がありました。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo docker run --rm \
+  -v /tmp/.X11-unix \
+  -v ~/.Xauthority:/home/user/.Xauthority \
+  -e DISPLAY \
+  -e XAUTHORITY=/home/user/.Xauthority \
+  --net host \
+  --privileged \
+  archlinux \
+  sh -c &amp;#39;pacman -Syu --noconfirm chromium; useradd user; chown user:user /home/user; su user chromium&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;もう少し &lt;code class=&quot;language-text&quot;&gt;--cap-add&lt;/code&gt; などで Capability を絞ってもいけそうですね。&lt;/p&gt;
+&lt;p&gt;Firefox に比べれば安定しているかなという印象ですが、やはり
+YouTube などを FullHD で視聴しようとするとタブがクラッシュしてしまうので、
+実用には厳しいかなという印象でした。&lt;/p&gt;
+&lt;p&gt;わざわざ Docker 内で起動しなくても、psd なんかで毎回リセットするように
+してあげればほぼ同じことが実現できるんですけどね……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[MOTHER 1+2 を買いました]]></title><description><![CDATA[よく名前の挙がるゲームである MOTHER ですが、今まで遊んだことが
 なかったため、いい機会だと思い購入してみました。 バーチャルコンソールでない GBA…]]></description><link>https://ny-a.github.io/blog22020-05/bought-mother-1-2/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-05/bought-mother-1-2/</guid><pubDate>Sat, 16 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;よく名前の挙がるゲームである MOTHER ですが、今まで遊んだことが
 なかったため、いい機会だと思い購入してみました。&lt;/p&gt;
 &lt;p&gt;バーチャルコンソールでない GBA 用ソフトはもう新品では入手できない
