@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 25 May 2020 03:16:48 GMT</lastBuildDate><item><title><![CDATA[やさしいタオルを洗濯乾燥機で洗ってみました]]></title><description><![CDATA[…]]></description><link>https://ny-a.github.io/blog22020-05/washed-yasashii-towel/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-05/washed-yasashii-towel/</guid><pubDate>Mon, 25 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;書いてあった通り端が少し縮んでしまっていました。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 26 May 2020 12:30:05 GMT</lastBuildDate><item><title><![CDATA[GBA のノイズが気になる]]></title><description><![CDATA[…]]></description><link>https://ny-a.github.io/blog22020-05/gba-noise/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-05/gba-noise/</guid><pubDate>Tue, 26 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;スピーカーでプレイしていると気にならなかったのですが、
+イヤホンでプレイすると低音のノイズが気になりますね……。&lt;/p&gt;
+&lt;p&gt;音量を上げてもノイズ自体の音量レベルは上がらないようなので、
+音量を下げるような延長ケーブルを使えばノイズは一応改善しそう
+ですね。&lt;/p&gt;
+&lt;p&gt;既存の音量ボリュームを生かしながら音質の改善ができれば
+いいのですが……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[やさしいタオルを洗濯乾燥機で洗ってみました]]></title><description><![CDATA[…]]></description><link>https://ny-a.github.io/blog22020-05/washed-yasashii-towel/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-05/washed-yasashii-towel/</guid><pubDate>Mon, 25 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;書いてあった通り端が少し縮んでしまっていました。&lt;/p&gt;
 &lt;p&gt;手元にアイロンがないので (ヘアアイロンはありますが……)、
 手で伸ばしてみたところ、なんかいい感じになったように
 思います。&lt;/p&gt;
