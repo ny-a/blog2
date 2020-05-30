@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 28 May 2020 15:25:36 GMT</lastBuildDate><item><title><![CDATA[RPi4 8GB 版が出ていました]]></title><description><![CDATA[ksy で見る限り1GB 版はまだ未定のようですが、公式サイトからは表記が消えていたので、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 30 May 2020 12:25:41 GMT</lastBuildDate><item><title><![CDATA[タオルのにおいを熱湯で取ってみます]]></title><description><![CDATA[…]]></description><link>https://ny-a.github.io/blog22020-05/clean-up-towel/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-05/clean-up-towel/</guid><pubDate>Sat, 30 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;大家族でもない限り (？)、洗濯を毎日するほど洗濯物は
+貯まらないと思いますが、私も洗濯機は毎日回していないので、
+タオルから嫌なにおいがしてくることがあります。&lt;/p&gt;
+&lt;p&gt;基本的に使ったタオルは広げてかけておくようにして、
+濡れた状態で細菌が繁殖するのは防ぐようにしているのですが、
+部屋干しや乾燥機だとそれでも完全に防ぎきれていません。&lt;/p&gt;
+&lt;p&gt;漂白剤を使う方法もありますが、ひとまず熱湯で漬け置きすると
+ある程度においが取れるというのを聞いたことがあるので、
+時々そうしているのですが、その後もすぐににおうように
+なってきていました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.1101.com/yasashikunaitowel/index.html&quot;&gt;ほぼ日刊イトイ新聞 - 「やさしくないタオル」のつくりかた。&lt;/a&gt;
+で
+「タオルの繊維のなかに、洗剤、汚れ、水分が残されたままの状態」
+になっている、という記述があったので、今回は熱湯に
+漬け置きした後、(残った汚れを落とすように)よくすすいでから
+もう一度熱湯に漬け置きしてみました。&lt;/p&gt;
+&lt;p&gt;その後、洗濯が終わって乾燥中ですが、果たしてにおいは
+取れているのでしょうか……
+これで取れていなかったら漂白剤のお世話になろうと
+思います。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[RPi4 8GB 版が出ていました]]></title><description><![CDATA[ksy で見る限り1GB 版はまだ未定のようですが、公式サイトからは表記が消えていたので、
 1GB をやめて 8GB にしたのかもしれません。 8GB……もうメモリ容量だけで見ると通常の PC と同じようなレベルになってきましたね。
 ますます RPi…]]></description><link>https://ny-a.github.io/blog22020-05/rpi-4-8gb/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-05/rpi-4-8gb/</guid><pubDate>Fri, 29 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ksy で見る限り1GB 版はまだ未定のようですが、公式サイトからは表記が消えていたので、
 1GB をやめて 8GB にしたのかもしれません。&lt;/p&gt;
