@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 01 Jun 2020 19:45:12 GMT</lastBuildDate><item><title><![CDATA[やさしいタオルを追加で購入しました]]></title><description><![CDATA[また買っちゃいました。 今治タオルが割と最高峰？だと思っていたのですが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 03 Jun 2020 10:39:03 GMT</lastBuildDate><item><title><![CDATA[Google Pay の QUICPay 番号を聞かれました]]></title><description><![CDATA[QUICPay で購入後、商品の交換をお願いしたところ、QUICPay の番号を
+求められました。 GooglePay アプリからは下4桁しか表示されておらず、レシートも同じ
+表記だったため、一旦保留にしていただき調査したのですが、
+QUICPay…]]></description><link>https://ny-a.github.io/blog22020-06/google-pay-quicpay-number/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/google-pay-quicpay-number/</guid><pubDate>Wed, 03 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;QUICPay で購入後、商品の交換をお願いしたところ、QUICPay の番号を
+求められました。&lt;/p&gt;
+&lt;p&gt;GooglePay アプリからは下4桁しか表示されておらず、レシートも同じ
+表記だったため、一旦保留にしていただき調査したのですが、
+QUICPay の番号自体あまり普段から認識することもないため、
+確認する方法を見つけることができませんでした。&lt;/p&gt;
+&lt;p&gt;POS システムによって返品の方法は違うと思いますが、
+QUICPay の番号を求められたのは初めてだったので驚きました。&lt;/p&gt;
+&lt;p&gt;最終的にはタッチで返品→再決済できたので事無きを得ました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[やさしいタオルを追加で購入しました]]></title><description><![CDATA[また買っちゃいました。 今治タオルが割と最高峰？だと思っていたのですが、
 全然そんなことはなかったですね。 売り切れになっている柄は入荷しないんでしょうか？
 無地が欲しくなってきました。]]></description><link>https://ny-a.github.io/blog22020-06/bought-extra-yasashii-towel/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/bought-extra-yasashii-towel/</guid><pubDate>Tue, 02 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;また買っちゃいました。&lt;/p&gt;
 &lt;p&gt;今治タオルが割と最高峰？だと思っていたのですが、
