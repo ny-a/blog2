@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 03 Jun 2020 10:39:03 GMT</lastBuildDate><item><title><![CDATA[Google Pay の QUICPay 番号を聞かれました]]></title><description><![CDATA[QUICPay で購入後、商品の交換をお願いしたところ、QUICPay の番号を
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 04 Jun 2020 14:39:24 GMT</lastBuildDate><item><title><![CDATA[イトーヨカドーのクレジット決済手順]]></title><description><![CDATA[ヨーカドーでは、商品登録が終わった直後に CAT…]]></description><link>https://ny-a.github.io/blog22020-06/itoyokado-credit-payment/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/itoyokado-credit-payment/</guid><pubDate>Thu, 04 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ヨーカドーでは、商品登録が終わった直後に CAT に「クレジット」と
+表示されて、クレジットカードを受け付ける状態になっていますが、
+この状態では決済できないようでした。&lt;/p&gt;
+&lt;p&gt;他の方の決済を見ていると、セブンアンドアイ系列のカードを差し込んで
+いる方を見ることがあるので、ポイント関連の処理なんでしょうか。&lt;/p&gt;
+&lt;p&gt;商品登録後は客側からの操作だけで完結すれば楽なのになあ……。なんて
+思っています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Google Pay の QUICPay 番号を聞かれました]]></title><description><![CDATA[QUICPay で購入後、商品の交換をお願いしたところ、QUICPay の番号を
 求められました。 GooglePay アプリからは下4桁しか表示されておらず、レシートも同じ
 表記だったため、一旦保留にしていただき調査したのですが、
 QUICPay…]]></description><link>https://ny-a.github.io/blog22020-06/google-pay-quicpay-number/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/google-pay-quicpay-number/</guid><pubDate>Wed, 03 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;QUICPay で購入後、商品の交換をお願いしたところ、QUICPay の番号を
