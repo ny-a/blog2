@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 06 Jun 2020 03:04:41 GMT</lastBuildDate><item><title><![CDATA[Kusakata.bot2 を倒せない]]></title><description><![CDATA[ArchWiki-jp 上初？なんですかね？連続編集回数が100回になっていました。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 06 Jun 2020 15:39:23 GMT</lastBuildDate><item><title><![CDATA[DHL で個人輸入の税金を支払いました]]></title><description><![CDATA[海外の通販サイトから商品を購入すると、輸入の際に消費税などの支払いが必要になりますが、
+DHL での配送の場合は DHL で税金の支払い代行サービスを利用することができます。 まず、DHL…]]></description><link>https://ny-a.github.io/blog22020-06/pay-tax-via-dhl/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/pay-tax-via-dhl/</guid><pubDate>Sun, 07 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;海外の通販サイトから商品を購入すると、輸入の際に消費税などの支払いが必要になりますが、
+DHL での配送の場合は DHL で税金の支払い代行サービスを利用することができます。&lt;/p&gt;
+&lt;p&gt;まず、DHL の追跡番号で状態を確認すると、支払いが必要である旨が表示されます。
+チャットでの問い合わせなどで追跡番号を伝え、クレジットカードで支払いたいと
+伝えるとメールでリンクが送られてきます。
+そのサイトでクレジットカード決済をすると、あとは通常と同じように DHL で配送されます。&lt;/p&gt;
+&lt;p&gt;チャットで問い合わせする際も親切に教えていただきとてもよかったです。
+手数料がある程度必要ですが、かなり手軽に購入・支払いができるので
+便利に利用させていただこうと思っています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Kusakata.bot2 を倒せない]]></title><description><![CDATA[ArchWiki-jp 上初？なんですかね？連続編集回数が100回になっていました。
 bot の、ですが。 今まで bot の連続記録が途切れていた原因って何なんでしょうか。
 このままでは永遠に bot…]]></description><link>https://ny-a.github.io/blog22020-06/can-not-beat-bot/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/can-not-beat-bot/</guid><pubDate>Sat, 06 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ArchWiki-jp 上初？なんですかね？連続編集回数が100回になっていました。
 bot の、ですが。&lt;/p&gt;
