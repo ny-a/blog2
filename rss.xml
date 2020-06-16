@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 16 Jun 2020 14:21:09 GMT</lastBuildDate><item><title><![CDATA[ArchWeb-jp にレビューのボットが追加されていました]]></title><description><![CDATA[ArchWeb に新しいニュースが追加されると、それを翻訳して ArchWeb-jp に
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 16 Jun 2020 15:05:35 GMT</lastBuildDate><item><title><![CDATA[Fitbit から普通の腕時計に変えました]]></title><description><![CDATA[しばらく Fitbit をつけて生活していたのですが、新しい腕時計を買って
+つけてみたら満足してしまったので Fitbit をつけなくなりました。 時間が常に表示されているとやっぱり違うものですね。
+Apple watch…]]></description><link>https://ny-a.github.io/blog22020-06/unsmartize-watch/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/unsmartize-watch/</guid><pubDate>Wed, 17 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;しばらく Fitbit をつけて生活していたのですが、新しい腕時計を買って
+つけてみたら満足してしまったので Fitbit をつけなくなりました。&lt;/p&gt;
+&lt;p&gt;時間が常に表示されているとやっぱり違うものですね。
+Apple watch で常時表示ができるようになったときも同じような感想を
+よく見かけましたが、確かに……となりました。&lt;/p&gt;
+&lt;p&gt;Wena wrist も検討していたのですが、スマートフォンを持たずに
+出かけたり買い物をしたりすることもあまりないので、とりあえずは
+不要かなと思っています。&lt;/p&gt;
+&lt;p&gt;通知機能は……今のところ通知に常に即座に対応しなければいけないわけでは
+ないため不要かなと思いはじめました。仕事中なんかはスマートフォンの
+通知に気付かないことはないですし。&lt;/p&gt;
+&lt;p&gt;ただ、もっと Suica に対応しているスマートウォッチの選択肢が増えて
+ほしいなとは思います。wena……&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ArchWeb-jp にレビューのボットが追加されていました]]></title><description><![CDATA[ArchWeb に新しいニュースが追加されると、それを翻訳して ArchWeb-jp に
 PullRequest…]]></description><link>https://ny-a.github.io/blog22020-06/archweb-review-bot/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/archweb-review-bot/</guid><pubDate>Tue, 16 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ArchWeb に新しいニュースが追加されると、それを翻訳して ArchWeb-jp に
 PullRequest を投げるわけですが、確かにレビュー側からすると原文や
 機械翻訳の内容と比較できる方が親切でしたね……。&lt;/p&gt;
