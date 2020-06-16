@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 15 Jun 2020 04:12:52 GMT</lastBuildDate><item><title><![CDATA[pacman の --overwrite についてよく分かっていない]]></title><description><![CDATA[pacman の —overwrite…]]></description><link>https://ny-a.github.io/blog22020-06/pacman-overwrite/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/pacman-overwrite/</guid><pubDate>Mon, 15 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;pacman の —overwrite オプションは滅多に使わないですが、パッケージが
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 16 Jun 2020 14:21:09 GMT</lastBuildDate><item><title><![CDATA[ArchWeb-jp にレビューのボットが追加されていました]]></title><description><![CDATA[ArchWeb に新しいニュースが追加されると、それを翻訳して ArchWeb-jp に
+PullRequest…]]></description><link>https://ny-a.github.io/blog22020-06/archweb-review-bot/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/archweb-review-bot/</guid><pubDate>Tue, 16 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ArchWeb に新しいニュースが追加されると、それを翻訳して ArchWeb-jp に
+PullRequest を投げるわけですが、確かにレビュー側からすると原文や
+機械翻訳の内容と比較できる方が親切でしたね……。&lt;/p&gt;
+&lt;p&gt;こういうサポートをぱっと思いついて実装できるのってすごいなあと
+思いました。&lt;/p&gt;
+&lt;p&gt;あと、sqlint ははじめて知りました。あんまり SQLite 使わないので
+調べたことがありませんでした……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[pacman の --overwrite についてよく分かっていない]]></title><description><![CDATA[pacman の —overwrite…]]></description><link>https://ny-a.github.io/blog22020-06/pacman-overwrite/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/pacman-overwrite/</guid><pubDate>Mon, 15 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;pacman の —overwrite オプションは滅多に使わないですが、パッケージが
 壊れてしまったときなどには使うことがあります。&lt;/p&gt;
 &lt;p&gt;ただ、ワイルドカードがどのように解決されていて、ディレクトリを再帰的に
 含めてくれるのか……などは分かっていません。&lt;/p&gt;
