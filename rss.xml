@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 18 Jun 2020 16:09:48 GMT</lastBuildDate><item><title><![CDATA[Amazon の延長保証の申請をしました]]></title><description><![CDATA[ディスプレイが壊れたので保証申請をしてみました。 Amazon に購入情報を確認するのに1週間程度かかるようなので、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 19 Jun 2020 16:52:27 GMT</lastBuildDate><item><title><![CDATA[COVID-19 接触確認アプリが配信されました]]></title><description><![CDATA[COVID-19 の感染が確認された人との接触履歴を通知してくれるアプリの
+配信が開始されました。 Play ストアは配信開始申請？をしてから実際に配信が開始されるまで…]]></description><link>https://ny-a.github.io/blog22020-06/cocoa-app/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/cocoa-app/</guid><pubDate>Sat, 20 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;COVID-19 の感染が確認された人との接触履歴を通知してくれるアプリの
+配信が開始されました。&lt;/p&gt;
+&lt;p&gt;Play ストアは配信開始申請？をしてから実際に配信が開始されるまで
+4時間近くかかったということでしょうか。
+今まであまり時間まで指定して配信開始というリリースを見たことが
+ないので分からないですが……。&lt;/p&gt;
+&lt;p&gt;というか、時間まで出しておく必要はあるのでしょうか？
+実際に配信が開始されてから twitter などで告知すればほとんどの場合
+十分なように思いました。&lt;/p&gt;
+&lt;p&gt;まあ、厚労省が twitter で配信されたよ〜って告知するかと言われれば……
+ですが。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Amazon の延長保証の申請をしました]]></title><description><![CDATA[ディスプレイが壊れたので保証申請をしてみました。 Amazon に購入情報を確認するのに1週間程度かかるようなので、
 しばらくは壊れたディスプレイと同棲することになりそうです。]]></description><link>https://ny-a.github.io/blog22020-06/amazon-extended-warranty/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/amazon-extended-warranty/</guid><pubDate>Fri, 19 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ディスプレイが壊れたので保証申請をしてみました。&lt;/p&gt;
 &lt;p&gt;Amazon に購入情報を確認するのに1週間程度かかるようなので、
 しばらくは壊れたディスプレイと同棲することになりそうです。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[subscribe の意味]]></title><description><![CDATA[subscribe という英単語を購読するという意味と認識していたのですが、
