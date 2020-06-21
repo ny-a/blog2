@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 19 Jun 2020 16:52:27 GMT</lastBuildDate><item><title><![CDATA[COVID-19 接触確認アプリが配信されました]]></title><description><![CDATA[COVID-19 の感染が確認された人との接触履歴を通知してくれるアプリの
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 21 Jun 2020 00:47:16 GMT</lastBuildDate><item><title><![CDATA[GU とエヴァのコラボ T シャツが売っていました]]></title><description><![CDATA[ユニクロの UT でエヴァの T シャツがあるのは知っていたのですが、
+GU からも出ていることを知りました。 ただ、行った御徒町の GU はあまり種類がなかったように思いました。
+西側の方が品揃えよかったりするんですかね？]]></description><link>https://ny-a.github.io/blog22020-06/collaboration-of-gu-and-eva/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/collaboration-of-gu-and-eva/</guid><pubDate>Sun, 21 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ユニクロの UT でエヴァの T シャツがあるのは知っていたのですが、
+GU からも出ていることを知りました。&lt;/p&gt;
+&lt;p&gt;ただ、行った御徒町の GU はあまり種類がなかったように思いました。
+西側の方が品揃えよかったりするんですかね？&lt;/p&gt;</content:encoded></item><item><title><![CDATA[COVID-19 接触確認アプリが配信されました]]></title><description><![CDATA[COVID-19 の感染が確認された人との接触履歴を通知してくれるアプリの
 配信が開始されました。 Play ストアは配信開始申請？をしてから実際に配信が開始されるまで…]]></description><link>https://ny-a.github.io/blog22020-06/cocoa-app/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/cocoa-app/</guid><pubDate>Sat, 20 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;COVID-19 の感染が確認された人との接触履歴を通知してくれるアプリの
 配信が開始されました。&lt;/p&gt;
 &lt;p&gt;Play ストアは配信開始申請？をしてから実際に配信が開始されるまで
