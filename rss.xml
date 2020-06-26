@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 24 Jun 2020 16:06:19 GMT</lastBuildDate><item><title><![CDATA[GitHub の新しいインターフェース]]></title><description><![CDATA[twitter アカウント欄が追加されたりして、GitHub のインターフェースが
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 26 Jun 2020 15:14:48 GMT</lastBuildDate><item><title><![CDATA[渋谷駅の埼京線のホームを見てきました]]></title><description><![CDATA[ホームが移動した渋谷駅の埼京線ホームを見てきました。
+確かに前は遠かった記憶があるので、横並びになって
+近くなってよかったですね。 といってもあまり使いませんが……。]]></description><link>https://ny-a.github.io/blog22020-06/shibuya-saikyo-line/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/shibuya-saikyo-line/</guid><pubDate>Fri, 26 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ホームが移動した渋谷駅の埼京線ホームを見てきました。
+確かに前は遠かった記憶があるので、横並びになって
+近くなってよかったですね。&lt;/p&gt;
+&lt;p&gt;といってもあまり使いませんが……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[GitHub の新しいインターフェース]]></title><description><![CDATA[twitter アカウント欄が追加されたりして、GitHub のインターフェースが
 新しくなったようですが、contribution の芝の色も少し変わったように
 思いました。 ただ、個人的には前の方がよかったかな……と思いました。]]></description><link>https://ny-a.github.io/blog22020-06/github-new-interface/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/github-new-interface/</guid><pubDate>Thu, 25 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;twitter アカウント欄が追加されたりして、GitHub のインターフェースが
 新しくなったようですが、contribution の芝の色も少し変わったように
