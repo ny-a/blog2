@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 26 Jun 2020 15:14:48 GMT</lastBuildDate><item><title><![CDATA[渋谷駅の埼京線のホームを見てきました]]></title><description><![CDATA[ホームが移動した渋谷駅の埼京線ホームを見てきました。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 27 Jun 2020 00:55:55 GMT</lastBuildDate><item><title><![CDATA[ARM が搭載される新しい Mac]]></title><description><![CDATA[新しい Mac には Intel というか x86_64 アーキテクチャではなく
+ARM64 アーキテクチャのプロセッサが搭載されるというようなことを
+知りました。 しばらくは Mac を買うつもりはないのであまり関心はないのですが、
+arm…]]></description><link>https://ny-a.github.io/blog22020-06/new-mac-with-arm/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/new-mac-with-arm/</guid><pubDate>Sat, 27 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;新しい Mac には Intel というか x86_64 アーキテクチャではなく
+ARM64 アーキテクチャのプロセッサが搭載されるというようなことを
+知りました。&lt;/p&gt;
+&lt;p&gt;しばらくは Mac を買うつもりはないのであまり関心はないのですが、
+arm の開発用マシンのシェアが増えて OSS のバイナリなんかの提供率が
+上がれば嬉しいなとは思いました。&lt;/p&gt;
+&lt;p&gt;OSS のプロジェクトだと CI や配布が無料なサービスもあるので、
+依存を解決したりビルドスクリプトを書くくらいでそこまで大変では
+ないと思っています。&lt;/p&gt;
+&lt;p&gt;まあただ arm でどこまでパワフルな処理ができるかは知らないので、
+そのあたりが十分だと嬉しそうだなと思いました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[渋谷駅の埼京線のホームを見てきました]]></title><description><![CDATA[ホームが移動した渋谷駅の埼京線ホームを見てきました。
 確かに前は遠かった記憶があるので、横並びになって
 近くなってよかったですね。 といってもあまり使いませんが……。]]></description><link>https://ny-a.github.io/blog22020-06/shibuya-saikyo-line/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/shibuya-saikyo-line/</guid><pubDate>Fri, 26 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ホームが移動した渋谷駅の埼京線ホームを見てきました。
 確かに前は遠かった記憶があるので、横並びになって
