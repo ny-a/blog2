@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 27 Jun 2020 00:55:55 GMT</lastBuildDate><item><title><![CDATA[ARM が搭載される新しい Mac]]></title><description><![CDATA[新しい Mac には Intel というか x86_64 アーキテクチャではなく
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 28 Jun 2020 00:50:23 GMT</lastBuildDate><item><title><![CDATA[Amazon の ヤマト延長保障のメールが届いていました]]></title><description><![CDATA[Amazon の延長保障の申請をした後、しばらく待っても音沙汰がないと思っていたのですが、
+Amazon のメッセージで Amazon に登録しているアドレスに連絡が来ていました。 また、電車に乗っていたので出られなかったのですが、それから…]]></description><link>https://ny-a.github.io/blog22020-06/amazon-extended-warranty-mail/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/amazon-extended-warranty-mail/</guid><pubDate>Sun, 28 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Amazon の延長保障の申請をした後、しばらく待っても音沙汰がないと思っていたのですが、
+Amazon のメッセージで Amazon に登録しているアドレスに連絡が来ていました。&lt;/p&gt;
+&lt;p&gt;また、電車に乗っていたので出られなかったのですが、それから1週間程度経ったあとに
+電話が掛かってきました。&lt;/p&gt;
+&lt;p&gt;メールに返信したのでこれから手続きが進むことを期待していますが、また Amazon の
+メールアドレスに届くのでしょうか。&lt;/p&gt;
+&lt;p&gt;メールアドレスの変更をすればいいんですけどね……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ARM が搭載される新しい Mac]]></title><description><![CDATA[新しい Mac には Intel というか x86_64 アーキテクチャではなく
 ARM64 アーキテクチャのプロセッサが搭載されるというようなことを
 知りました。 しばらくは Mac を買うつもりはないのであまり関心はないのですが、
 arm…]]></description><link>https://ny-a.github.io/blog22020-06/new-mac-with-arm/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-06/new-mac-with-arm/</guid><pubDate>Sat, 27 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;新しい Mac には Intel というか x86_64 アーキテクチャではなく
