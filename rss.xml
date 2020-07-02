@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 02 Jul 2020 18:18:31 GMT</lastBuildDate><item><title><![CDATA[マイナポイントへの JRE POINT の申し込み方法]]></title><description><![CDATA[マイナポイントはポイント事業者？側から申し込むこともできると
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 02 Jul 2020 18:25:09 GMT</lastBuildDate><item><title><![CDATA[クレジットカード決済時の暗証番号からのフォールバック]]></title><description><![CDATA[最近クレジットカードの暗証番号を乱数に変更したのですが、
+見事に忘れてしまい、レジで困ったのですが、
+店舗によってはサイン取引にさせていただけるようでした。 先日「暗証番号を忘れたのでサインにさせて欲しい」と
+言っている方を見かけた際は、店員さんに断られていたので、
+IC…]]></description><link>https://ny-a.github.io/blog22020-07/credit-card-sign-fallback/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-07/credit-card-sign-fallback/</guid><pubDate>Fri, 03 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;最近クレジットカードの暗証番号を乱数に変更したのですが、
+見事に忘れてしまい、レジで困ったのですが、
+店舗によってはサイン取引にさせていただけるようでした。&lt;/p&gt;
+&lt;p&gt;先日「暗証番号を忘れたのでサインにさせて欲しい」と
+言っている方を見かけた際は、店員さんに断られていたので、
+IC 取引のときは暗証番号でしか認証できないのかと思っていました。
+しかし、今回は、暗証番号を入力せずに確定を押すことで、
+wacom のペンタブレットによるサイン取引にフォールバックして
+決済を完了することができました。&lt;/p&gt;
+&lt;p&gt;サイン用タブレットなどの設備があるかどうかによって
+変わるんでしょうか。まともな (？) カード決済端末は
+あまり使ったことがないのでよく分かっていません。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[マイナポイントへの JRE POINT の申し込み方法]]></title><description><![CDATA[マイナポイントはポイント事業者？側から申し込むこともできると
 いうことを見かけたので、JRE POINT で調べてみたところ、
 JRE POINT 側からの申し込みにも対応する予定とのことでした。 具体的には、9月以降にセブン銀行 ATM で Suica…]]></description><link>https://ny-a.github.io/blog22020-07/myna-point-with-jre-point/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-07/myna-point-with-jre-point/</guid><pubDate>Thu, 02 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;マイナポイントはポイント事業者？側から申し込むこともできると
 いうことを見かけたので、JRE POINT で調べてみたところ、
