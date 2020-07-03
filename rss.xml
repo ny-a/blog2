@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 02 Jul 2020 18:25:09 GMT</lastBuildDate><item><title><![CDATA[クレジットカード決済時の暗証番号からのフォールバック]]></title><description><![CDATA[最近クレジットカードの暗証番号を乱数に変更したのですが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Jul 2020 16:02:08 GMT</lastBuildDate><item><title><![CDATA[若者言葉]]></title><description><![CDATA[…]]></description><link>https://ny-a.github.io/blog22020-07/young-wording/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-07/young-wording/</guid><pubDate>Sat, 04 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;銀行で手続きをしてきたのですが、対応していただいた行員の方の
+言葉遣いが少し気になりました。&lt;/p&gt;
+&lt;p&gt;まず、本人確認で身分証の顔写真の確認で、マスクを「一瞬」外すように
+言われました。まあそれは一瞬だったのでよかったのですが、
+キャッシュカードの再発行の説明のとき、カードを「一瞬」預かって
+更新カードを郵送する、と言われました。&lt;/p&gt;
+&lt;p&gt;私もそこまで年齢は変わらないと思いますし、一瞬という言葉も使うことは
+あるのでそこまで気になったり直してほしいと思ったりはしないのですが、
+郵送は一瞬ではないのでは……と思いました。&lt;/p&gt;
+&lt;p&gt;あと窓口でネットバンクのログインをすることになったのも少し驚きました。
+本人確認しているので ID とパスワードなしでログインできてもいいような
+気もしますが……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[クレジットカード決済時の暗証番号からのフォールバック]]></title><description><![CDATA[最近クレジットカードの暗証番号を乱数に変更したのですが、
 見事に忘れてしまい、レジで困ったのですが、
 店舗によってはサイン取引にさせていただけるようでした。 先日「暗証番号を忘れたのでサインにさせて欲しい」と
 言っている方を見かけた際は、店員さんに断られていたので、
