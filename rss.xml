@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 11 Jul 2020 03:25:54 GMT</lastBuildDate><item><title><![CDATA[ATM の千円両替ボタン]]></title><description><![CDATA[最近は現金を使うこともかなり減ってきていて、ATM を使うことも
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 11 Jul 2020 15:19:41 GMT</lastBuildDate><item><title><![CDATA[ArchWiki-jp の連続編集が100日になりました]]></title><description><![CDATA[何度かヒヤヒヤしましたが、途切れなくてよかったです。 まあ、これからも騙し騙し続けていきますが……、
+初期のようにうまく時間を確保できていないので、1日
+1セクションのような感じが続くかもしれません。 引き続きよろしくお願いいたします。]]></description><link>https://ny-a.github.io/blog22020-07/arch-wiki-jp-streak/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-07/arch-wiki-jp-streak/</guid><pubDate>Sun, 12 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;何度かヒヤヒヤしましたが、途切れなくてよかったです。&lt;/p&gt;
+&lt;p&gt;まあ、これからも騙し騙し続けていきますが……、
+初期のようにうまく時間を確保できていないので、1日
+1セクションのような感じが続くかもしれません。&lt;/p&gt;
+&lt;p&gt;引き続きよろしくお願いいたします。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ATM の千円両替ボタン]]></title><description><![CDATA[最近は現金を使うこともかなり減ってきていて、ATM を使うことも
 ほとんどなくなってきましたが、0ではありません。 1万円札だけしか持っていないと面倒なこともあるので、ある程度の
 千円札を財布に入れているようにしているのですが、
 普段千円札が欲しいときは…]]></description><link>https://ny-a.github.io/blog22020-07/change-into-1000-yen/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-07/change-into-1000-yen/</guid><pubDate>Sat, 11 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;最近は現金を使うこともかなり減ってきていて、ATM を使うことも
