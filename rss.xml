@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 22 Jul 2020 15:25:14 GMT</lastBuildDate><item><title><![CDATA[4連休]]></title><description><![CDATA[今日から4連休ですね。実感はありませんが。 いくつか電話しないといけない手続きがあったのですが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 23 Jul 2020 16:55:49 GMT</lastBuildDate><item><title><![CDATA[仮想コンソールの切り替えで画面が乱れる]]></title><description><![CDATA[普段は Linux デスクトップを使用しているため、
+Linux の仮想コンソールを使うことは少ないのですが、
+時々使用します。そういうとき、大抵は screen などの
+マルチプレクサを使うことが多いですが、
+Ctrl+Alt+F1-…]]></description><link>https://ny-a.github.io/blog22020-07/change-virtual-console/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-07/change-virtual-console/</guid><pubDate>Fri, 24 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;普段は Linux デスクトップを使用しているため、
+Linux の仮想コンソールを使うことは少ないのですが、
+時々使用します。そういうとき、大抵は screen などの
+マルチプレクサを使うことが多いですが、
+Ctrl+Alt+F1-6 を使って仮想コンソールを切り替えることも
+時々あります。&lt;/p&gt;
+&lt;p&gt;こういった切り替えがカーネルでどのように扱われているのか
+までは調べていないのですが、Intel Graphics 620 を搭載した
+ノート PC でこの切り替えをしていると、eDP で接続された
+内蔵ディスプレイが固まってしまう現象に遭遇しました。&lt;/p&gt;
+&lt;p&gt;Intel Graphics 620 を搭載している他のノート PC では
+この現象は起きないようなので、他の部分が原因なのかもしれませんが、
+検索してみても同じような症状は見かけませんでした。&lt;/p&gt;
+&lt;p&gt;スリープに入ったり再起動すると一応は復旧するため、
+とりあえずの使用は問題ないのですが、画面が暗いとチラついたり
+するようになってしまっており、ハードウェアへのダメージが心配に
+なっています。&lt;/p&gt;
+&lt;p&gt;Windows で再現できれば修理依頼をしようと思っているのですが、
+今のところどうも Linux 側の問題のような気がしています……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[4連休]]></title><description><![CDATA[今日から4連休ですね。実感はありませんが。 いくつか電話しないといけない手続きがあったのですが、
 すっかり忘れたまま週末になってしまいました。
 来週忘れないように済ませようと思います。]]></description><link>https://ny-a.github.io/blog22020-07/4-days-holiday/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-07/4-days-holiday/</guid><pubDate>Thu, 23 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;今日から4連休ですね。実感はありませんが。&lt;/p&gt;
 &lt;p&gt;いくつか電話しないといけない手続きがあったのですが、
