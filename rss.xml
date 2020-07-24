@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 23 Jul 2020 16:55:49 GMT</lastBuildDate><item><title><![CDATA[仮想コンソールの切り替えで画面が乱れる]]></title><description><![CDATA[普段は Linux デスクトップを使用しているため、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 24 Jul 2020 16:01:06 GMT</lastBuildDate><item><title><![CDATA[GRUB の LUKS サポート]]></title><description><![CDATA[GRUB が LUKS 1のみサポートしていることをすっかり忘れていて、
+久しぶりに Arch のインストールをする際にハマってしまいました。 LUKS 2サポートはまだリリースされていないようで、現在 pacman から
+インストールできるバージョンでは LUKS…]]></description><link>https://ny-a.github.io/blog22020-07/grub-luks/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-07/grub-luks/</guid><pubDate>Sat, 25 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;GRUB が LUKS 1のみサポートしていることをすっかり忘れていて、
+久しぶりに Arch のインストールをする際にハマってしまいました。&lt;/p&gt;
+&lt;p&gt;LUKS 2サポートはまだリリースされていないようで、現在 pacman から
+インストールできるバージョンでは LUKS 1のみが使用できるようです。
+LUKS 2を使用すると、暗号化パーティションとして認識されず、root
+パーティションが認識されなくなってしまいます。&lt;/p&gt;
+&lt;p&gt;wiki の記述通り、&lt;code class=&quot;language-text&quot;&gt;--type luks1&lt;/code&gt; を付けてフォーマットするときちんと
+認識されるようになりました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[仮想コンソールの切り替えで画面が乱れる]]></title><description><![CDATA[普段は Linux デスクトップを使用しているため、
 Linux の仮想コンソールを使うことは少ないのですが、
 時々使用します。そういうとき、大抵は screen などの
 マルチプレクサを使うことが多いですが、
