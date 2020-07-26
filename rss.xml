@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 25 Jul 2020 16:51:36 GMT</lastBuildDate><item><title><![CDATA[10GbE スイッチの価格]]></title><description><![CDATA[いつの間にか 10GbE スイッチの価格がポートあたり1万円を切るように
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 26 Jul 2020 15:34:00 GMT</lastBuildDate><item><title><![CDATA[Ryzen 搭載ノート PC のキャッシュバック]]></title><description><![CDATA[Ryzen 搭載ノート PC を購入したのでキャッシュバックキャンペーンに
+申し込んでいました。 ローソンで受け取ってみましたが、レジから出金するというのはあまり
+ないので慣れないですね。
+現金のやりとりなんかはセブン ATM…]]></description><link>https://ny-a.github.io/blog22020-07/ryzen-cashback/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-07/ryzen-cashback/</guid><pubDate>Mon, 27 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Ryzen 搭載ノート PC を購入したのでキャッシュバックキャンペーンに
+申し込んでいました。&lt;/p&gt;
+&lt;p&gt;ローソンで受け取ってみましたが、レジから出金するというのはあまり
+ないので慣れないですね。
+現金のやりとりなんかはセブン ATM が強いイメージがあるのですが、
+受け取りのサインなど対応できないのでしょうか。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[10GbE スイッチの価格]]></title><description><![CDATA[いつの間にか 10GbE スイッチの価格がポートあたり1万円を切るように
 なっていました。かなり導入しやすくなったのではないでしょうか。 といってもインターネット接続もまだ 10Gbps ではないですし、
 高速な NAS もないので導入するつもりはありませんが。]]></description><link>https://ny-a.github.io/blog22020-07/10gbe-switch/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-07/10gbe-switch/</guid><pubDate>Sun, 26 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;いつの間にか 10GbE スイッチの価格がポートあたり1万円を切るように
 なっていました。かなり導入しやすくなったのではないでしょうか。&lt;/p&gt;
