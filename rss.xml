@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 28 Jul 2020 17:03:37 GMT</lastBuildDate><item><title><![CDATA[Git 2.28 リリース]]></title><description><![CDATA[Git 2.28 がリリースされたようです。 個人的な注目ポイントは、switch サブコマンドのシェル補完が追加
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 31 Jul 2020 03:00:23 GMT</lastBuildDate><item><title><![CDATA[緊急地震速報]]></title><description><![CDATA[…]]></description><link>https://ny-a.github.io/blog22020-07/etws/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-07/etws/</guid><pubDate>Thu, 30 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;久しぶりに珍しく過大な警報が出ましたね。&lt;/p&gt;
+&lt;p&gt;基本的に地震は正確な予測ができないものだと思っていて、
+あくまで実験的な予報だと考えていたので、誤報については
+特に何も思っていません。&lt;/p&gt;
+&lt;p&gt;ただ、(もちろんデメリットもありますが)地震動の予報業務について
+もう少し裾野を広げて情報技術系の参入を促してみたらどうかなと
+いう気持ちはあります。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Git 2.28 リリース]]></title><description><![CDATA[Git 2.28 がリリースされたようです。 個人的な注目ポイントは、switch サブコマンドのシェル補完が追加
 されたことでしょうか……？と思ったのですが、手元の2.2…]]></description><link>https://ny-a.github.io/blog22020-07/git-2-28-release/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-07/git-2-28-release/</guid><pubDate>Wed, 29 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Git 2.28 がリリースされたようです。&lt;/p&gt;
 &lt;p&gt;個人的な注目ポイントは、switch サブコマンドのシェル補完が追加
 されたことでしょうか……？と思ったのですが、手元の2.27でも
