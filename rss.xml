@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 31 Jul 2020 03:00:23 GMT</lastBuildDate><item><title><![CDATA[緊急地震速報]]></title><description><![CDATA[…]]></description><link>https://ny-a.github.io/blog22020-07/etws/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-07/etws/</guid><pubDate>Thu, 30 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;久しぶりに珍しく過大な警報が出ましたね。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 31 Jul 2020 03:09:26 GMT</lastBuildDate><item><title><![CDATA[新しい PC への GPG キーの移動]]></title><description><![CDATA[新しい PC のセットアップや、使っている PC の再インストールで、
+環境を移行するときにはデータの移動が必要になりますが、
+GPG キーなどは安全に移動する必要がありそうです。 PC 間の機密情報の移動といえば、定期的にやっているはず (？) の
+GPG…]]></description><link>https://ny-a.github.io/blog22020-07/copying-gpg-keys/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-07/copying-gpg-keys/</guid><pubDate>Fri, 31 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;新しい PC のセットアップや、使っている PC の再インストールで、
+環境を移行するときにはデータの移動が必要になりますが、
+GPG キーなどは安全に移動する必要がありそうです。&lt;/p&gt;
+&lt;p&gt;PC 間の機密情報の移動といえば、定期的にやっているはず (？) の
+GPG キーの有効期限の更新と、それに伴う GPG キーのやりとりがあり、
+それ以外の情報は GPG で暗号化さえすればアップロードしておける
+(はず？) なので、GPG キーさえ普段の方法で受け渡しできれば
+問題ないですね。&lt;/p&gt;
+&lt;p&gt;まあ、YubiKey 使えばいい話なんですが、パスフレーズ打つ方が手軽で……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[緊急地震速報]]></title><description><![CDATA[…]]></description><link>https://ny-a.github.io/blog22020-07/etws/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-07/etws/</guid><pubDate>Thu, 30 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;久しぶりに珍しく過大な警報が出ましたね。&lt;/p&gt;
 &lt;p&gt;基本的に地震は正確な予測ができないものだと思っていて、
 あくまで実験的な予報だと考えていたので、誤報については
 特に何も思っていません。&lt;/p&gt;
