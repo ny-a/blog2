@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 03 Aug 2020 15:17:09 GMT</lastBuildDate><item><title><![CDATA[シャープの開発した適温蓄冷剤]]></title><description><![CDATA[sharp の開発した tekion という素材を知りました。 幅広い温度帯で一定の温度を保つことができる素材を
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 04 Aug 2020 15:53:23 GMT</lastBuildDate><item><title><![CDATA[ディスクイメージのバージョン管理]]></title><description><![CDATA[コードのバージョン管理は当たり前のようにしているのですが、
+コードとそれを動かす OS を全て含めたディスクイメージは
+なかなか管理が難しいなと思いました。 時代はサーバーレスのコードオンリーですが……。]]></description><link>https://ny-a.github.io/blog22020-08/version-control-of-image/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-08/version-control-of-image/</guid><pubDate>Wed, 05 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;コードのバージョン管理は当たり前のようにしているのですが、
+コードとそれを動かす OS を全て含めたディスクイメージは
+なかなか管理が難しいなと思いました。&lt;/p&gt;
+&lt;p&gt;時代はサーバーレスのコードオンリーですが……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[シャープの開発した適温蓄冷剤]]></title><description><![CDATA[sharp の開発した tekion という素材を知りました。 幅広い温度帯で一定の温度を保つことができる素材を
 作ったということで、sharp の研究開発はすごいなと
 思いました。]]></description><link>https://ny-a.github.io/blog22020-08/sharp-cool-keeper/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-08/sharp-cool-keeper/</guid><pubDate>Tue, 04 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;sharp の開発した tekion という素材を知りました。&lt;/p&gt;
 &lt;p&gt;幅広い温度帯で一定の温度を保つことができる素材を
