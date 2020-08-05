@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 04 Aug 2020 15:53:23 GMT</lastBuildDate><item><title><![CDATA[ディスクイメージのバージョン管理]]></title><description><![CDATA[コードのバージョン管理は当たり前のようにしているのですが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 05 Aug 2020 15:36:11 GMT</lastBuildDate><item><title><![CDATA[URxvt と uim の問題]]></title><description><![CDATA[普段 URxvt と uim を使っていて、時々 URxvt 上で日本語入力をするのですが、
+最近 URxvt 上で uim が有効にならないなと思っていました。 どうやら libx11 のバグ？のようでした。
+FS#6746…]]></description><link>https://ny-a.github.io/blog22020-08/urxvt-with-uim/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-08/urxvt-with-uim/</guid><pubDate>Thu, 06 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;普段 URxvt と uim を使っていて、時々 URxvt 上で日本語入力をするのですが、
+最近 URxvt 上で uim が有効にならないなと思っていました。&lt;/p&gt;
+&lt;p&gt;どうやら libx11 のバグ？のようでした。
+&lt;a href=&quot;https://bugs.archlinux.org/task/67461&quot;&gt;FS#67461&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;更新して再起動した後と思っていたときには改善していなくて、
+何度か再起動した後にいつのまにか直っていました。&lt;/p&gt;
+&lt;p&gt;時々しか使っていないですが、直ってよかったです。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ディスクイメージのバージョン管理]]></title><description><![CDATA[コードのバージョン管理は当たり前のようにしているのですが、
 コードとそれを動かす OS を全て含めたディスクイメージは
 なかなか管理が難しいなと思いました。 時代はサーバーレスのコードオンリーですが……。]]></description><link>https://ny-a.github.io/blog22020-08/version-control-of-image/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-08/version-control-of-image/</guid><pubDate>Wed, 05 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;コードのバージョン管理は当たり前のようにしているのですが、
 コードとそれを動かす OS を全て含めたディスクイメージは
