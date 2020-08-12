@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 11 Aug 2020 05:13:59 GMT</lastBuildDate><item><title><![CDATA[Dynabook が Sharp に買収されていました]]></title><description><![CDATA[いつのまにか Sharp に Dynabook を売却していたようです。 でも IGZO 搭載モデルは各社から出ているので、あまり検討は
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 12 Aug 2020 03:44:37 GMT</lastBuildDate><item><title><![CDATA[クリックしてから遷移するのが遅いリンク]]></title><description><![CDATA[PASMO のサイトを見ていたら、クリックしてから遷移するのが遅いのが
+気になりました。 他のサイトでもたまにありますが、普通の a 要素を使っていればこんなに
+遅延は発生しないはずです。 見てみると、span 要素を使っていて a 要素は使っていないようでした。
+vendor…]]></description><link>https://ny-a.github.io/blog22020-08/slow-link/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-08/slow-link/</guid><pubDate>Wed, 12 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;PASMO のサイトを見ていたら、クリックしてから遷移するのが遅いのが
+気になりました。&lt;/p&gt;
+&lt;p&gt;他のサイトでもたまにありますが、普通の a 要素を使っていればこんなに
+遅延は発生しないはずです。&lt;/p&gt;
+&lt;p&gt;見てみると、span 要素を使っていて a 要素は使っていないようでした。
+vendor.js には jQuery が入っていて、span 要素にはクリックイベントは
+付いていなかったので、jQuery 側でクリックイベントを拾って頑張っている
+感じなのでしょうか。&lt;/p&gt;
+&lt;p&gt;アクセシビリティの面からも問題があるような気がしていますし、
+ページ間遷移はできる限り a 要素を使いたいなと思いました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Dynabook が Sharp に買収されていました]]></title><description><![CDATA[いつのまにか Sharp に Dynabook を売却していたようです。 でも IGZO 搭載モデルは各社から出ているので、あまり検討は
 しないかなと思っています。]]></description><link>https://ny-a.github.io/blog22020-08/sharp-dynabook/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-08/sharp-dynabook/</guid><pubDate>Tue, 11 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;いつのまにか Sharp に Dynabook を売却していたようです。&lt;/p&gt;
 &lt;p&gt;でも IGZO 搭載モデルは各社から出ているので、あまり検討は
 しないかなと思っています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[マイナンバーカードと健康保険証]]></title><description><![CDATA[マイナンバーカードを健康保険証として使えるようになりますが、
