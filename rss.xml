@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 18 Aug 2020 15:00:02 GMT</lastBuildDate><item><title><![CDATA[containerd のバグ]]></title><description><![CDATA[昨日 containerd を更新したのですが、docker…]]></description><link>https://ny-a.github.io/blog22020-08/containerd-issue/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-08/containerd-issue/</guid><pubDate>Tue, 18 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;昨日 containerd を更新したのですが、docker で
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 19 Aug 2020 14:53:41 GMT</lastBuildDate><item><title><![CDATA[AUR の リクエストの調べ方]]></title><description><![CDATA[AUR のパッケージのページには、現在のリクエスト数が表示されていますが、
+リクエストの種類や内容は表示されていません。 使っているメーラーの検索機能があまり賢くないのか、
+aur-request…]]></description><link>https://ny-a.github.io/blog22020-08/aur-request/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-08/aur-request/</guid><pubDate>Wed, 19 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;AUR のパッケージのページには、現在のリクエスト数が表示されていますが、
+リクエストの種類や内容は表示されていません。&lt;/p&gt;
+&lt;p&gt;使っているメーラーの検索機能があまり賢くないのか、
+aur-request は購読しているものの検索してもうまく見つけられませんでした。&lt;/p&gt;
+&lt;p&gt;仕方がないので pipermail のアーカイブから検索して見つけました。
+できればリクエストの種類くらいは表示できたら……と思うので、
+時間のあるときに aur-web の当該部分のコードを見てみようと思っています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[containerd のバグ]]></title><description><![CDATA[昨日 containerd を更新したのですが、docker…]]></description><link>https://ny-a.github.io/blog22020-08/containerd-issue/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-08/containerd-issue/</guid><pubDate>Tue, 18 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;昨日 containerd を更新したのですが、docker で
 コンテナが起動できなくなってしまいました。&lt;/p&gt;
 &lt;p&gt;パッケージの問題だったようで、すぐに問題は修正されたの
 ですが、使っているミラーが古くなっていたようで、
