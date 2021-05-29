@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 23 Aug 2020 15:07:07 GMT</lastBuildDate><item><title><![CDATA[Amazon の翌日お急ぎ便]]></title><description><![CDATA[時々 Amazon で購入するのですが、都内に住んでいると
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 29 May 2021 15:37:32 GMT</lastBuildDate><item><title><![CDATA[RTTY のデコードを試してみました]]></title><description><![CDATA[セキュリティ・ネクストキャンプに応募しようと思うので、その講義の中で扱われる
+RTTY について少し試してみようと思いました。 講師の方のプロジェクトは imaoca/RTTY - GitHub にあります。 ここでは、サンプルの音声ファイルとして Wikipedia…]]></description><link>https://ny-a.github.io/blog22021-05/rtty/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-05/rtty/</guid><pubDate>Sat, 29 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;セキュリティ・ネクストキャンプに応募しようと思うので、その講義の中で扱われる
+RTTY について少し試してみようと思いました。&lt;/p&gt;
+&lt;p&gt;講師の方のプロジェクトは &lt;a href=&quot;https://github.com/imaoca/RTTY&quot;&gt;imaoca/RTTY - GitHub&lt;/a&gt; にあります。&lt;/p&gt;
+&lt;p&gt;ここでは、サンプルの音声ファイルとして Wikipedia の &lt;a href=&quot;https://en.wikipedia.org/wiki/File:RTTY.ogg&quot;&gt;RTTY.ogg&lt;/a&gt; を
+使用します。&lt;/p&gt;
+&lt;p&gt;ただ、このままでは使用できず、このプロジェクトのスクリプトで仮定されているフォーマットに
+変換する必要があります。&lt;/p&gt;
+&lt;p&gt;サクっと ffmpeg を使って 8KHz sampling, mono, 8bit quantization, and no sign な wav ファイルに
+変換しましょう。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;ffmpeg -i RTTY.ogg -ar 8k -c:a pcm_u8 -f wav rtty3s.wav&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;-i&lt;/code&gt; の後の ogg ファイルが入力、&lt;code class=&quot;language-text&quot;&gt;-ar&lt;/code&gt; がサンプリングレート、&lt;code class=&quot;language-text&quot;&gt;-c:a&lt;/code&gt; で量子化ビット数と符号なしを指定して、
+&lt;code class=&quot;language-text&quot;&gt;-f&lt;/code&gt; で wav フォーマットを指定、最後に出力先ファイル名です。&lt;/p&gt;
+&lt;p&gt;あとは README の Usage に従って、&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;python rtty8k.py &amp;gt; rtty.csv&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;を実行すれば、Excel なんかで読み込んでグラフ化することができるでしょう。&lt;/p&gt;
+&lt;h2&gt;詰まった所&lt;/h2&gt;
+&lt;p&gt;wav ファイルのフォーマットです。
+サンプリングレートについては、始めは元ファイルの48kHzのままにして、プログラム側のパラメータ修正で
+なんとかしていたのですが、フォーマットは pcm_s16le のままだとダメでした……。&lt;/p&gt;
+&lt;p&gt;普段 pcm_u8 なんて使わないので。。。README は穴が開くくらい読みましょうという感じでした。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Amazon の翌日お急ぎ便]]></title><description><![CDATA[時々 Amazon で購入するのですが、都内に住んでいると
 ほとんどの商品が翌日には届くのが当たり前のようになっています。。 ただ、帰省などで他の県などに滞在すると、余分に…]]></description><link>https://ny-a.github.io/blog22020-08/amazon-1day-express/</link><guid isPermaLink="false">https://ny-a.github.io/blog22020-08/amazon-1day-express/</guid><pubDate>Mon, 24 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;時々 Amazon で購入するのですが、都内に住んでいると
 ほとんどの商品が翌日には届くのが当たり前のようになっています。。&lt;/p&gt;
 &lt;p&gt;ただ、帰省などで他の県などに滞在すると、余分に1日程度
