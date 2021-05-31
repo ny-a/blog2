@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 30 May 2021 15:31:22 GMT</lastBuildDate><item><title><![CDATA[Docker 内で uim が使えました]]></title><description><![CDATA[前から Docker 内で Chromium などの GUI アプリケーションを動かそうと試みていたのですが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 31 May 2021 13:25:45 GMT</lastBuildDate><item><title><![CDATA[ChromiumをDockerコンテナ内で実行する]]></title><description><![CDATA[Chromium を Docker コンテナ内で安定して動かすことができるようになったので
+方法をメモしておきます。 ny-a/chrome-in-docker 上記リポジトリで  すれば済むのですが、解説します。  は chrome が namespace…]]></description><link>https://ny-a.github.io/blog22021-05/chrome-in-docker/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-05/chrome-in-docker/</guid><pubDate>Mon, 31 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Chromium を Docker コンテナ内で安定して動かすことができるようになったので
+方法をメモしておきます。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/ny-a/chrome-in-docker&quot;&gt;ny-a/chrome-in-docker&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;上記リポジトリで &lt;code class=&quot;language-text&quot;&gt;docker-compose up --build&lt;/code&gt; すれば済むのですが、解説します。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;SYS_ADMIN&lt;/code&gt; は chrome が namespace の操作権限を必要とするので付けています。
+&lt;code class=&quot;language-text&quot;&gt;--no-sandbox&lt;/code&gt; オプションをつけて chrome を起動することでも対処はできますが、非推奨です。
+どちらもないと、&lt;code class=&quot;language-text&quot;&gt;Failed to move to new namespace&lt;/code&gt; というエラーが出ます。
+(sysctl から設定を変更することでも可能なようですが、Arch標準のカーネルの設定で起動することを考えています。)
+参考: &lt;a href=&quot;https://github.com/jessfraz/dockerfiles/issues/350&quot;&gt;jessfraz/dockerfiles #350&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;network_mode: host&lt;/code&gt; は、ホストの X11 サーバーに直接ウィンドウを表示するために必要です。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;devices: /dev/snd&lt;/code&gt; があると音が出ます。環境によっては ALSA の設定なんかを Docker 内から
+見えるようにする必要があるかもしれません。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;${XAUTHORITY}:/home/user/.Xauthority&lt;/code&gt; ボリュームは、X11 の認証に必要です。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;DISPLAY&lt;/code&gt; 環境変数は、X11 サーバーが複数立ち上がっているときに区別するために必要です。
+まあほとんどの環境で &lt;code class=&quot;language-text&quot;&gt;:0&lt;/code&gt; にしておけば問題ないはずです。&lt;/p&gt;
+&lt;p&gt;docker-compose を使いたくなければ、&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker build . -t chrome
+docker run --rm -te DISPLAY=$DISPLAY --net host -v ~/.Xauthority:/home/user/.Xauthority chrome&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;みたいな感じでいけると思います。&lt;/p&gt;
+&lt;p&gt;日本語入力したかったらコンテナ内に IME 入れてください。ホストは関係ないので好きなやつを入れることが
+できます。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Docker 内で uim が使えました]]></title><description><![CDATA[前から Docker 内で Chromium などの GUI アプリケーションを動かそうと試みていたのですが、
 (当然ですが)日本語入力はホストのものを使えず、何か方法がないか探していました。 結局のところ、Docker 内にも uim…]]></description><link>https://ny-a.github.io/blog22021-05/uim-in-docker/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-05/uim-in-docker/</guid><pubDate>Sun, 30 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;前から Docker 内で Chromium などの GUI アプリケーションを動かそうと試みていたのですが、
 (当然ですが)日本語入力はホストのものを使えず、何か方法がないか探していました。&lt;/p&gt;
 &lt;p&gt;結局のところ、Docker 内にも uim をインストールすればきちんと動くようでした。
