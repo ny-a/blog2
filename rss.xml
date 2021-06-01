@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 31 May 2021 13:25:45 GMT</lastBuildDate><item><title><![CDATA[ChromiumをDockerコンテナ内で実行する]]></title><description><![CDATA[Chromium を Docker コンテナ内で安定して動かすことができるようになったので
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 01 Jun 2021 13:23:03 GMT</lastBuildDate><item><title><![CDATA[uimのビルドエラー]]></title><description><![CDATA[AUR の uim パッケージに、ビルドが失敗するという
+コメントをいただきました。 しかし、手元の Docker 環境でビルドしてみたところ、正常にビルドを完了することができました。 ビルドエラーは csi…]]></description><link>https://ny-a.github.io/blog22021-06/uim-build-error/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/uim-build-error/</guid><pubDate>Tue, 01 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;AUR の &lt;a href=&quot;https://aur.archlinux.org/packages/uim/&quot;&gt;uim&lt;/a&gt; パッケージに、ビルドが失敗するという
+コメントをいただきました。&lt;/p&gt;
+&lt;p&gt;しかし、手元の Docker 環境でビルドしてみたところ、正常にビルドを完了することができました。&lt;/p&gt;
+&lt;p&gt;ビルドエラーは csi というコマンドで発生しているようで、手元のビルド環境にはこの実行ファイルは
+存在していませんでした。
+&lt;code class=&quot;language-text&quot;&gt;Makefile.in&lt;/code&gt; ファイルを確認した所、ビルド時に &lt;code class=&quot;language-text&quot;&gt;csi&lt;/code&gt; 実行ファイルが存在していればそのコマンドが
+実行されるようになっていました。&lt;/p&gt;
+&lt;p&gt;Arch のパッケージで &lt;code class=&quot;language-text&quot;&gt;/usr/bin/csi&lt;/code&gt; が含まれているものを探してみると、&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ pacman -Fy
+$ pacman -F /usr/bin/csi
+usr/bin/csi is owned by extra/mono 6.12.0.107-1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;どうやら &lt;a href=&quot;https://archlinux.org/packages/extra/x86_64/mono/&quot;&gt;mono&lt;/a&gt; に含まれているようでした。
+&lt;code class=&quot;language-text&quot;&gt;error CS2006: Command-line syntax error: Missing &amp;#39;&amp;lt;text&amp;gt;&amp;#39; for &amp;#39;-R&amp;#39; option&lt;/code&gt; というエラーも、
+検索してみた限りでは mono のエラーと考えてよさそうです。&lt;/p&gt;
+&lt;p&gt;ただ、uim は mono に依存していないようなので、この csi は mono に含まれているバイナリを
+期待しているわけではなさそうです。GitHub の issue を探してみると、&lt;a href=&quot;https://github.com/uim/uim/issues/26&quot;&gt;#26&lt;/a&gt; で
+csi について言及されていました。
+これによると、Chicken Scheme のインタプリタが csi という名前のようです。&lt;/p&gt;
+&lt;p&gt;依存に含まれていない以上何とも言えないですが、上記の issue も閉じられていないようなので
+Chicken Scheme が実行可能でもエラーになってしまいそうな気がしました。&lt;/p&gt;
+&lt;p&gt;ひとまず、mono の入っていない環境では正常にビルドできそうです。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ChromiumをDockerコンテナ内で実行する]]></title><description><![CDATA[Chromium を Docker コンテナ内で安定して動かすことができるようになったので
 方法をメモしておきます。 ny-a/chrome-in-docker 上記リポジトリで  すれば済むのですが、解説します。  は chrome が namespace…]]></description><link>https://ny-a.github.io/blog22021-05/chrome-in-docker/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-05/chrome-in-docker/</guid><pubDate>Mon, 31 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Chromium を Docker コンテナ内で安定して動かすことができるようになったので
 方法をメモしておきます。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/ny-a/chrome-in-docker&quot;&gt;ny-a/chrome-in-docker&lt;/a&gt;&lt;/p&gt;
