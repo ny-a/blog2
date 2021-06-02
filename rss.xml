@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 01 Jun 2021 13:23:03 GMT</lastBuildDate><item><title><![CDATA[uimのビルドエラー]]></title><description><![CDATA[AUR の uim パッケージに、ビルドが失敗するという
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 02 Jun 2021 13:03:05 GMT</lastBuildDate><item><title><![CDATA[RTTY のデコードを試す(2)]]></title><description><![CDATA[前回生成した csv から、文字へのデコードを試してみます。 ゆくゆくはプログラム書いてデコードしたいですが、一旦コードの
+仕様確認なども兼ねて csv 上で挑戦します。 まず、0/1の2値化された値は、かなり安定しているようです。
+RTTYでは一般的に 45.45Baud…]]></description><link>https://ny-a.github.io/blog22021-06/rtty-2/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/rtty-2/</guid><pubDate>Wed, 02 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;前回生成した csv から、文字へのデコードを試してみます。&lt;/p&gt;
+&lt;p&gt;ゆくゆくはプログラム書いてデコードしたいですが、一旦コードの
+仕様確認なども兼ねて csv 上で挑戦します。&lt;/p&gt;
+&lt;p&gt;まず、0/1の2値化された値は、かなり安定しているようです。
+RTTYでは一般的に 45.45Baud を使用するようなので、
+8kHz だと 45.45 で割ると 176 フレームごとに1ビットという感じでしょうか。
+また、一般的に使われている文字コードは Baudot code で、5bit で表現されて
+いて、各文字にスタートビットとストップビットがそれぞれ1, 1.5ビットの長さで
+付加されているようです。&lt;/p&gt;
+&lt;p&gt;とりあえず、だいたい176回同じ値が連続するごとに区切ってみると、定期的に
+中途半端な部分が出てきそうです。
+試してみると……、めちゃめちゃ綺麗にアライメントされていて、半端なビットは
+なさそうでした。&lt;/p&gt;
+&lt;p&gt;早速困ってしまいましたが、今回のサンプルは幸い値が詳しくコメントされています。
+ほぼ反則ですが、一度文字の方からバイナリ列に当てはめて考えてみようかなと
+悩んでいます。&lt;/p&gt;
+&lt;p&gt;いや、それよりも FFT する方法で、諸々のパラメータが分からない場合にでも
+使用できるデコーダを書くのを先に進めた方がいいかもしれません。&lt;/p&gt;
+&lt;p&gt;まあ、何か重大なことを見落としているなんてこともしょっちゅうなので、
+諦めずに挑戦してみるのも大事かもしれません。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[uimのビルドエラー]]></title><description><![CDATA[AUR の uim パッケージに、ビルドが失敗するという
 コメントをいただきました。 しかし、手元の Docker 環境でビルドしてみたところ、正常にビルドを完了することができました。 ビルドエラーは csi…]]></description><link>https://ny-a.github.io/blog22021-06/uim-build-error/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/uim-build-error/</guid><pubDate>Tue, 01 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;AUR の &lt;a href=&quot;https://aur.archlinux.org/packages/uim/&quot;&gt;uim&lt;/a&gt; パッケージに、ビルドが失敗するという
 コメントをいただきました。&lt;/p&gt;
 &lt;p&gt;しかし、手元の Docker 環境でビルドしてみたところ、正常にビルドを完了することができました。&lt;/p&gt;
