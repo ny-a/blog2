@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 03 Jun 2021 10:26:40 GMT</lastBuildDate><item><title><![CDATA[GPU 上で FFT を計算する]]></title><description><![CDATA[GPU で何を計算するかのアイデアを探していたのですが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 04 Jun 2021 14:51:15 GMT</lastBuildDate><item><title><![CDATA[RTTY のデコードを試す(3)]]></title><description><![CDATA[前回生成した csv から、文字へのデコードを試してみます。(2回目) なんか調べてみると、ストップビットは1, 1.5, 2ビットのパターン？が
+あるようでした。
+サンプルのファイルには1.5ビットって書いてあったような気がしたのですが……。 まあ、気を取り直して、0→…]]></description><link>https://ny-a.github.io/blog22021-06/rtty-3/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/rtty-3/</guid><pubDate>Fri, 04 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;前回生成した csv から、文字へのデコードを試してみます。(2回目)&lt;/p&gt;
+&lt;p&gt;なんか調べてみると、ストップビットは1, 1.5, 2ビットのパターン？が
+あるようでした。
+サンプルのファイルには1.5ビットって書いてあったような気がしたのですが……。&lt;/p&gt;
+&lt;p&gt;まあ、気を取り直して、0→1または1→0に変化する箇所を抽出して、
+6ビット以内はデータと考えて無視すると、綺麗に7ビットごとに
+並んでいるようでした。ストップビットは1ビットだったようです。&lt;/p&gt;
+&lt;p&gt;あとはプログラムを書いて、データ部5ビットごとに区切って出力すれば、
+文字へデコードするのはかなり簡単になりそうですね。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[GPU 上で FFT を計算する]]></title><description><![CDATA[GPU で何を計算するかのアイデアを探していたのですが、
 よく考えたら FFT も GPU 上で計算できそうだと思って
 少し調べてみました。 すると、2次元 FFT の話題が多いようでした。
 2次元の周波数成分といえば、JPEG…]]></description><link>https://ny-a.github.io/blog22021-06/fft-on-gpu/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/fft-on-gpu/</guid><pubDate>Thu, 03 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;GPU で何を計算するかのアイデアを探していたのですが、
