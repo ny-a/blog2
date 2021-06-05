@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 04 Jun 2021 14:51:15 GMT</lastBuildDate><item><title><![CDATA[RTTY のデコードを試す(3)]]></title><description><![CDATA[前回生成した csv から、文字へのデコードを試してみます。(2回目) なんか調べてみると、ストップビットは1, 1.5, 2ビットのパターン？が
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 05 Jun 2021 12:23:32 GMT</lastBuildDate><item><title><![CDATA[Git-Mediawiki]]></title><description><![CDATA[ArchWiki の編集で割とつらいのが、編集が textarea…]]></description><link>https://ny-a.github.io/blog22021-06/git-mediawiki/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/git-mediawiki/</guid><pubDate>Sat, 05 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ArchWiki の編集で割とつらいのが、編集が textarea で行う必要があることです。
+普段はあまり気にならないですが、サイズの大きいページを編集する際などは
+レスポンスの悪さが気になることもあります。&lt;/p&gt;
+&lt;p&gt;これが、テキストファイルをテキストエディタで編集するようにできたら
+色々な問題が解決しそうです。また、revision の仕組みなどを考えると、
+git などでバージョン管理をしてあげると嬉しいかもしれません。&lt;/p&gt;
+&lt;p&gt;そこで、「git mediawiki」などで検索してみると、やりたいことズバリの
+&lt;a href=&quot;https://github.com/Git-Mediawiki/Git-Mediawiki&quot;&gt;Git-Mediawiki&lt;/a&gt; という
+プロジェクトを発見しました。&lt;/p&gt;
+&lt;p&gt;git は perl に依存しているので驚くことでもありませんが、Git-Mediawiki も
+perl で書かれていて、perl の依存のインストールが必要です。
+私は、各言語の依存パッケージでマシンの環境を汚したくないので、このような
+場合には Docker イメージに閉じ込めてしまう場合が多いです。
+いつも通り archlinux/archlinux ベースイメージから、git と各依存パッケージを
+インストールしてイメージを作成しました。&lt;/p&gt;
+&lt;p&gt;さて、早速 ArchWiki 日本語版を pull していきたいところですが、実際に
+やってみると途中で落ちます。author の特殊文字のエスケープが抜けていますね……。&lt;/p&gt;
+&lt;p&gt;あと、今まで気付いていなかったのですが、このプロジェクトは git-core に
+取り込まれているようです。知名度はそんなに高くない気がしますが、
+git コミッタの周りでの使用者が多いんでしょうか……。&lt;/p&gt;
+&lt;p&gt;とにかく、この場合パッチを送るのは git-core の方になりそうなので、
+git の &lt;a href=&quot;https://github.com/git/git/blob/master/Documentation/SubmittingPatches&quot;&gt;コントリビューションの方法&lt;/a&gt; を調べるところから始めないと
+いけないですね。&lt;/p&gt;
+&lt;p&gt;設定項目としては、標準では標準名前空間のみ対象としているため、ArchWiki の
+全ての名前空間を対象にするには、&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;git config remote.origin.namespaces &amp;quot;(Main) Talk User User_talk ArchWiki ArchWiki・トーク File File_talk MediaWiki MediaWiki_talk Template Template_talk Help Help_talk Category Category_talk&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;を実行する必要がありますね。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[RTTY のデコードを試す(3)]]></title><description><![CDATA[前回生成した csv から、文字へのデコードを試してみます。(2回目) なんか調べてみると、ストップビットは1, 1.5, 2ビットのパターン？が
 あるようでした。
 サンプルのファイルには1.5ビットって書いてあったような気がしたのですが……。 まあ、気を取り直して、0→…]]></description><link>https://ny-a.github.io/blog22021-06/rtty-3/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/rtty-3/</guid><pubDate>Fri, 04 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;前回生成した csv から、文字へのデコードを試してみます。(2回目)&lt;/p&gt;
 &lt;p&gt;なんか調べてみると、ストップビットは1, 1.5, 2ビットのパターン？が
