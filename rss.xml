@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 05 Jun 2021 12:23:32 GMT</lastBuildDate><item><title><![CDATA[Git-Mediawiki]]></title><description><![CDATA[ArchWiki の編集で割とつらいのが、編集が textarea…]]></description><link>https://ny-a.github.io/blog22021-06/git-mediawiki/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/git-mediawiki/</guid><pubDate>Sat, 05 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ArchWiki の編集で割とつらいのが、編集が textarea で行う必要があることです。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 06 Jun 2021 06:27:39 GMT</lastBuildDate><item><title><![CDATA[rpi-vcsmが更新されました]]></title><description><![CDATA[Idein/rpi-vcsm の issue #2 で
+vcsm-cma に対応していただけるとのことだったのですが、今日 GitHub…]]></description><link>https://ny-a.github.io/blog22021-06/rpi-vcsm/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/rpi-vcsm/</guid><pubDate>Sun, 06 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://github.com/Idein/rpi-vcsm&quot;&gt;Idein/rpi-vcsm&lt;/a&gt; の &lt;a href=&quot;https://github.com/Idein/rpi-vcsm/issues/2&quot;&gt;issue #2&lt;/a&gt; で
+vcsm-cma に対応していただけるとのことだったのですが、今日 GitHub から通知が来て、
+なんともう対応していただけたようです。すごく早い……ありがたいですね。&lt;/p&gt;
+&lt;p&gt;早速最新のカーネルで試してみましょう。&lt;code class=&quot;language-text&quot;&gt;5.10.17-v7+&lt;/code&gt; で試しました。&lt;/p&gt;
+&lt;p&gt;先に rpi-vcsm をインストールします。書いてある通りです。インストールできたら py-videocore の
+example を試してみましょう。&lt;/p&gt;
+&lt;p&gt;py-videocore の方にも PR が出されているので、&lt;a href=&quot;https://github.com/Terminus-IMRC/py-videocore/tree/rpi-vcsm-3&quot;&gt;フォークされたブランチ&lt;/a&gt; を
+clone してきます。あとは書いてある通りに試していくと……エラーが出ますね。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;ImportError: libf77blas.so.3: cannot open shared object file: No such file or directory&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;numpy のインストール時の常識でしょうか……。&lt;code class=&quot;language-text&quot;&gt;sudo apt-get install libatlas-base-dev&lt;/code&gt; しましょう。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ python3 examples/sgemm.py 
+==== sgemm example (96x363 times 363x3072) ====
+threads: 12
+numpy: 0.4205 sec, 0.5113 Gflops
+GPU: 0.0294 sec, 7.3126 Gflops
+minimum absolute error: 0.0000e+00
+maximum absolute error: 9.1553e-04
+minimum relative error: 0.0000e+00
+maximum relative error: 1.0522e+01&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;ちゃんと動いているようです。&lt;/p&gt;
+&lt;p&gt;最新カーネルでも py-videocore が動くことを確認できました。
+これでネクストキャンプも安心ですね！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Git-Mediawiki]]></title><description><![CDATA[ArchWiki の編集で割とつらいのが、編集が textarea…]]></description><link>https://ny-a.github.io/blog22021-06/git-mediawiki/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/git-mediawiki/</guid><pubDate>Sat, 05 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ArchWiki の編集で割とつらいのが、編集が textarea で行う必要があることです。
 普段はあまり気にならないですが、サイズの大きいページを編集する際などは
 レスポンスの悪さが気になることもあります。&lt;/p&gt;
 &lt;p&gt;これが、テキストファイルをテキストエディタで編集するようにできたら
