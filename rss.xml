@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 08 Jun 2021 14:19:37 GMT</lastBuildDate><item><title><![CDATA[GitHubのプロファイルをカスタマイズ]]></title><description><![CDATA[GitHub のプロファイルをカスタマイズできることは知っていましたが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 09 Jun 2021 14:46:40 GMT</lastBuildDate><item><title><![CDATA[RTTY のデコードを試す(4)]]></title><description><![CDATA[プログラムでの文字へのデコードを試す前に、サンプリングレートが 8kHz、
+量子化ビット数が 8bit の unsigned な wave…]]></description><link>https://ny-a.github.io/blog22021-06/rtty-4/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/rtty-4/</guid><pubDate>Wed, 09 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;プログラムでの文字へのデコードを試す前に、サンプリングレートが 8kHz、
+量子化ビット数が 8bit の unsigned な wave ファイルという制約を
+なんとか取り払えないか試してみます。&lt;/p&gt;
+&lt;p&gt;まず、サンプリングレートは簡単で、変数に入っている数値を変更するだけで
+問題なさそうです。が、window&lt;em&gt;size も同じ比率で変更してあげないと、
+出力に差が出てくるようです。
+同じ比率を保つために、window&lt;/em&gt;size はサンプリングレートの250分の1に
+して、出力が変化しないようにします。&lt;/p&gt;
+&lt;p&gt;ちなみに、サンプリングレートは wave モジュールで取得できるようです。
+わざわざ変更するのも面倒なので、取得するようにしましょう。&lt;/p&gt;
+&lt;p&gt;また、unsigned を仮定しているのは、フレームの値から 128 を引いている
+部分のようです。(量子化ビット数も関係ありますが。)&lt;/p&gt;
+&lt;p&gt;量子化ビット数を変更できるようにするには、今のフレーム(バイナリ)の
+0番目の値のみを見ている所を変更する必要がありそうです。
+Python の&lt;a href=&quot;https://docs.python.org/3/library/stdtypes.html&quot;&gt;Built-in Types&lt;/a&gt; の、
+&lt;a href=&quot;https://docs.python.org/3/library/stdtypes.html#int.from_bytes&quot;&gt;int.from_bytes&lt;/a&gt; を
+使えばよさそうです。
+unsigned の制約も外すために、128 を引いている部分もビット数から計算して
+引くように変更します。unsigned 8bit のときに -128 なのは、u8 が [0, 255] で、
+その半分を引いて [-128, 127] にするためですね。同様に、unsigned 16bit であれば
+-(2^15) してあげればいいですね。signed であれば何も引きません。一般化すると、
+n bit のとき、signed であれば -0、unsigned であれば -(2^(n-1)) ということに
+なります。&lt;/p&gt;
+&lt;p&gt;あとは愚直に実装して、&lt;a href=&quot;https://github.com/ny-a/rtty/tree/improve-ny-a&quot;&gt;ny-a/RTTY - GitHub&lt;/a&gt; に
+push すれば完了です。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[GitHubのプロファイルをカスタマイズ]]></title><description><![CDATA[GitHub のプロファイルをカスタマイズできることは知っていましたが、
 ユーザー名と同じ名前を付けたリポジトリの README.md…]]></description><link>https://ny-a.github.io/blog22021-06/github-profile-metrics/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/github-profile-metrics/</guid><pubDate>Tue, 08 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;GitHub のプロファイルをカスタマイズできることは知っていましたが、
 ユーザー名と同じ名前を付けたリポジトリの README.md が表示されていると
 いうことを知ったので、試してみました。&lt;/p&gt;
