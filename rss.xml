@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Jun 2021 13:34:22 GMT</lastBuildDate><item><title><![CDATA[セキュリティ・ネクストキャンプに通過しました]]></title><description><![CDATA[ネクストキャンプ通過しました。やったー。]]></description><link>https://ny-a.github.io/blog22021-06/sec-next-camp/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/sec-next-camp/</guid><pubDate>Thu, 10 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ネクストキャンプ通過しました。やったー。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[RTTY のデコードを試す(4)]]></title><description><![CDATA[プログラムでの文字へのデコードを試す前に、サンプリングレートが 8kHz、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 11 Jun 2021 13:33:17 GMT</lastBuildDate><item><title><![CDATA[セキュリティ・キャンプ通過チェッカーを作りました]]></title><description><![CDATA[昨晩 Twitter を眺めていると、セキュリティキャンプ通過者一覧の目 grep がつらいとの声を
+ちらほら見かけました。じゃあコンピューターに grep させればいいですよね。
+明日は12時から予定があるので夜更しはできません。とりあえず寝ましょう。 09:0…]]></description><link>https://ny-a.github.io/blog22021-06/seccamp-kaitou-id-checker/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/seccamp-kaitou-id-checker/</guid><pubDate>Fri, 11 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;昨晩&lt;/h2&gt;
+&lt;p&gt;Twitter を眺めていると、セキュリティキャンプ通過者一覧の目 grep がつらいとの声を
+ちらほら見かけました。じゃあコンピューターに grep させればいいですよね。
+明日は12時から予定があるので夜更しはできません。とりあえず寝ましょう。&lt;/p&gt;
+&lt;h2&gt;09:00 起床&lt;/h2&gt;
+&lt;p&gt;起きました。PC を開きました。
+まず、create-react-app を叩きます。react も redux もあまり使ったことがないので
+勉強がてら両方使いましょう。あとは適当に tsx を書いていきましょう。
+適当にゴリゴリ実装していきます。公式 PDF をブラウザで開いて、テキストをコピー
+します。ほとんど半角数字と半角のカンマが使われていて優しいですね。どうせなら
+せめて txt、願わくば json で公開して欲しいものです。
+ほとんどと書いたのは、ジュニア開発ゼミの箇所だけ全角のカンマが使われていました。
+まあ3つだけなので手で修正して対応しました。&lt;/p&gt;
+&lt;h2&gt;11:00 電車に乗る&lt;/h2&gt;
+&lt;p&gt;40 分くらい電車で移動する必要があるのでこの時間に家を出ます。
+まだ完成にはほど遠いです。はい、電車で開発しましょう。
+昔は Bluetooth テザリングをしていた記憶があるのですが、電車の中には Bluetooth の
+電波がかなり多く、ペアリングから始めるのは困難そうでした。USB テザリングして
+開発を進めましょう。&lt;/p&gt;
+&lt;h2&gt;11:40 目的地最寄り駅に到着&lt;/h2&gt;
+&lt;p&gt;目的地に移動します。時間がもったいないので小走りで。&lt;/p&gt;
+&lt;h2&gt;11:50 目的地到着&lt;/h2&gt;
+&lt;p&gt;まだ時間があります。ラストスパートです。
+GitHub Actions で CI/CD するつもりだったのですが、なんだかうまくいきません。
+こだわっても仕方ないので、&lt;code class=&quot;language-text&quot;&gt;npm i gh-pages&lt;/code&gt; して手元からデプロイすることにします。&lt;/p&gt;
+&lt;h2&gt;12:00 予定&lt;/h2&gt;
+&lt;p&gt;……デプロイすることにします。と思った瞬間、時間になったので名前を呼ばれます。
+思ったよりも時間が早く過ぎていたようでした。どうしましょう……あと1分……&lt;/p&gt;
+&lt;p&gt;私「あと1分ください。」&lt;/p&gt;
+&lt;p&gt;1分もらいました。デプロイしてツイートします。完成。&lt;/p&gt;
+&lt;h2&gt;20:00 帰宅&lt;/h2&gt;
+&lt;p&gt;他にもやることを済ませて帰宅します。そういえばデプロイに失敗しているんでした。
+適当に &lt;code class=&quot;language-text&quot;&gt;npm update&lt;/code&gt; します。直りました。よかったです。(本当は他にもいろいろ試しました。)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[セキュリティ・ネクストキャンプに通過しました]]></title><description><![CDATA[ネクストキャンプ通過しました。やったー。]]></description><link>https://ny-a.github.io/blog22021-06/sec-next-camp/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/sec-next-camp/</guid><pubDate>Thu, 10 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ネクストキャンプ通過しました。やったー。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[RTTY のデコードを試す(4)]]></title><description><![CDATA[プログラムでの文字へのデコードを試す前に、サンプリングレートが 8kHz、
 量子化ビット数が 8bit の unsigned な wave…]]></description><link>https://ny-a.github.io/blog22021-06/rtty-4/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/rtty-4/</guid><pubDate>Wed, 09 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;プログラムでの文字へのデコードを試す前に、サンプリングレートが 8kHz、
 量子化ビット数が 8bit の unsigned な wave ファイルという制約を
 なんとか取り払えないか試してみます。&lt;/p&gt;
