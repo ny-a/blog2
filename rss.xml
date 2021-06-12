@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 11 Jun 2021 13:33:17 GMT</lastBuildDate><item><title><![CDATA[セキュリティ・キャンプ通過チェッカーを作りました]]></title><description><![CDATA[昨晩 Twitter を眺めていると、セキュリティキャンプ通過者一覧の目 grep がつらいとの声を
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 12 Jun 2021 14:58:49 GMT</lastBuildDate><item><title><![CDATA[駅データAPIのクローンを作りました]]></title><description><![CDATA[作ったのは昨日なんですが、駅データ.jp さんの
+API のクローンを作成しました。 CSV ファイルと、PHP で生成プログラムを公開されていたので、
+のんびり TypeScript に移植して GitHub Actions で生成、
+GitHub Pages…]]></description><link>https://ny-a.github.io/blog22021-06/ekidata/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/ekidata/</guid><pubDate>Sat, 12 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;作ったのは昨日なんですが、&lt;a href=&quot;https://www.ekidata.jp/&quot;&gt;駅データ.jp&lt;/a&gt; さんの
+API のクローンを作成しました。&lt;/p&gt;
+&lt;p&gt;CSV ファイルと、PHP で生成プログラムを公開されていたので、
+のんびり TypeScript に移植して GitHub Actions で生成、
+GitHub Pages にデプロイしています。&lt;/p&gt;
+&lt;p&gt;今は HTML ファイルを一切置いていないですが、
+API リファレンスなどを用意しようと思っています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[セキュリティ・キャンプ通過チェッカーを作りました]]></title><description><![CDATA[昨晩 Twitter を眺めていると、セキュリティキャンプ通過者一覧の目 grep がつらいとの声を
 ちらほら見かけました。じゃあコンピューターに grep させればいいですよね。
 明日は12時から予定があるので夜更しはできません。とりあえず寝ましょう。 09:0…]]></description><link>https://ny-a.github.io/blog22021-06/seccamp-kaitou-id-checker/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/seccamp-kaitou-id-checker/</guid><pubDate>Fri, 11 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;昨晩&lt;/h2&gt;
 &lt;p&gt;Twitter を眺めていると、セキュリティキャンプ通過者一覧の目 grep がつらいとの声を
