@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 12 Jun 2021 14:58:49 GMT</lastBuildDate><item><title><![CDATA[駅データAPIのクローンを作りました]]></title><description><![CDATA[作ったのは昨日なんですが、駅データ.jp さんの
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 13 Jun 2021 14:57:43 GMT</lastBuildDate><item><title><![CDATA[Hugo でブログを作ろうと思います]]></title><description><![CDATA[個人的にブログ形式はなんか違うなと思ってきていて、
+Hugo などの静的サイトジェネレーターを使って Wiki のような形式で
+情報をアウトプットしていきたいと考えているのですが、
+ひとまず Hugo を試してみようと思いました。 Theme はとりあえず PaperMod…]]></description><link>https://ny-a.github.io/blog22021-06/create-blog-with-hugo/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/create-blog-with-hugo/</guid><pubDate>Sun, 13 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;個人的にブログ形式はなんか違うなと思ってきていて、
+Hugo などの静的サイトジェネレーターを使って Wiki のような形式で
+情報をアウトプットしていきたいと考えているのですが、
+ひとまず Hugo を試してみようと思いました。&lt;/p&gt;
+&lt;p&gt;Theme はとりあえず PaperMod を使ってみようと思います。
+コンテンツは……とりあえずここと同じものを……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[駅データAPIのクローンを作りました]]></title><description><![CDATA[作ったのは昨日なんですが、駅データ.jp さんの
 API のクローンを作成しました。 CSV ファイルと、PHP で生成プログラムを公開されていたので、
 のんびり TypeScript に移植して GitHub Actions で生成、
 GitHub Pages…]]></description><link>https://ny-a.github.io/blog22021-06/ekidata/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/ekidata/</guid><pubDate>Sat, 12 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;作ったのは昨日なんですが、&lt;a href=&quot;https://www.ekidata.jp/&quot;&gt;駅データ.jp&lt;/a&gt; さんの
