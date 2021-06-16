@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 15 Jun 2021 14:28:15 GMT</lastBuildDate><item><title><![CDATA[みずほ銀行の報告書]]></title><description><![CDATA[みずほ銀行のシステム障害の報告書が公表されたようですね。 失敗事例を知ることは、同じような失敗を繰り返さないためにも重要だと思っていますが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 16 Jun 2021 14:39:28 GMT</lastBuildDate><item><title><![CDATA[ARC122-A]]></title><description><![CDATA[ARC122 の A 問題、結局時間内には解けなかったのですが、
+じっくり考えてみるといい線は行ってたことが分かりました。 まず RE が出て心が折れていたのですが、普通に範囲外アクセスでした。
+問題の上限を…]]></description><link>https://ny-a.github.io/blog22021-06/atcoder-arc122-a/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/atcoder-arc122-a/</guid><pubDate>Wed, 16 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ARC122 の A 問題、結局時間内には解けなかったのですが、
+じっくり考えてみるといい線は行ってたことが分かりました。&lt;/p&gt;
+&lt;p&gt;まず RE が出て心が折れていたのですが、普通に範囲外アクセスでした。
+問題の上限を1桁打ち間違えていました。&lt;/p&gt;
+&lt;p&gt;あとはフィボナッチ数列まわりの数値が前後していたのがダメだったようです。
+ただ、なぜかテストケースは全て通っていて、上記の上限を修正して出しても
+3ケース以外は AC になっていたので、うまく気付くことができませんでした。&lt;/p&gt;
+&lt;p&gt;もう少し考察の精度を上げたいと思いました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[みずほ銀行の報告書]]></title><description><![CDATA[みずほ銀行のシステム障害の報告書が公表されたようですね。 失敗事例を知ることは、同じような失敗を繰り返さないためにも重要だと思っていますが、
 みずほ銀行のシステムでは手作業の部分が多いという指摘を見かけました。 銀行の勘定系のような複雑なシステムを、全て…]]></description><link>https://ny-a.github.io/blog22021-06/mizuho-bk-report/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/mizuho-bk-report/</guid><pubDate>Tue, 15 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;みずほ銀行のシステム障害の報告書が公表されたようですね。&lt;/p&gt;
 &lt;p&gt;失敗事例を知ることは、同じような失敗を繰り返さないためにも重要だと思っていますが、
 みずほ銀行のシステムでは手作業の部分が多いという指摘を見かけました。&lt;/p&gt;
