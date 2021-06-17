@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 16 Jun 2021 14:39:28 GMT</lastBuildDate><item><title><![CDATA[ARC122-A]]></title><description><![CDATA[ARC122 の A 問題、結局時間内には解けなかったのですが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 17 Jun 2021 14:34:57 GMT</lastBuildDate><item><title><![CDATA[都内でのワクチン接種]]></title><description><![CDATA[都内での18歳以上のワクチン接種が大規模接種センターで始まったようです。 とはいえ、23区内でもチケットの発送が完了しているのはまだ少ないということで、
+すぐに、というわけではありませんが、届き次第できるだけ早く接種したいなと
+思っています。]]></description><link>https://ny-a.github.io/blog22021-06/vaccine/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/vaccine/</guid><pubDate>Thu, 17 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;都内での18歳以上のワクチン接種が大規模接種センターで始まったようです。&lt;/p&gt;
+&lt;p&gt;とはいえ、23区内でもチケットの発送が完了しているのはまだ少ないということで、
+すぐに、というわけではありませんが、届き次第できるだけ早く接種したいなと
+思っています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ARC122-A]]></title><description><![CDATA[ARC122 の A 問題、結局時間内には解けなかったのですが、
 じっくり考えてみるといい線は行ってたことが分かりました。 まず RE が出て心が折れていたのですが、普通に範囲外アクセスでした。
 問題の上限を…]]></description><link>https://ny-a.github.io/blog22021-06/atcoder-arc122-a/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/atcoder-arc122-a/</guid><pubDate>Wed, 16 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ARC122 の A 問題、結局時間内には解けなかったのですが、
 じっくり考えてみるといい線は行ってたことが分かりました。&lt;/p&gt;
