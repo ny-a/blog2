@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 17 Jun 2021 14:34:57 GMT</lastBuildDate><item><title><![CDATA[都内でのワクチン接種]]></title><description><![CDATA[都内での18歳以上のワクチン接種が大規模接種センターで始まったようです。 とはいえ、23区内でもチケットの発送が完了しているのはまだ少ないということで、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 18 Jun 2021 14:03:00 GMT</lastBuildDate><item><title><![CDATA[RTTY のデコードを試す(5)]]></title><description><![CDATA[前回はサンプリングレートや量子化ビット数を変更できるようにしましたが、
+オリジナルのファイルから ffmpeg のデフォルト設定で wav に変換すると、
+48kHz となり、実行時間が気になってきます。
+そこで、高速化を試すことにしました。 真っ先に、リストに append…]]></description><link>https://ny-a.github.io/blog22021-06/rtty-5/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/rtty-5/</guid><pubDate>Fri, 18 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;前回はサンプリングレートや量子化ビット数を変更できるようにしましたが、
+オリジナルのファイルから ffmpeg のデフォルト設定で wav に変換すると、
+48kHz となり、実行時間が気になってきます。
+そこで、高速化を試すことにしました。&lt;/p&gt;
+&lt;p&gt;真っ先に、リストに append したり pop したりするのは不安になってくるので、
+array をリングバッファとして使いましょう。&lt;/p&gt;
+&lt;p&gt;その次はどこが遅いか調べます。&lt;code class=&quot;language-text&quot;&gt;cProfile&lt;/code&gt; なんかを使うとよさそうです。
+調べてみると、一番遅いのは &lt;code class=&quot;language-text&quot;&gt;sum&lt;/code&gt; の呼び出しでしょうか。&lt;/p&gt;
+&lt;p&gt;window&lt;em&gt;size で平滑化(？)していますが、毎回その全てを足し合わせるのは効率が悪いですね。
+実質的にしなければいけないのは、window&lt;/em&gt;size 分だけ前の値を引いて、新しい値を足すことです。
+別の class に切り出して、インデックスの管理もその中に任せましょう。&lt;/p&gt;
+&lt;p&gt;ファイルも分割したいですが、カレントディレクトリにある python ファイルを実行すると、
+explicit relative import が使えないようなので、&lt;code class=&quot;language-text&quot;&gt;src&lt;/code&gt; ディレクトリ内にファイルを移動して、
+&lt;code class=&quot;language-text&quot;&gt;python -m src.main&lt;/code&gt; のように呼び出すようにします。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;**&lt;/code&gt; 演算子は、2乗とか決まっていたら乗算で書いた方が早いようですね。
+値にあまり意味はなく (値に失礼)、大小を比較しているのみのため、&lt;code class=&quot;language-text&quot;&gt;sqrt&lt;/code&gt; も不要でしょう。
+削除しましょう。&lt;/p&gt;
+&lt;p&gt;さて、ちまちまと高速化してきましたが、一番遅いのは多分 stdout です。ファイルに書くようにしましょう。
+だいたい8倍くらいは高速になりました、多分。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[都内でのワクチン接種]]></title><description><![CDATA[都内での18歳以上のワクチン接種が大規模接種センターで始まったようです。 とはいえ、23区内でもチケットの発送が完了しているのはまだ少ないということで、
 すぐに、というわけではありませんが、届き次第できるだけ早く接種したいなと
 思っています。]]></description><link>https://ny-a.github.io/blog22021-06/vaccine/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/vaccine/</guid><pubDate>Thu, 17 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;都内での18歳以上のワクチン接種が大規模接種センターで始まったようです。&lt;/p&gt;
 &lt;p&gt;とはいえ、23区内でもチケットの発送が完了しているのはまだ少ないということで、
