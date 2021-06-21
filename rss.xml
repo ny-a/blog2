@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 20 Jun 2021 15:01:37 GMT</lastBuildDate><item><title><![CDATA[Atcoder-toolsのDockerイメージを作りました]]></title><description><![CDATA[atcoder-tools の docker イメージを作って、コンパイルなんかも自動でコンテナ内でするようにしました。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 21 Jun 2021 14:57:00 GMT</lastBuildDate><item><title><![CDATA[Atcoder-toolsのDockerイメージをAlpineベースに変更]]></title><description><![CDATA[atcoder-tools の docker イメージを Alpine ベースに変更しました。
+ArchLinux ベースだと手元とほぼ同じ環境なのですごい楽なんですが、
+今回はパッケージ数も少なくてそんなに大変ではなかったので
+Alpine ベースに変更してみました。 libc…]]></description><link>https://ny-a.github.io/blog22021-06/atcoder-tools-docker-2/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/atcoder-tools-docker-2/</guid><pubDate>Mon, 21 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;atcoder-tools の docker イメージを Alpine ベースに変更しました。
+ArchLinux ベースだと手元とほぼ同じ環境なのですごい楽なんですが、
+今回はパッケージ数も少なくてそんなに大変ではなかったので
+Alpine ベースに変更してみました。&lt;/p&gt;
+&lt;p&gt;libc6-compat も入れるとよりよいのかもしれませんが、
+どうせソースからビルドすることが大半なので、あまり関係ないと思っています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Atcoder-toolsのDockerイメージを作りました]]></title><description><![CDATA[atcoder-tools の docker イメージを作って、コンパイルなんかも自動でコンテナ内でするようにしました。
 コンパイルオプションなんかもきっちり合わせて、軽微なエラーも同じ出力になるようにしたいです。]]></description><link>https://ny-a.github.io/blog22021-06/atcoder-tools-docker/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/atcoder-tools-docker/</guid><pubDate>Sun, 20 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;atcoder-tools の docker イメージを作って、コンパイルなんかも自動でコンテナ内でするようにしました。
 コンパイルオプションなんかもきっちり合わせて、軽微なエラーも同じ出力になるようにしたいです。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[精進グラフ]]></title><description><![CDATA[精進グラフ というものがあることを知りました。
 解いた問題の点数の合計 (割る100) とレーティングに何か関係があるのかと思って調べたのですが、
