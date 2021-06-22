@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 21 Jun 2021 20:49:08 GMT</lastBuildDate><item><title><![CDATA[Earworm]]></title><description><![CDATA[英語ネイティブ話者ではないので、日々色々な英単語を知ることになるわけですが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 22 Jun 2021 15:20:34 GMT</lastBuildDate><item><title><![CDATA[HTML5とHTML Living Standard]]></title><description><![CDATA[W3C による HTML5 が廃止されて、これからは WHATWG の HTML Living Standard
+が標準となるようです。 HTML5 のドラフトが発表されたのはもう10年以上前なんですね。
+割とリアルタイムで見ながら成長してきたように思います。
+とはいえ、1…]]></description><link>https://ny-a.github.io/blog22021-06/html-living-standard/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/html-living-standard/</guid><pubDate>Wed, 23 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;W3C による HTML5 が廃止されて、これからは WHATWG の HTML Living Standard
+が標準となるようです。&lt;/p&gt;
+&lt;p&gt;HTML5 のドラフトが発表されたのはもう10年以上前なんですね。
+割とリアルタイムで見ながら成長してきたように思います。
+とはいえ、10年前と今とでは Web の様相もかなり変化していますが。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Earworm]]></title><description><![CDATA[英語ネイティブ話者ではないので、日々色々な英単語を知ることになるわけですが、
 時々そんなものも1つの単語になっているのかと驚くことがあります。 「頭の中で延々リピートされる曲」が睡眠を妨げると判明
 という
 Gigazine の記事を読んで、earworm…]]></description><link>https://ny-a.github.io/blog22021-06/earworm/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/earworm/</guid><pubDate>Tue, 22 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;英語ネイティブ話者ではないので、日々色々な英単語を知ることになるわけですが、
