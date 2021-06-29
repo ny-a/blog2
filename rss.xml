@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 28 Jun 2021 16:12:55 GMT</lastBuildDate><item><title><![CDATA[Puppeteerで複数のwaitを組み合わせる]]></title><description><![CDATA[puppeteer の page.click なんかを使うときに、waitForNavigation
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 29 Jun 2021 15:17:17 GMT</lastBuildDate><item><title><![CDATA[6月の終わり]]></title><description><![CDATA[2021年ももう半分過ぎてしまいました。 ある程度充実した半年だったように思います。
+始めの方では、ArchWiki…]]></description><link>https://ny-a.github.io/blog22021-06/end-of-june/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/end-of-june/</guid><pubDate>Wed, 30 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;2021年ももう半分過ぎてしまいました。&lt;/p&gt;
+&lt;p&gt;ある程度充実した半年だったように思います。
+始めの方では、ArchWiki の連続編集記録が途切れたり、
+このブログの更新をサボっていたりしてあまりよいスタートではありませんでしたが、
+応用情報に合格することができ、ネクストキャンプにも通過していろいろな人と交流しているので、
+よい1年になりそうだなと思っています。&lt;/p&gt;
+&lt;p&gt;ただ、ネクストキャンプも1ヶ月後にせまっており、事前学習が必要だったり、
+学校のテストがあったりして、のんびりしている暇はありません。&lt;/p&gt;
+&lt;p&gt;やりたいことはたくさんあるので、もっと時間が欲しいですね。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Puppeteerで複数のwaitを組み合わせる]]></title><description><![CDATA[puppeteer の page.click なんかを使うときに、waitForNavigation
 などと連続の await で組み合わせるとうまく遷移の完了を検知できずにつらいなと思っていました。 よくよく ドキュメント
 を読んでみると、Promise.all…]]></description><link>https://ny-a.github.io/blog22021-06/puppeteer-multiple-wait/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-06/puppeteer-multiple-wait/</guid><pubDate>Tue, 29 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;puppeteer の page.click なんかを使うときに、waitForNavigation
 などと連続の await で組み合わせるとうまく遷移の完了を検知できずにつらいなと思っていました。&lt;/p&gt;
