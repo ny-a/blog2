@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 30 Jun 2021 15:30:52 GMT</lastBuildDate><item><title><![CDATA[GitHub Copilot]]></title><description><![CDATA[GitHub から、コードを自動生成する GitHub Copilot
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 02 Jul 2021 02:05:37 GMT</lastBuildDate><item><title><![CDATA[リアクティブなデザインパターン]]></title><description><![CDATA[JavaScript のフロントエンドフレームワーク (React, Vue…]]></description><link>https://ny-a.github.io/blog22021-07/reactive-design-pattern/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-07/reactive-design-pattern/</guid><pubDate>Fri, 02 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JavaScript のフロントエンドフレームワーク (React, Vue など) を使っているとき、
+テンプレート内で、値が複数の候補の中のどれかを判定したくなるときがあります。&lt;/p&gt;
+&lt;p&gt;そういうときに、今まではテンプレート内で愚直に一致するかどうか判定していました。
+(よく考えると1つ1つ Boolean を事前計算した方がよかったのですが、
+命名も面倒なのでサボっていました……。)&lt;/p&gt;
+&lt;p&gt;最近 AWS Amplify のソースコードで、String から Boolean への Map を事前に作っておき、
+テンプレート内ではその Boolean の値を使うという方法を見て、いい方法だと思いました。&lt;/p&gt;
+&lt;p&gt;こういった知見を集めた、リアクティブなデザインパターンみたいなものがどこかにまとまっていたら……
+と思いました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[GitHub Copilot]]></title><description><![CDATA[GitHub から、コードを自動生成する GitHub Copilot
 が発表されました。 「AI ペアプログラマー」と書かれていて、普段一人でコーディングをすることが多い私にとってはありがたい機能のように思います。 とりあえず、テクニカルプレビューの waitlist…]]></description><link>https://ny-a.github.io/blog22021-07/github-copilot/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-07/github-copilot/</guid><pubDate>Thu, 01 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;GitHub から、コードを自動生成する &lt;a href=&quot;https://copilot.github.com/&quot;&gt;GitHub Copilot&lt;/a&gt;
 が発表されました。&lt;/p&gt;
 &lt;p&gt;「AI ペアプログラマー」と書かれていて、普段一人でコーディングをすることが多い私にとってはありがたい機能のように思います。&lt;/p&gt;
