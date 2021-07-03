@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 02 Jul 2021 02:05:37 GMT</lastBuildDate><item><title><![CDATA[リアクティブなデザインパターン]]></title><description><![CDATA[JavaScript のフロントエンドフレームワーク (React, Vue…]]></description><link>https://ny-a.github.io/blog22021-07/reactive-design-pattern/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-07/reactive-design-pattern/</guid><pubDate>Fri, 02 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JavaScript のフロントエンドフレームワーク (React, Vue など) を使っているとき、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 03 Jul 2021 01:55:15 GMT</lastBuildDate><item><title><![CDATA[git filter-repoを使ってみました]]></title><description><![CDATA[Git を使っていて、何らかの理由でコミット履歴を書き換えたいとき、
+標準サブコマンドの中でよく使われるのは filter-branch でしょう。 ただ、公式ドキュメント
+を見てみると、filter-branch を使う代わりに、
+filter-repo…]]></description><link>https://ny-a.github.io/blog22021-07/git-filter-repo/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-07/git-filter-repo/</guid><pubDate>Sat, 03 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Git を使っていて、何らかの理由でコミット履歴を書き換えたいとき、
+標準サブコマンドの中でよく使われるのは filter-branch でしょう。&lt;/p&gt;
+&lt;p&gt;ただ、&lt;a href=&quot;https://git-scm.com/docs/git-filter-branch&quot;&gt;公式ドキュメント&lt;/a&gt;
+を見てみると、filter-branch を使う代わりに、
+&lt;a href=&quot;https://github.com/newren/git-filter-repo&quot;&gt;filter-repo&lt;/a&gt;
+というサードパーティーの代替などを使うように警告されます。&lt;/p&gt;
+&lt;p&gt;そこで、filter-repo を使ってみました。
+ArchLinux では &lt;a href=&quot;https://archlinux.org/packages/community/any/git-filter-repo/&quot;&gt;community/git-filter-repo&lt;/a&gt;
+からインストールできます。&lt;/p&gt;
+&lt;p&gt;今回やりたいことは (いつも同じで)、個人で使っているこのアカウントが
+Author/Committer となっているコミットを、仕事で使っている情報に書き換えることです。
+(毎回 git config をやり忘れるの、何か対策したいところですが……。)&lt;/p&gt;
+&lt;p&gt;ドキュメントを見てみると、どうもあまりオプションはないようです。
+というより、Python のコードをオプションとして渡してあげると、
+いい感じに実行してくれるようです。&lt;/p&gt;
+&lt;p&gt;今回はまだ自分しかコミットしていないリポジトリだったので、
+常に同じバイナリ列 (文字列ではダメです) を返すコードを書きます。&lt;/p&gt;
+&lt;p&gt;……その前に、バックアップを取っておきます。
+filter-repo では、clone したばかりの clean なリポジトリを使うことが推奨されています。
+/tmp で &lt;code class=&quot;language-text&quot;&gt;git clone /path/to/repository --no-local&lt;/code&gt; を実行して、リポジトリを複製します。&lt;/p&gt;
+&lt;p&gt;次に、実際の書き換えを行っていきます。
+&lt;code class=&quot;language-text&quot;&gt;--email-callback&lt;/code&gt; と &lt;code class=&quot;language-text&quot;&gt;--name-callback&lt;/code&gt; を使います。
+どちらも現在の値を考慮する必要はないため、
+&lt;code class=&quot;language-text&quot;&gt;&amp;quot;return b&amp;#39;user@example.com&amp;#39;&amp;quot;&lt;/code&gt; のような引数を与えればいいです。&lt;/p&gt;
+&lt;p&gt;そして実行すると……、一瞬で終わりました。
+filter-branch では original が残りますが、filter-repo では残らないようです。
+軽く見た感じ問題なく完了しているようなので、
+&lt;code class=&quot;language-text&quot;&gt;git push /path/to/repository branch:branch_new&lt;/code&gt; を実行して、
+元のリポジトリに書き換えたコミットを push します。&lt;/p&gt;
+&lt;p&gt;元のブランチと diff を取って、当然何も出ないことを確認したら、
+&lt;code class=&quot;language-text&quot;&gt;git reset --hard branch_new&lt;/code&gt; したり、
+&lt;code class=&quot;language-text&quot;&gt;git branch -f branch branch_new&lt;/code&gt; したりして古いブランチを新しいブランチに移動します。&lt;/p&gt;
+&lt;p&gt;あとは、必要に応じて force push したり(関係するメンバーに謝りましょう……)、
+運よく push していなければ、もう二度と同じ誤ちを繰り返さないように心に誓ったりしましょう。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[リアクティブなデザインパターン]]></title><description><![CDATA[JavaScript のフロントエンドフレームワーク (React, Vue…]]></description><link>https://ny-a.github.io/blog22021-07/reactive-design-pattern/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-07/reactive-design-pattern/</guid><pubDate>Fri, 02 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;JavaScript のフロントエンドフレームワーク (React, Vue など) を使っているとき、
 テンプレート内で、値が複数の候補の中のどれかを判定したくなるときがあります。&lt;/p&gt;
 &lt;p&gt;そういうときに、今まではテンプレート内で愚直に一致するかどうか判定していました。
 (よく考えると1つ1つ Boolean を事前計算した方がよかったのですが、
