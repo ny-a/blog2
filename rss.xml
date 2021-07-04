@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 03 Jul 2021 01:55:15 GMT</lastBuildDate><item><title><![CDATA[git filter-repoを使ってみました]]></title><description><![CDATA[Git を使っていて、何らかの理由でコミット履歴を書き換えたいとき、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 04 Jul 2021 01:27:43 GMT</lastBuildDate><item><title><![CDATA[AtCoderのRatedPointSumが10000になりました]]></title><description><![CDATA[ABCのA問題から埋めていくようにしているのですが、
+やっと Rated Point Sum が10000を超えました。 今のレーティングを考えるとこれの4倍くらいは精進しておきたい所です。
+典型9…]]></description><link>https://ny-a.github.io/blog22021-07/atcoder-rated-point-sum-10k/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-07/atcoder-rated-point-sum-10k/</guid><pubDate>Sun, 04 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;ABCのA問題から埋めていくようにしているのですが、
+やっと Rated Point Sum が10000を超えました。&lt;/p&gt;
+&lt;p&gt;今のレーティングを考えるとこれの4倍くらいは精進しておきたい所です。
+典型90問も、コンテスト期間内に解き終えるのは少し厳しくなってきましたが、
+終了後でも最後まで解こうと思っています。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[git filter-repoを使ってみました]]></title><description><![CDATA[Git を使っていて、何らかの理由でコミット履歴を書き換えたいとき、
 標準サブコマンドの中でよく使われるのは filter-branch でしょう。 ただ、公式ドキュメント
 を見てみると、filter-branch を使う代わりに、
 filter-repo…]]></description><link>https://ny-a.github.io/blog22021-07/git-filter-repo/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-07/git-filter-repo/</guid><pubDate>Sat, 03 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Git を使っていて、何らかの理由でコミット履歴を書き換えたいとき、
