@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 09 Jul 2021 10:22:20 GMT</lastBuildDate><item><title><![CDATA[Google Adsのcanaryリリース？]]></title><description><![CDATA[今日、スマートフォンで Gigazine
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 10 Jul 2021 16:10:56 GMT</lastBuildDate><item><title><![CDATA[期限切れのアルファ化米]]></title><description><![CDATA[賞味期限が1年前のアルファ化米を発掘したので、
+覚悟を決めて食べてみました。 変な覚悟をする前にインターネットで先人の挑戦を探してみると、
+2年、
+3年、
+3年8ヶ月、
+7年、
+10年…… はい、今回は1年なので大丈夫そうですね。
+そして実際大丈夫そうです。]]></description><link>https://ny-a.github.io/blog22021-07/alpha-ized-rice/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-07/alpha-ized-rice/</guid><pubDate>Sat, 10 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;賞味期限が1年前のアルファ化米を発掘したので、
+覚悟を決めて食べてみました。&lt;/p&gt;
+&lt;p&gt;変な覚悟をする前にインターネットで先人の挑戦を探してみると、
+&lt;a href=&quot;http://enjoylifemax.com/blog/5422/&quot;&gt;2年&lt;/a&gt;、
+&lt;a href=&quot;https://statsuo.hatenablog.com/entry/2015/07/12/150447&quot;&gt;3年&lt;/a&gt;、
+&lt;a href=&quot;https://ameblo.jp/ave-blo/entry-12622277480.html&quot;&gt;3年8ヶ月&lt;/a&gt;、
+&lt;a href=&quot;https://www.bousai1000.com/entry/2017-08-01-161858&quot;&gt;7年&lt;/a&gt;、
+&lt;a href=&quot;https://minkara.carview.co.jp/userid/526128/blog/42001721/&quot;&gt;10年&lt;/a&gt;……&lt;/p&gt;
+&lt;p&gt;はい、今回は1年なので大丈夫そうですね。
+そして実際大丈夫そうです。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Google Adsのcanaryリリース？]]></title><description><![CDATA[今日、スマートフォンで Gigazine
 の記事を閲覧している際、Google 広告の上をスクロールすると
 「ページを表示」といったボタンが表示されました。 ページ内の他の Google 広告でも、タップするとボタンが表示され、…]]></description><link>https://ny-a.github.io/blog22021-07/google-ad-canary/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-07/google-ad-canary/</guid><pubDate>Fri, 09 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;今日、スマートフォンで &lt;a href=&quot;https://gigazine.net/&quot;&gt;Gigazine&lt;/a&gt;
 の記事を閲覧している際、Google 広告の上をスクロールすると
