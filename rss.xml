@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 15 Jul 2021 15:20:22 GMT</lastBuildDate><item><title><![CDATA[Blenderで正8面体を作ってみました]]></title><description><![CDATA[Blender で正8面体を作ってみました。 Cube から Bevel を使って正8面体を作ると、頂点が4つ重なった状態になってしまって不都合なため、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 16 Jul 2021 15:23:11 GMT</lastBuildDate><item><title><![CDATA[WolframAlphaの日本語対応]]></title><description><![CDATA[久しぶりに WolframAlpha を使ったのですが、いつのまにか？
+日本語のクエリにも対応するようになっていて驚きました。 方程式の分類も、「一階線形常微分方程式」などと出ていますね。
+(ブラウザを英語設定にしているので、今試したら
+“first-order linear…]]></description><link>https://ny-a.github.io/blog22021-07/wolfram-alpha-jp/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-07/wolfram-alpha-jp/</guid><pubDate>Sat, 17 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;久しぶりに WolframAlpha を使ったのですが、いつのまにか？
+日本語のクエリにも対応するようになっていて驚きました。&lt;/p&gt;
+&lt;p&gt;方程式の分類も、「一階線形常微分方程式」などと出ていますね。
+(ブラウザを英語設定にしているので、今試したら
+“first-order linear ordinary differential equation”
+と出てあれ？となりました)&lt;/p&gt;
+&lt;p&gt;常微分方程式、ODE と略すんですね……。初めて知りました。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Blenderで正8面体を作ってみました]]></title><description><![CDATA[Blender で正8面体を作ってみました。 Cube から Bevel を使って正8面体を作ると、頂点が4つ重なった状態になってしまって不都合なため、
 edge を subdivide して、New Edge/Face from vertices してから Scale…]]></description><link>https://ny-a.github.io/blog22021-07/blender-octahedron/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-07/blender-octahedron/</guid><pubDate>Fri, 16 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Blender で正8面体を作ってみました。&lt;/p&gt;
 &lt;p&gt;Cube から Bevel を使って正8面体を作ると、頂点が4つ重なった状態になってしまって不都合なため、
 edge を subdivide して、New Edge/Face from vertices してから Scale する方法で作ってみました。&lt;/p&gt;
