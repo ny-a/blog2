@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 16 Jul 2021 15:23:11 GMT</lastBuildDate><item><title><![CDATA[WolframAlphaの日本語対応]]></title><description><![CDATA[久しぶりに WolframAlpha を使ったのですが、いつのまにか？
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 18 Jul 2021 15:02:55 GMT</lastBuildDate><item><title><![CDATA[Googleで数学グラフ]]></title><description><![CDATA[Google で数式の計算ができることは知っていたのですが、
+方程式を検索するとグラフが表示されて驚きました。 Wolfram Alpha もどんどん強くなっていると思うのですが、
+Google の進化もすごいですね。]]></description><link>https://ny-a.github.io/blog22021-07/google-graph/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-07/google-graph/</guid><pubDate>Sun, 18 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Google で数式の計算ができることは知っていたのですが、
+方程式を検索するとグラフが表示されて驚きました。&lt;/p&gt;
+&lt;p&gt;Wolfram Alpha もどんどん強くなっていると思うのですが、
+Google の進化もすごいですね。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[WolframAlphaの日本語対応]]></title><description><![CDATA[久しぶりに WolframAlpha を使ったのですが、いつのまにか？
 日本語のクエリにも対応するようになっていて驚きました。 方程式の分類も、「一階線形常微分方程式」などと出ていますね。
 (ブラウザを英語設定にしているので、今試したら
 “first-order linear…]]></description><link>https://ny-a.github.io/blog22021-07/wolfram-alpha-jp/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-07/wolfram-alpha-jp/</guid><pubDate>Sat, 17 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;久しぶりに WolframAlpha を使ったのですが、いつのまにか？
