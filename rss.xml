@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 18 Jul 2021 15:02:55 GMT</lastBuildDate><item><title><![CDATA[Googleで数学グラフ]]></title><description><![CDATA[Google で数式の計算ができることは知っていたのですが、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 19 Jul 2021 13:23:55 GMT</lastBuildDate><item><title><![CDATA[AlpineベースのPythonコンテナのパッケージ管理]]></title><description><![CDATA[Python を Docker 内で動かそうとするとき、
+Alpine ベースのコンテナを使うと軽量で嬉しかったりしますが、
+pip でパッケージをインストールしようとすると、x86_6…]]></description><link>https://ny-a.github.io/blog22021-07/alpine-python-libraries/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-07/alpine-python-libraries/</guid><pubDate>Mon, 19 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Python を Docker 内で動かそうとするとき、
+Alpine ベースのコンテナを使うと軽量で嬉しかったりしますが、
+pip でパッケージをインストールしようとすると、x86_64 アーキテクチャでも、
+バイナリが降ってくる代わりにソースからビルドする必要があったりします。&lt;/p&gt;
+&lt;p&gt;しかし、最近は Alpine のパッケージも充実してきているので、
+(バージョンを気にしなければ) 割と apk add できることがあります。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;numpy&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;scipy&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;scikit-learn&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;pandas&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;boto3&lt;/code&gt;
+などは alpine のパッケージとして提供されているので、
+x86_64 向けバイナリとして入手することができます。&lt;/p&gt;
+&lt;p&gt;Alpine のパッケージは Arch Linux の PKGBUILD 由来の
+APKBUILD というファイルで定義されているので、
+公式リポジトリに入っていないパッケージも自分で作成すると嬉しいかもしれません。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Googleで数学グラフ]]></title><description><![CDATA[Google で数式の計算ができることは知っていたのですが、
 方程式を検索するとグラフが表示されて驚きました。 Wolfram Alpha もどんどん強くなっていると思うのですが、
 Google の進化もすごいですね。]]></description><link>https://ny-a.github.io/blog22021-07/google-graph/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-07/google-graph/</guid><pubDate>Sun, 18 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Google で数式の計算ができることは知っていたのですが、
 方程式を検索するとグラフが表示されて驚きました。&lt;/p&gt;
