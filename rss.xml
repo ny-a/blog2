@@ -1,4 +1,87 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 19 Jul 2021 13:23:55 GMT</lastBuildDate><item><title><![CDATA[AlpineベースのPythonコンテナのパッケージ管理]]></title><description><![CDATA[Python を Docker 内で動かそうとするとき、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 15 Sep 2021 04:07:14 GMT</lastBuildDate><item><title><![CDATA[TsukuCTF2021 Writeup(OSINT以外)]]></title><description><![CDATA[TsukuCTF ny_a です。182チーム中5位でした。 Web Logonly 解けませんでした。 デカいログを見てみると、214154行目に攻撃が成功しているという情報しかありませんでした。 Kali Linux…]]></description><link>https://ny-a.github.io/blog22021-09/tsukuctf-2021-writeup/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-09/tsukuctf-2021-writeup/</guid><pubDate>Wed, 15 Sep 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://tsukuctf.sechack365.com/&quot;&gt;TsukuCTF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ny_a です。182チーム中5位でした。&lt;/p&gt;
+&lt;h2&gt;Web&lt;/h2&gt;
+&lt;h3&gt;Logonly&lt;/h3&gt;
+&lt;p&gt;解けませんでした。&lt;/p&gt;
+&lt;p&gt;デカいログを見てみると、214154行目に攻撃が成功しているという情報しかありませんでした。&lt;/p&gt;
+&lt;p&gt;Kali Linux は使ったことないな〜、ダウンロードも面倒だし、と思いググってみると、
+&lt;a href=&quot;https://gitlab.com/kalilinux/packages/wordlists&quot;&gt;kalilinux/wordlists&lt;/a&gt; リポジトリに
+rockyou というパスワードリストがあるようでした。サイズも十分大きいし、最終更新も8年前なのでバージョンの問題もなさそうです。
+ungzip して214154行目の &lt;code class=&quot;language-text&quot;&gt;qwertzu&lt;/code&gt; で incorrect。別ファイルかなーと思い諦めました。&lt;/p&gt;
+&lt;p&gt;ちなみに、作問者さんに聞いてみた所想定解法っぽいですね。1つ古い？バージョンだと &lt;code class=&quot;language-text&quot;&gt;/dev/null&lt;/code&gt; が入っていないらしいです。なるほど。&lt;/p&gt;
+&lt;p&gt;guess 問題なのでエスパーすればよかったですね。&lt;/p&gt;
+&lt;h3&gt;digits&lt;/h3&gt;
+&lt;p&gt;python の &lt;code class=&quot;language-text&quot;&gt;int()&lt;/code&gt; が int を返せば ok そうです。
+ドキュメントを見るとアンダースコアを任意の位置に入れることができるようです。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;1_1_1111111&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Login&lt;/h3&gt;
+&lt;p&gt;SQLi ですか。普通にフレームワークを使ってバックエンドの開発をやっていると、そのような脆弱性を作り込むこともほぼないので、
+攻撃方法についてはあまり詳しくなく……。調べながらクエリを投げたらログインできました。&lt;/p&gt;
+&lt;h3&gt;Login2, Login3&lt;/h3&gt;
+&lt;p&gt;解けませんでした。&lt;/p&gt;
+&lt;p&gt;同じようにログインはできましたが、あんまり攻撃するのも申し訳なくなってきたので諦めました。
+バックエンドエンジニアにこんなことさせないで……と思いましたが、次までには解けるように練習しておきます。&lt;/p&gt;
+&lt;h3&gt;Journey&lt;/h3&gt;
+&lt;p&gt;HTTP ステータスコードを見ろと言われたので見ると、Method not allowed。&lt;/p&gt;
+&lt;p&gt;OPTIONS の返答から一つずつ試していくと、CONNECT で referrer 関連のエラーメッセージが出ます。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;curl -XCONNECT --referrer (railwaysのURL)&lt;/code&gt; とかするとフラグが得られます。&lt;/p&gt;
+&lt;h3&gt;gyOTAKU&lt;/h3&gt;
+&lt;p&gt;解けませんでした。&lt;/p&gt;
+&lt;p&gt;適当にローカルファイルを iframe に表示する HTML を書いて、適当に GitHub Pages にデプロイしてみたものの、キャッシュの問題か404……。
+適当にローカルに nginx コンテナでサーバーを建ててみたものの、ディレクトリ一覧はなぜか表示されず。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;/etc/passwd&lt;/code&gt; とか見るのもかわいそう(？)だと思い試しませんでしたが、試していたら解けていたかもしれません。
+いやだからあんまり攻撃させないでください…………。&lt;/p&gt;
+&lt;h2&gt;Rev&lt;/h2&gt;
+&lt;h3&gt;Legacy code&lt;/h3&gt;
+&lt;p&gt;pentium と書かれている所は x87 FPU の命令っぽいですね。&lt;/p&gt;
+&lt;p&gt;800.635 + 0.365 をしているようです。ちょうど801くらいになりますね。&lt;/p&gt;
+&lt;p&gt;それを &lt;code class=&quot;language-text&quot;&gt;PC%d%.0f&lt;/code&gt; で表示しているようです。多分 &lt;code class=&quot;language-text&quot;&gt;PC9801&lt;/code&gt; でしょう。試したら通りました。&lt;/p&gt;
+&lt;p&gt;$9 って即値なんですね。知りませんでした。&lt;/p&gt;
+&lt;h2&gt;Network&lt;/h2&gt;
+&lt;h3&gt;Genesis&lt;/h3&gt;
+&lt;p&gt;ブロックチェーンの知識はないですが、データ構造を見ながら前や後を見ていくと、GENESIS と書かれたものを発見。&lt;/p&gt;
+&lt;p&gt;その tx から、
+&lt;code class=&quot;language-text&quot;&gt;/api/getrawtransaction?txid=f44d8ca0b6e787c2193297aec523d685bc0ab5a38eca5a0b014c5a679507b13e&amp;amp;decrypt=1&lt;/code&gt;
+にアクセスして、適当に hex を ascii に変換してみたらフラグがありました。&lt;/p&gt;
+&lt;h2&gt;Crypt&lt;/h2&gt;
+&lt;h3&gt;CrackSSH!&lt;/h3&gt;
+&lt;p&gt;適当に e と n を見てみると、e がデカいのが脆弱なようです。&lt;/p&gt;
+&lt;p&gt;適当に d を調べて、適当に rsatool で秘密鍵を作ると、ログインが……できません。&lt;/p&gt;
+&lt;p&gt;多分 ssh-agent が悪いんでしょう。適当に docker コンテナ内から ssh すると入れました。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;flag.txt&lt;/code&gt; ファイルにフラグが書いてありました。&lt;/p&gt;
+&lt;h2&gt;Misc&lt;/h2&gt;
+&lt;h3&gt;TORitsukushi&lt;/h3&gt;
+&lt;p&gt;VSCodeで開いて適当に s/TSUKUSHI//g な置換をしまくったら、case insensitive になっていたようで incorrect。
+case sensitive にしてやり直しました。&lt;/p&gt;
+&lt;h3&gt;Customization&lt;/h3&gt;
+&lt;p&gt;マンダラートは何か分かりませんでしたが、目標とか書いてあるので9x9のあのなんか、あれでしょうか。
+真ん中に目標書いてありそうですよね。背景色が変わっていますが、数式バーには出るので見るだけです。&lt;/p&gt;
+&lt;h3&gt;discriminate&lt;/h3&gt;
+&lt;p&gt;あー、途中まで見覚えのある文章ですね……。
+とりあえず内容が破綻し始める位置のあたりをつけて、ポスターと完全一致している所の末尾5文字を投げてみます。
+それでダメだったらモデルを動かして……と思ったのですが、通ったのでヨシ！&lt;/p&gt;
+&lt;h2&gt;Hardware&lt;/h2&gt;
+&lt;h3&gt;CAD&lt;/h3&gt;
+&lt;p&gt;ご丁寧にも CAD ソフトいらないよと書いてあるので stl online viewer とかでググって適当に開きます。
+左右の {} が微妙に違っていて、tかな……？とかやって incorrect になってしまいました。
+CTF 初心者なのでフラグ形式でピンと来ず……。&lt;/p&gt;
+&lt;h3&gt;Ltika&lt;/h3&gt;
+&lt;p&gt;Arduino ですね。丁寧に関数を作って点滅させているようです。
+関数名だけ無視して、長いのと短いのがあるのでモールス信号だろうと推測、適当なサイトで復号(？)しました。&lt;/p&gt;
+&lt;h3&gt;PCB&lt;/h3&gt;
+&lt;p&gt;なんかオンラインのガーバービューアーだと丸い基板みたいな感じに表示されてしまった？ので、
+最近はあまり出番のない KiCad を起動して開きます。&lt;/p&gt;
+&lt;p&gt;そもそも LED と POWER の区別すらしないで適当に星座と見比べていたらそれっぽいのを見つけたので投げてみました。&lt;/p&gt;
+&lt;h2&gt;Tsukushi&lt;/h2&gt;
+&lt;h3&gt;Welcome&lt;/h3&gt;
+&lt;p&gt;補足にスクリーンネームでいいよって書いてあったのでそちらで。
+終わった後にアカウント見たら、ユーザー名がフラグ形式になっていたのでこちらが想定解だったんだなと気付きました。&lt;/p&gt;
+&lt;h2&gt;感想&lt;/h2&gt;
+&lt;p&gt;CTF、多分期間の決まっていて一般公開されているものに出るのは初めて？な気がするのですが、出てみるもんですね。楽しかったです。&lt;/p&gt;
+&lt;p&gt;(上記に該当しないものとして、CpawCTF と、セキュキャンの講義内で CTF 形式の演習はやったことがあります。その程度で、マジの初心者です。いやこれはマジなんですよ。信じて。)&lt;/p&gt;
+&lt;p&gt;サービスを守るには攻撃手法の概要くらいを知っていればいいか……と思っていたのですが、
+具体的な攻撃手法を知ることも大事なのかなと考え直しました。勉強します。&lt;/p&gt;
+&lt;p&gt;とはいえ、fork bomb で怒られてしまう国ではなかなか難しい気もしないでもないんですよね……。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[AlpineベースのPythonコンテナのパッケージ管理]]></title><description><![CDATA[Python を Docker 内で動かそうとするとき、
 Alpine ベースのコンテナを使うと軽量で嬉しかったりしますが、
 pip でパッケージをインストールしようとすると、x86_6…]]></description><link>https://ny-a.github.io/blog22021-07/alpine-python-libraries/</link><guid isPermaLink="false">https://ny-a.github.io/blog22021-07/alpine-python-libraries/</guid><pubDate>Mon, 19 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Python を Docker 内で動かそうとするとき、
 Alpine ベースのコンテナを使うと軽量で嬉しかったりしますが、
