@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 08 May 2022 00:24:52 GMT</lastBuildDate><item><title><![CDATA[2022年ゴールデンウィーク@秋葉原 1日目]]></title><description><![CDATA[秋葉原に行ってきました。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 08 May 2022 00:26:13 GMT</lastBuildDate><item><title><![CDATA[2022年ゴールデンウィーク@秋葉原 2日目]]></title><description><![CDATA[秋葉原に行ってきました。2日連続ですね。なんで？
+私は滅多に秋葉原に行かないので何年ぶりだ？という気分ですが、実は昨日も行っているのでだいたい1日ぶりでした。なんで？ 買ったもの HDMI Type-A to Type-C 変換ケーブル 昨日買った HDMI Type-A to…]]></description><link>https://ny-a.github.io/blog22022-05/gw-akihabara-day2/</link><guid isPermaLink="false">https://ny-a.github.io/blog22022-05/gw-akihabara-day2/</guid><pubDate>Fri, 06 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;秋葉原に行ってきました。2日連続ですね。なんで？
+私は滅多に秋葉原に行かないので何年ぶりだ？という気分ですが、実は昨日も行っているのでだいたい1日ぶりでした。なんで？&lt;/p&gt;
+&lt;h2&gt;買ったもの&lt;/h2&gt;
+&lt;h3&gt;HDMI Type-A to Type-C 変換ケーブル&lt;/h3&gt;
+&lt;p&gt;昨日買った HDMI Type-A to Type-C/Type-D 変換アダプタ、まあいらないことはないというか普通に使うんですが、普通に気軽に USB 給電しながら使いたいケースもあるよな……と思い、
+変換ケーブルも買うことにしました。半分嘘です。普通に HDMI Type-C のディスプレイに接続するのに使います。昨日まとめて買えはそう。&lt;/p&gt;
+&lt;h2&gt;欲しいなと思ったもの&lt;/h2&gt;
+&lt;p&gt;PD トリガーケーブル。いやでも 3.3/5/12V あたりなら ATX 電源使えば？の気持ちですし、それはそうと直流安定化電源1台くらいあってもいいよなの気持ちです。一旦スルー。&lt;/p&gt;
+&lt;p&gt;そもそも USB PD PPS ってそんなに安定してるんですかね？いろいろオシロで見てみても面白いかもしれませんね。
+でもダイレクトチャージってマジ？時代は PD なんですかね……&lt;/p&gt;
+&lt;p&gt;いやでも、安定化電源は、ちょっとほしい。&lt;/p&gt;
+&lt;h2&gt;エンカウント失敗&lt;/h2&gt;
+&lt;p&gt;おっ &lt;a href=&quot;https://twitter.com/nekoruri&quot;&gt;Aki＠めもおきば&lt;/a&gt; さんアキバなのか〜&lt;/p&gt;
+&lt;p&gt;……と思ったんですが今日は予定があるらしい。アポ取ってないので問題ないです。&lt;/p&gt;
+&lt;h2&gt;さて、そろそろ帰りま〜す！&lt;/h2&gt;
+&lt;p&gt;秋葉原に行く機会なんてほとんどないので、まあ次来るのは早くて3ヶ月後とかでしょう。いやマジで。
+またいつか〜 (タイトル……)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[2022年ゴールデンウィーク@秋葉原 1日目]]></title><description><![CDATA[秋葉原に行ってきました。
 私は滅多に秋葉原に行かないので何年ぶりだ？という気分ですが、実は先月も行っているのでだいたい1ヶ月ぶりでした。 買ったもの RaspberryPi Zero WH アキハバラ＠BEEP on Twitter…]]></description><link>https://ny-a.github.io/blog22022-05/gw-akihabara-day1/</link><guid isPermaLink="false">https://ny-a.github.io/blog22022-05/gw-akihabara-day1/</guid><pubDate>Thu, 05 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;秋葉原に行ってきました。
 私は滅多に秋葉原に行かないので何年ぶりだ？という気分ですが、実は先月も行っているのでだいたい1ヶ月ぶりでした。&lt;/p&gt;
 &lt;h2&gt;買ったもの&lt;/h2&gt;
