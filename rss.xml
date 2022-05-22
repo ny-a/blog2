@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 22 May 2022 04:30:51 GMT</lastBuildDate><item><title><![CDATA[ArkEdgeSpaceでインターンを始めました]]></title><description><![CDATA[金曜日だし日付変わる前にツンツンしてみるか、と思ったらインターンが生えました。
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[My study log of software development]]></description><link>https://ny-a.github.io/blog2</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 22 May 2022 04:44:40 GMT</lastBuildDate><item><title><![CDATA[seccampのエントリーページから性別の設問が削除されました]]></title><description><![CDATA[…]]></description><link>https://ny-a.github.io/blog22022-05/seccamp-application-form-gender/</link><guid isPermaLink="false">https://ny-a.github.io/blog22022-05/seccamp-application-form-gender/</guid><pubDate>Sun, 22 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;セキュリティ・キャンプのエントリーでは、例年性別情報が収集されています。
+ただ、去年オンラインで参加した立場として、この情報は一体何に使われたんだ？と疑問に思っていました。&lt;/p&gt;
+&lt;p&gt;そこで、オンラインだと性別情報いらなくないですか？特に選考前にはいらないですよね？と問い合わせたところ、&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;これまで性別欄につきましては、性別に関係なくバランス良く応募者にご参加いただくための統計情報として、またリアル開催時は宿泊の部屋割りなどに配慮が必要であるため、使用しておりましたため、例年の応募内容と同様に募集を行っておりました。
+今般のご意見を踏まえ、必要性について再考し上司と相談の上、本年度の応募内容の性別項目を削除することといたしました。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;との回答をいただき、実際に設問をなくしていただくことができました。&lt;/p&gt;
+&lt;p&gt;問い合わせの際に、講師の Hikalium さんにアドバイスや手助けをしていただきました。改めてありがとうございました。&lt;/p&gt;
+&lt;p&gt;というわけで、後で統計用に性別情報が収集されるかもしれません。それはこういうわけなので、よろしくお願いします。&lt;/p&gt;
+&lt;p&gt;もう少し早めに投げた方がよかったというのはそうだと思います。遅くなってすいませんでした。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ArkEdgeSpaceでインターンを始めました]]></title><description><![CDATA[金曜日だし日付変わる前にツンツンしてみるか、と思ったらインターンが生えました。
 実質月曜日からみたいなもんですね。はい。 ArkEdgeSpace のことは去年のセキュリティキャンプ期間中に知ったと記憶していて、…]]></description><link>https://ny-a.github.io/blog22022-05/got-internship-at-arkedgespace/</link><guid isPermaLink="false">https://ny-a.github.io/blog22022-05/got-internship-at-arkedgespace/</guid><pubDate>Fri, 13 May 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;金曜日だし日付変わる前にツンツンしてみるか、と思ったらインターンが生えました。
 実質月曜日からみたいなもんですね。はい。&lt;/p&gt;
 &lt;p&gt;ArkEdgeSpace のことは去年のセキュリティキャンプ期間中に知ったと記憶していて、
